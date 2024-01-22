@@ -1,0 +1,85 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 48 224 232)
+	(text "One_Counter" (rect 64 160 153 176)(font "Arial" (font_size 8)))
+	(text "inst" (rect 32 160 55 175)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "E" (rect 0 0 10 16)(font "Arial" (font_size 8)))
+		(text "E" (rect 21 35 31 51)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "S[1..0]" (rect 0 0 46 16)(font "Arial" (font_size 8)))
+		(text "S[1..0]" (rect 21 59 67 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 16)
+		(input)
+		(text "I[7..0]" (rect 0 0 38 16)(font "Arial" (font_size 8)))
+		(text "I[7..0]" (rect 24 8 62 24)(font "Arial" (font_size 8)))
+		(line (pt 0 16)(pt 16 16)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "IL" (rect 0 0 11 16)(font "Arial" (font_size 8)))
+		(text "IL" (rect 24 80 35 96)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "CLK" (rect 0 0 29 16)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 24 136 53 152)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "RESETN" (rect 0 0 61 16)(font "Arial" (font_size 8)))
+		(text "RESETN" (rect 21 107 82 123)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 160 24)
+		(output)
+		(text "F" (rect -40 0 -31 16)(font "Arial" (font_size 8)))
+		(text "F" (rect 130 19 139 35)(font "Arial" (font_size 8)))
+		(line (pt 160 24)(pt 144 24))
+	)
+	(port
+		(pt 160 104)
+		(output)
+		(text "COUNT[4..0]" (rect -40 0 47 16)(font "Arial" (font_size 8)))
+		(text "COUNT[4..0]" (rect 52 99 139 115)(font "Arial" (font_size 8)))
+		(line (pt 160 104)(pt 144 104)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 1 144 161))
+	)
+)

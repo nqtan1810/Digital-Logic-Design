@@ -1,0 +1,107 @@
+|TOP
+Q[0] <= COUNTER32_UP_DOWN:inst.Q[0]
+Q[1] <= COUNTER32_UP_DOWN:inst.Q[1]
+Q[2] <= COUNTER32_UP_DOWN:inst.Q[2]
+Q[3] <= COUNTER32_UP_DOWN:inst.Q[3]
+Q[4] <= COUNTER32_UP_DOWN:inst.Q[4]
+D => COUNTER32_UP_DOWN:inst.D
+E => COUNTER32_UP_DOWN:inst.E
+CLK => COUNTER32_UP_DOWN:inst.CLK
+RESETN => COUNTER32_UP_DOWN:inst.RESETN
+SETN => COUNTER32_UP_DOWN:inst.SETN
+
+
+|TOP|COUNTER32_UP_DOWN:inst
+Q[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+RESETN => inst4.ACLR
+RESETN => inst.ACLR
+RESETN => inst1.ACLR
+RESETN => inst2.ACLR
+RESETN => inst3.ACLR
+CLK => inst4.CLK
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+D => HAS:inst6.D
+D => HAS:instS.D
+D => HAS:inst7.D
+D => HAS:inst8.D
+D => HAS:inst9.D
+E => HAS:inst6.C
+SETN => inst4.PRESET
+SETN => inst.PRESET
+SETN => inst1.PRESET
+SETN => inst2.PRESET
+SETN => inst3.PRESET
+
+
+|TOP|COUNTER32_UP_DOWN:inst|HAS:inst6
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst3.IN0
+Q => inst1.IN2
+Q => inst4.IN0
+C => inst3.IN1
+C => inst1.IN1
+C => insta.IN1
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+
+
+|TOP|COUNTER32_UP_DOWN:inst|HAS:instS
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst3.IN0
+Q => inst1.IN2
+Q => inst4.IN0
+C => inst3.IN1
+C => inst1.IN1
+C => insta.IN1
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+
+
+|TOP|COUNTER32_UP_DOWN:inst|HAS:inst7
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst3.IN0
+Q => inst1.IN2
+Q => inst4.IN0
+C => inst3.IN1
+C => inst1.IN1
+C => insta.IN1
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+
+
+|TOP|COUNTER32_UP_DOWN:inst|HAS:inst8
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst3.IN0
+Q => inst1.IN2
+Q => inst4.IN0
+C => inst3.IN1
+C => inst1.IN1
+C => insta.IN1
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+
+
+|TOP|COUNTER32_UP_DOWN:inst|HAS:inst9
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst3.IN0
+Q => inst1.IN2
+Q => inst4.IN0
+C => inst3.IN1
+C => inst1.IN1
+C => insta.IN1
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+
+

@@ -1,0 +1,176 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 184 400)
+	(text "OUTPUT" (rect 5 0 65 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 365 31 380)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Q[3..0]" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "Q[3..0]" (rect 21 27 68 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "ER1" (rect 0 0 29 16)(font "Arial" (font_size 8)))
+		(text "ER1" (rect 118 27 147 43)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "ER2" (rect 0 0 29 16)(font "Arial" (font_size 8)))
+		(text "ER2" (rect 118 43 147 59)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "ER3" (rect 0 0 29 16)(font "Arial" (font_size 8)))
+		(text "ER3" (rect 118 59 147 75)(font "Arial" (font_size 8)))
+		(line (pt 168 64)(pt 152 64))
+	)
+	(port
+		(pt 168 80)
+		(output)
+		(text "ER4" (rect 0 0 29 16)(font "Arial" (font_size 8)))
+		(text "ER4" (rect 118 75 147 91)(font "Arial" (font_size 8)))
+		(line (pt 168 80)(pt 152 80))
+	)
+	(port
+		(pt 168 96)
+		(output)
+		(text "ER5" (rect 0 0 29 16)(font "Arial" (font_size 8)))
+		(text "ER5" (rect 118 91 147 107)(font "Arial" (font_size 8)))
+		(line (pt 168 96)(pt 152 96))
+	)
+	(port
+		(pt 168 112)
+		(output)
+		(text "AU1[1..0]" (rect 0 0 64 16)(font "Arial" (font_size 8)))
+		(text "AU1[1..0]" (rect 83 107 147 123)(font "Arial" (font_size 8)))
+		(line (pt 168 112)(pt 152 112)(line_width 3))
+	)
+	(port
+		(pt 168 128)
+		(output)
+		(text "AU2[1..0]" (rect 0 0 64 16)(font "Arial" (font_size 8)))
+		(text "AU2[1..0]" (rect 83 123 147 139)(font "Arial" (font_size 8)))
+		(line (pt 168 128)(pt 152 128)(line_width 3))
+	)
+	(port
+		(pt 168 144)
+		(output)
+		(text "ET1" (rect 0 0 27 16)(font "Arial" (font_size 8)))
+		(text "ET1" (rect 120 139 147 155)(font "Arial" (font_size 8)))
+		(line (pt 168 144)(pt 152 144))
+	)
+	(port
+		(pt 168 160)
+		(output)
+		(text "ET2" (rect 0 0 27 16)(font "Arial" (font_size 8)))
+		(text "ET2" (rect 120 155 147 171)(font "Arial" (font_size 8)))
+		(line (pt 168 160)(pt 152 160))
+	)
+	(port
+		(pt 168 176)
+		(output)
+		(text "ET3" (rect 0 0 27 16)(font "Arial" (font_size 8)))
+		(text "ET3" (rect 120 171 147 187)(font "Arial" (font_size 8)))
+		(line (pt 168 176)(pt 152 176))
+	)
+	(port
+		(pt 168 192)
+		(output)
+		(text "ET4" (rect 0 0 27 16)(font "Arial" (font_size 8)))
+		(text "ET4" (rect 120 187 147 203)(font "Arial" (font_size 8)))
+		(line (pt 168 192)(pt 152 192))
+	)
+	(port
+		(pt 168 208)
+		(output)
+		(text "ET5" (rect 0 0 27 16)(font "Arial" (font_size 8)))
+		(text "ET5" (rect 120 203 147 219)(font "Arial" (font_size 8)))
+		(line (pt 168 208)(pt 152 208))
+	)
+	(port
+		(pt 168 224)
+		(output)
+		(text "ET6" (rect 0 0 27 16)(font "Arial" (font_size 8)))
+		(text "ET6" (rect 120 219 147 235)(font "Arial" (font_size 8)))
+		(line (pt 168 224)(pt 152 224))
+	)
+	(port
+		(pt 168 240)
+		(output)
+		(text "ET7" (rect 0 0 27 16)(font "Arial" (font_size 8)))
+		(text "ET7" (rect 120 235 147 251)(font "Arial" (font_size 8)))
+		(line (pt 168 240)(pt 152 240))
+	)
+	(port
+		(pt 168 256)
+		(output)
+		(text "ET8" (rect 0 0 27 16)(font "Arial" (font_size 8)))
+		(text "ET8" (rect 120 251 147 267)(font "Arial" (font_size 8)))
+		(line (pt 168 256)(pt 152 256))
+	)
+	(port
+		(pt 168 272)
+		(output)
+		(text "ET9" (rect 0 0 27 16)(font "Arial" (font_size 8)))
+		(text "ET9" (rect 120 267 147 283)(font "Arial" (font_size 8)))
+		(line (pt 168 272)(pt 152 272))
+	)
+	(port
+		(pt 168 288)
+		(output)
+		(text "ET10" (rect 0 0 35 16)(font "Arial" (font_size 8)))
+		(text "ET10" (rect 112 283 147 299)(font "Arial" (font_size 8)))
+		(line (pt 168 288)(pt 152 288))
+	)
+	(port
+		(pt 168 304)
+		(output)
+		(text "ET11" (rect 0 0 35 16)(font "Arial" (font_size 8)))
+		(text "ET11" (rect 112 299 147 315)(font "Arial" (font_size 8)))
+		(line (pt 168 304)(pt 152 304))
+	)
+	(port
+		(pt 168 320)
+		(output)
+		(text "ET12" (rect 0 0 35 16)(font "Arial" (font_size 8)))
+		(text "ET12" (rect 112 315 147 331)(font "Arial" (font_size 8)))
+		(line (pt 168 320)(pt 152 320))
+	)
+	(port
+		(pt 168 336)
+		(output)
+		(text "DONE" (rect 0 0 43 16)(font "Arial" (font_size 8)))
+		(text "DONE" (rect 104 331 147 347)(font "Arial" (font_size 8)))
+		(line (pt 168 336)(pt 152 336))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 368))
+	)
+)

@@ -1,0 +1,59 @@
+|TOP
+Y <= modulo_3_updown_counter:inst.Y
+C => modulo_3_updown_counter:inst.C
+D => modulo_3_updown_counter:inst.D
+CLK => modulo_3_updown_counter:inst.CLK
+S1 <= modulo_3_updown_counter:inst.S1
+S0 <= modulo_3_updown_counter:inst.S0
+
+
+|TOP|modulo_3_updown_counter:inst
+Y <= OUTPUT:inst4.Y
+C => OUTPUT:inst4.C
+C => NEXT_STATE:inst.C
+D => OUTPUT:inst4.D
+D => NEXT_STATE:inst.D
+CLK => Q1.CLK
+CLK => Q0.CLK
+S1 <= DECODE_BLOCK:inst2.S1
+S0 <= DECODE_BLOCK:inst2.S0
+
+
+|TOP|modulo_3_updown_counter:inst|OUTPUT:inst4
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C => inst1.IN0
+C => inst.IN0
+D => inst4.IN0
+D => inst.IN1
+Q1 => inst1.IN2
+Q0 => inst3.IN0
+
+
+|TOP|modulo_3_updown_counter:inst|NEXT_STATE:inst
+K0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Q1 => inst5.IN0
+Q1 => inst4.IN0
+C => inst5.IN1
+C => inst1.IN1
+C => J0.DATAIN
+C => inst6.IN1
+C => inst9.IN1
+C => K1.DATAIN
+D => inst.IN0
+D => inst1.IN2
+D => inst6.IN2
+J0 <= C.DB_MAX_OUTPUT_PORT_TYPE
+J1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Q0 => inst3.IN0
+Q0 => inst9.IN0
+K1 <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|modulo_3_updown_counter:inst|DECODE_BLOCK:inst2
+S1 <= Q1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 => S1.DATAIN
+Q1 => inst1.IN0
+S0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q0 => inst.IN1
+
+

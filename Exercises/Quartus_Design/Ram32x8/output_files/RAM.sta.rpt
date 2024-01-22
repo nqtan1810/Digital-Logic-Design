@@ -1,0 +1,1134 @@
+TimeQuest Timing Analyzer report for RAM
+Thu May 25 23:12:24 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Minimum Pulse Width: 'ADDR[0]'
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Propagation Delay
+ 17. Minimum Propagation Delay
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Minimum Pulse Width: 'ADDR[0]'
+ 24. Setup Times
+ 25. Hold Times
+ 26. Clock to Output Times
+ 27. Minimum Clock to Output Times
+ 28. Propagation Delay
+ 29. Minimum Propagation Delay
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Progagation Delay
+ 36. Minimum Progagation Delay
+ 37. Clock Transfers
+ 38. Report TCCS
+ 39. Report RSKM
+ 40. Unconstrained Paths
+ 41. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; RAM                                                               ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                              ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets     ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------+
+; ADDR[0]    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ADDR[0] } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------+
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++---------+--------+---------------------+
+; Clock   ; Slack  ; End Point TNS       ;
++---------+--------+---------------------+
+; ADDR[0] ; -1.222 ; -1.222              ;
++---------+--------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'ADDR[0]'                                                                                           ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock   ; Clock Edge ; Target                                           ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; ADDR[0] ; Rise       ; ADDR[0]                                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; ADDR[0]|combout                                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; ADDR[0]|combout                                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst7|inst  ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; D[*]      ; ADDR[0]    ; 5.690 ; 5.690 ; Rise       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; 5.495 ; 5.495 ; Rise       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; 4.923 ; 4.923 ; Rise       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; 5.453 ; 5.453 ; Rise       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; 4.798 ; 4.798 ; Rise       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; 5.256 ; 5.256 ; Rise       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; 5.690 ; 5.690 ; Rise       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; 4.770 ; 4.770 ; Rise       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; 4.922 ; 4.922 ; Rise       ; ADDR[0]         ;
+; D[*]      ; ADDR[0]    ; 6.028 ; 6.028 ; Fall       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; 5.467 ; 5.467 ; Fall       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; 5.062 ; 5.062 ; Fall       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; 5.497 ; 5.497 ; Fall       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; 4.769 ; 4.769 ; Fall       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; 5.253 ; 5.253 ; Fall       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; 6.028 ; 6.028 ; Fall       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; 4.766 ; 4.766 ; Fall       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; 4.912 ; 4.912 ; Fall       ; ADDR[0]         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; D[*]      ; ADDR[0]    ; 0.272  ; 0.272  ; Rise       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; -0.190 ; -0.190 ; Rise       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; 0.079  ; 0.079  ; Rise       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; 0.267  ; 0.267  ; Rise       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; 0.161  ; 0.161  ; Rise       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; 0.243  ; 0.243  ; Rise       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; -0.036 ; -0.036 ; Rise       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; 0.272  ; 0.272  ; Rise       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; 0.268  ; 0.268  ; Rise       ; ADDR[0]         ;
+; D[*]      ; ADDR[0]    ; -0.006 ; -0.006 ; Fall       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; -0.328 ; -0.328 ; Fall       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; -0.329 ; -0.329 ; Fall       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; -0.417 ; -0.417 ; Fall       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; -0.357 ; -0.357 ; Fall       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; -0.270 ; -0.270 ; Fall       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; -0.107 ; -0.107 ; Fall       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; -0.006 ; -0.006 ; Fall       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; -0.259 ; -0.259 ; Fall       ; ADDR[0]         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; Q[*]      ; ADDR[0]    ; 17.009 ; 17.009 ; Rise       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 16.932 ; 16.932 ; Rise       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 16.858 ; 16.858 ; Rise       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 17.009 ; 17.009 ; Rise       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 16.446 ; 16.446 ; Rise       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 16.595 ; 16.595 ; Rise       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 16.822 ; 16.822 ; Rise       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 16.788 ; 16.788 ; Rise       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 16.817 ; 16.817 ; Rise       ; ADDR[0]         ;
+; Q[*]      ; ADDR[0]    ; 17.009 ; 17.009 ; Fall       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 16.932 ; 16.932 ; Fall       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 16.858 ; 16.858 ; Fall       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 17.009 ; 17.009 ; Fall       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 16.446 ; 16.446 ; Fall       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 16.595 ; 16.595 ; Fall       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 16.822 ; 16.822 ; Fall       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 16.788 ; 16.788 ; Fall       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 16.817 ; 16.817 ; Fall       ; ADDR[0]         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; Q[*]      ; ADDR[0]    ; 9.148  ; 9.148  ; Rise       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 9.161  ; 9.161  ; Rise       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 9.148  ; 9.148  ; Rise       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 9.154  ; 9.154  ; Rise       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 9.798  ; 9.798  ; Rise       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 9.313  ; 9.313  ; Rise       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 10.062 ; 10.062 ; Rise       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 9.599  ; 9.599  ; Rise       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 9.425  ; 9.425  ; Rise       ; ADDR[0]         ;
+; Q[*]      ; ADDR[0]    ; 9.294  ; 9.294  ; Fall       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 9.294  ; 9.294  ; Fall       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 9.433  ; 9.433  ; Fall       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 9.335  ; 9.335  ; Fall       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 9.803  ; 9.803  ; Fall       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 9.399  ; 9.399  ; Fall       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 10.045 ; 10.045 ; Fall       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 9.635  ; 9.635  ; Fall       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 9.448  ; 9.448  ; Fall       ; ADDR[0]         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; ADDR[1]    ; Q[0]        ; 16.760 ; 16.136 ; 16.136 ; 16.760 ;
+; ADDR[1]    ; Q[1]        ; 16.688 ; 16.442 ; 16.442 ; 16.688 ;
+; ADDR[1]    ; Q[2]        ; 16.839 ; 16.225 ; 16.225 ; 16.839 ;
+; ADDR[1]    ; Q[3]        ; 16.276 ; 15.868 ; 15.868 ; 16.276 ;
+; ADDR[1]    ; Q[4]        ; 16.425 ; 15.704 ; 15.704 ; 16.425 ;
+; ADDR[1]    ; Q[5]        ; 16.650 ; 16.203 ; 16.203 ; 16.650 ;
+; ADDR[1]    ; Q[6]        ; 16.618 ; 16.088 ; 16.088 ; 16.618 ;
+; ADDR[1]    ; Q[7]        ; 16.645 ; 16.236 ; 16.236 ; 16.645 ;
+; ADDR[2]    ; Q[0]        ; 17.558 ; 16.445 ; 16.445 ; 17.558 ;
+; ADDR[2]    ; Q[1]        ; 16.783 ; 16.403 ; 16.403 ; 16.783 ;
+; ADDR[2]    ; Q[2]        ; 16.961 ; 16.523 ; 16.523 ; 16.961 ;
+; ADDR[2]    ; Q[3]        ; 16.138 ; 15.960 ; 15.960 ; 16.138 ;
+; ADDR[2]    ; Q[4]        ; 16.211 ; 16.109 ; 16.109 ; 16.211 ;
+; ADDR[2]    ; Q[5]        ; 16.811 ; 16.335 ; 16.335 ; 16.811 ;
+; ADDR[2]    ; Q[6]        ; 16.022 ; 16.302 ; 16.302 ; 16.022 ;
+; ADDR[2]    ; Q[7]        ; 16.501 ; 16.330 ; 16.330 ; 16.501 ;
+; ADDR[3]    ; Q[0]        ; 11.964 ; 13.321 ; 13.321 ; 11.964 ;
+; ADDR[3]    ; Q[1]        ; 12.563 ; 12.519 ; 12.519 ; 12.563 ;
+; ADDR[3]    ; Q[2]        ; 12.741 ; 12.779 ; 12.779 ; 12.741 ;
+; ADDR[3]    ; Q[3]        ; 11.916 ; 11.938 ; 11.938 ; 11.916 ;
+; ADDR[3]    ; Q[4]        ; 11.358 ; 12.246 ; 12.246 ; 11.358 ;
+; ADDR[3]    ; Q[5]        ; 12.591 ; 12.244 ; 12.244 ; 12.591 ;
+; ADDR[3]    ; Q[6]        ; 11.800 ; 11.787 ; 11.787 ; 11.800 ;
+; ADDR[3]    ; Q[7]        ; 12.170 ; 12.310 ; 12.310 ; 12.170 ;
+; ADDR[4]    ; Q[0]        ; 15.574 ; 16.714 ; 16.714 ; 15.574 ;
+; ADDR[4]    ; Q[1]        ; 15.977 ; 15.760 ; 15.760 ; 15.977 ;
+; ADDR[4]    ; Q[2]        ; 16.175 ; 16.017 ; 16.017 ; 16.175 ;
+; ADDR[4]    ; Q[3]        ; 15.334 ; 15.190 ; 15.190 ; 15.334 ;
+; ADDR[4]    ; Q[4]        ; 15.642 ; 15.367 ; 15.367 ; 15.642 ;
+; ADDR[4]    ; Q[5]        ; 16.005 ; 15.637 ; 15.637 ; 16.005 ;
+; ADDR[4]    ; Q[6]        ; 15.214 ; 15.097 ; 15.097 ; 15.214 ;
+; ADDR[4]    ; Q[7]        ; 15.706 ; 15.681 ; 15.681 ; 15.706 ;
+; CS         ; Q[0]        ; 8.758  ; 12.898 ; 12.898 ; 8.758  ;
+; CS         ; Q[1]        ; 8.593  ; 12.164 ; 12.164 ; 8.593  ;
+; CS         ; Q[2]        ; 8.175  ; 12.370 ; 12.370 ; 8.175  ;
+; CS         ; Q[3]        ; 8.141  ; 11.518 ; 11.518 ; 8.141  ;
+; CS         ; Q[4]        ; 8.141  ; 11.826 ; 11.826 ; 8.141  ;
+; CS         ; Q[5]        ; 8.758  ; 12.192 ; 12.192 ; 8.758  ;
+; CS         ; Q[6]        ; 7.925  ; 11.401 ; 11.401 ; 7.925  ;
+; CS         ; Q[7]        ; 8.326  ; 11.890 ; 11.890 ; 8.326  ;
+; RWS        ; Q[0]        ; 17.594 ; 12.469 ; 12.469 ; 17.594 ;
+; RWS        ; Q[1]        ; 16.819 ; 12.304 ; 12.304 ; 16.819 ;
+; RWS        ; Q[2]        ; 16.997 ; 11.886 ; 11.886 ; 16.997 ;
+; RWS        ; Q[3]        ; 16.174 ; 11.852 ; 11.852 ; 16.174 ;
+; RWS        ; Q[4]        ; 16.247 ; 11.852 ; 11.852 ; 16.247 ;
+; RWS        ; Q[5]        ; 16.847 ; 12.469 ; 12.469 ; 16.847 ;
+; RWS        ; Q[6]        ; 16.427 ; 11.636 ; 11.636 ; 16.427 ;
+; RWS        ; Q[7]        ; 16.537 ; 12.037 ; 12.037 ; 16.537 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; ADDR[1]    ; Q[0]        ; 13.950 ; 13.946 ; 13.946 ; 13.950 ;
+; ADDR[1]    ; Q[1]        ; 13.937 ; 13.938 ; 13.938 ; 13.937 ;
+; ADDR[1]    ; Q[2]        ; 14.224 ; 14.704 ; 14.704 ; 14.224 ;
+; ADDR[1]    ; Q[3]        ; 13.421 ; 13.453 ; 13.453 ; 13.421 ;
+; ADDR[1]    ; Q[4]        ; 13.388 ; 13.604 ; 13.604 ; 13.388 ;
+; ADDR[1]    ; Q[5]        ; 13.513 ; 13.748 ; 13.748 ; 13.513 ;
+; ADDR[1]    ; Q[6]        ; 13.282 ; 13.599 ; 13.599 ; 13.282 ;
+; ADDR[1]    ; Q[7]        ; 14.284 ; 13.683 ; 13.683 ; 14.284 ;
+; ADDR[2]    ; Q[0]        ; 15.182 ; 14.773 ; 14.773 ; 15.182 ;
+; ADDR[2]    ; Q[1]        ; 14.784 ; 14.697 ; 14.697 ; 14.784 ;
+; ADDR[2]    ; Q[2]        ; 15.394 ; 14.666 ; 14.666 ; 15.394 ;
+; ADDR[2]    ; Q[3]        ; 14.451 ; 14.568 ; 14.568 ; 14.451 ;
+; ADDR[2]    ; Q[4]        ; 14.815 ; 13.936 ; 13.936 ; 14.815 ;
+; ADDR[2]    ; Q[5]        ; 14.823 ; 14.895 ; 14.895 ; 14.823 ;
+; ADDR[2]    ; Q[6]        ; 14.597 ; 14.420 ; 14.420 ; 14.597 ;
+; ADDR[2]    ; Q[7]        ; 14.953 ; 14.835 ; 14.835 ; 14.953 ;
+; ADDR[3]    ; Q[0]        ; 9.774  ; 10.626 ; 10.626 ; 9.774  ;
+; ADDR[3]    ; Q[1]        ; 10.493 ; 9.777  ; 9.777  ; 10.493 ;
+; ADDR[3]    ; Q[2]        ; 10.402 ; 9.746  ; 9.746  ; 10.402 ;
+; ADDR[3]    ; Q[3]        ; 9.991  ; 10.051 ; 10.051 ; 9.991  ;
+; ADDR[3]    ; Q[4]        ; 9.815  ; 9.835  ; 9.835  ; 9.815  ;
+; ADDR[3]    ; Q[5]        ; 10.156 ; 10.655 ; 10.655 ; 10.156 ;
+; ADDR[3]    ; Q[6]        ; 10.415 ; 10.004 ; 10.004 ; 10.415 ;
+; ADDR[3]    ; Q[7]        ; 10.148 ; 9.967  ; 9.967  ; 10.148 ;
+; ADDR[4]    ; Q[0]        ; 13.187 ; 13.629 ; 13.629 ; 13.187 ;
+; ADDR[4]    ; Q[1]        ; 13.041 ; 13.038 ; 13.038 ; 13.041 ;
+; ADDR[4]    ; Q[2]        ; 13.107 ; 13.137 ; 13.137 ; 13.107 ;
+; ADDR[4]    ; Q[3]        ; 13.055 ; 12.842 ; 12.842 ; 13.055 ;
+; ADDR[4]    ; Q[4]        ; 13.037 ; 12.737 ; 12.737 ; 13.037 ;
+; ADDR[4]    ; Q[5]        ; 13.569 ; 13.169 ; 13.169 ; 13.569 ;
+; ADDR[4]    ; Q[6]        ; 13.092 ; 13.221 ; 13.221 ; 13.092 ;
+; ADDR[4]    ; Q[7]        ; 13.535 ; 13.358 ; 13.358 ; 13.535 ;
+; CS         ; Q[0]        ; 8.758  ; 8.758  ; 8.758  ; 8.758  ;
+; CS         ; Q[1]        ; 8.593  ; 8.593  ; 8.593  ; 8.593  ;
+; CS         ; Q[2]        ; 8.175  ; 8.175  ; 8.175  ; 8.175  ;
+; CS         ; Q[3]        ; 8.141  ; 8.141  ; 8.141  ; 8.141  ;
+; CS         ; Q[4]        ; 8.141  ; 8.141  ; 8.141  ; 8.141  ;
+; CS         ; Q[5]        ; 8.758  ; 8.758  ; 8.758  ; 8.758  ;
+; CS         ; Q[6]        ; 7.925  ; 7.925  ; 7.925  ; 7.925  ;
+; CS         ; Q[7]        ; 8.326  ; 8.326  ; 8.326  ; 8.326  ;
+; RWS        ; Q[0]        ; 12.469 ; 12.469 ; 12.469 ; 12.469 ;
+; RWS        ; Q[1]        ; 12.304 ; 12.304 ; 12.304 ; 12.304 ;
+; RWS        ; Q[2]        ; 11.886 ; 11.886 ; 11.886 ; 11.886 ;
+; RWS        ; Q[3]        ; 11.852 ; 11.852 ; 11.852 ; 11.852 ;
+; RWS        ; Q[4]        ; 11.852 ; 11.852 ; 11.852 ; 11.852 ;
+; RWS        ; Q[5]        ; 12.469 ; 12.469 ; 12.469 ; 12.469 ;
+; RWS        ; Q[6]        ; 11.636 ; 11.636 ; 11.636 ; 11.636 ;
+; RWS        ; Q[7]        ; 12.037 ; 12.037 ; 12.037 ; 12.037 ;
++------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++---------+--------+---------------------+
+; Clock   ; Slack  ; End Point TNS       ;
++---------+--------+---------------------+
+; ADDR[0] ; -1.222 ; -1.222              ;
++---------+--------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'ADDR[0]'                                                                                           ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock   ; Clock Edge ; Target                                           ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; ADDR[0] ; Rise       ; ADDR[0]                                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; ADDR[0]|combout                                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; ADDR[0]|combout                                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst1|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst2|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst3|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst4|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst5|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst3 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst4 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst5 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst6 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ADDR[0] ; Fall       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst6|inst7 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ADDR[0] ; Rise       ; RAM32X8:inst|RAM8X8:inst5|WORD_8_bit:inst7|inst  ;
++--------+--------------+----------------+------------------+---------+------------+--------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; D[*]      ; ADDR[0]    ; 3.233 ; 3.233 ; Rise       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; 3.126 ; 3.126 ; Rise       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; 2.830 ; 2.830 ; Rise       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; 3.104 ; 3.104 ; Rise       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; 2.785 ; 2.785 ; Rise       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; 2.999 ; 2.999 ; Rise       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; 3.233 ; 3.233 ; Rise       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; 2.792 ; 2.792 ; Rise       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; 2.836 ; 2.836 ; Rise       ; ADDR[0]         ;
+; D[*]      ; ADDR[0]    ; 3.380 ; 3.380 ; Fall       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; 3.108 ; 3.108 ; Fall       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; 2.881 ; 2.881 ; Fall       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; 3.124 ; 3.124 ; Fall       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; 2.803 ; 2.803 ; Fall       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; 2.972 ; 2.972 ; Fall       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; 3.380 ; 3.380 ; Fall       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; 2.791 ; 2.791 ; Fall       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; 2.827 ; 2.827 ; Fall       ; ADDR[0]         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; D[*]      ; ADDR[0]    ; -0.141 ; -0.141 ; Rise       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; -0.357 ; -0.357 ; Rise       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; -0.238 ; -0.238 ; Rise       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; -0.174 ; -0.174 ; Rise       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; -0.233 ; -0.233 ; Rise       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; -0.190 ; -0.190 ; Rise       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; -0.350 ; -0.350 ; Rise       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; -0.141 ; -0.141 ; Rise       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; -0.174 ; -0.174 ; Rise       ; ADDR[0]         ;
+; D[*]      ; ADDR[0]    ; -0.308 ; -0.308 ; Fall       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; -0.461 ; -0.461 ; Fall       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; -0.444 ; -0.444 ; Fall       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; -0.490 ; -0.490 ; Fall       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; -0.480 ; -0.480 ; Fall       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; -0.439 ; -0.439 ; Fall       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; -0.354 ; -0.354 ; Fall       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; -0.308 ; -0.308 ; Fall       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; -0.408 ; -0.408 ; Fall       ; ADDR[0]         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Q[*]      ; ADDR[0]    ; 8.835 ; 8.835 ; Rise       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 8.813 ; 8.813 ; Rise       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 8.758 ; 8.758 ; Rise       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 8.835 ; 8.835 ; Rise       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 8.578 ; 8.578 ; Rise       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 8.629 ; 8.629 ; Rise       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 8.760 ; 8.760 ; Rise       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 8.761 ; 8.761 ; Rise       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 8.739 ; 8.739 ; Rise       ; ADDR[0]         ;
+; Q[*]      ; ADDR[0]    ; 8.835 ; 8.835 ; Fall       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 8.813 ; 8.813 ; Fall       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 8.758 ; 8.758 ; Fall       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 8.835 ; 8.835 ; Fall       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 8.578 ; 8.578 ; Fall       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 8.629 ; 8.629 ; Fall       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 8.760 ; 8.760 ; Fall       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 8.761 ; 8.761 ; Fall       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 8.739 ; 8.739 ; Fall       ; ADDR[0]         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Q[*]      ; ADDR[0]    ; 4.589 ; 4.589 ; Rise       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 4.591 ; 4.591 ; Rise       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 4.595 ; 4.595 ; Rise       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 4.589 ; 4.589 ; Rise       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 4.879 ; 4.879 ; Rise       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 4.638 ; 4.638 ; Rise       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 5.001 ; 5.001 ; Rise       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 4.796 ; 4.796 ; Rise       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 4.699 ; 4.699 ; Rise       ; ADDR[0]         ;
+; Q[*]      ; ADDR[0]    ; 4.652 ; 4.652 ; Fall       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 4.652 ; 4.652 ; Fall       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 4.718 ; 4.718 ; Fall       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 4.668 ; 4.668 ; Fall       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 4.863 ; 4.863 ; Fall       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 4.703 ; 4.703 ; Fall       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 5.018 ; 5.018 ; Fall       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 4.814 ; 4.814 ; Fall       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 4.748 ; 4.748 ; Fall       ; ADDR[0]         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; ADDR[1]    ; Q[0]        ; 8.741 ; 8.430 ; 8.430 ; 8.741 ;
+; ADDR[1]    ; Q[1]        ; 8.694 ; 8.573 ; 8.573 ; 8.694 ;
+; ADDR[1]    ; Q[2]        ; 8.771 ; 8.489 ; 8.489 ; 8.771 ;
+; ADDR[1]    ; Q[3]        ; 8.514 ; 8.314 ; 8.314 ; 8.514 ;
+; ADDR[1]    ; Q[4]        ; 8.565 ; 8.221 ; 8.221 ; 8.565 ;
+; ADDR[1]    ; Q[5]        ; 8.688 ; 8.497 ; 8.497 ; 8.688 ;
+; ADDR[1]    ; Q[6]        ; 8.697 ; 8.465 ; 8.465 ; 8.697 ;
+; ADDR[1]    ; Q[7]        ; 8.667 ; 8.489 ; 8.489 ; 8.667 ;
+; ADDR[2]    ; Q[0]        ; 9.108 ; 8.630 ; 8.630 ; 9.108 ;
+; ADDR[2]    ; Q[1]        ; 8.746 ; 8.592 ; 8.592 ; 8.746 ;
+; ADDR[2]    ; Q[2]        ; 8.833 ; 8.655 ; 8.655 ; 8.833 ;
+; ADDR[2]    ; Q[3]        ; 8.448 ; 8.398 ; 8.398 ; 8.448 ;
+; ADDR[2]    ; Q[4]        ; 8.480 ; 8.449 ; 8.449 ; 8.480 ;
+; ADDR[2]    ; Q[5]        ; 8.786 ; 8.577 ; 8.577 ; 8.786 ;
+; ADDR[2]    ; Q[6]        ; 8.420 ; 8.581 ; 8.581 ; 8.420 ;
+; ADDR[2]    ; Q[7]        ; 8.612 ; 8.556 ; 8.556 ; 8.612 ;
+; ADDR[3]    ; Q[0]        ; 5.966 ; 6.613 ; 6.613 ; 5.966 ;
+; ADDR[3]    ; Q[1]        ; 6.226 ; 6.294 ; 6.294 ; 6.226 ;
+; ADDR[3]    ; Q[2]        ; 6.313 ; 6.424 ; 6.424 ; 6.313 ;
+; ADDR[3]    ; Q[3]        ; 5.927 ; 5.995 ; 5.995 ; 5.927 ;
+; ADDR[3]    ; Q[4]        ; 5.675 ; 6.161 ; 6.161 ; 5.675 ;
+; ADDR[3]    ; Q[5]        ; 6.266 ; 6.110 ; 6.110 ; 6.266 ;
+; ADDR[3]    ; Q[6]        ; 5.899 ; 5.935 ; 5.935 ; 5.899 ;
+; ADDR[3]    ; Q[7]        ; 6.049 ; 6.177 ; 6.177 ; 6.049 ;
+; ADDR[4]    ; Q[0]        ; 8.207 ; 8.718 ; 8.718 ; 8.207 ;
+; ADDR[4]    ; Q[1]        ; 8.374 ; 8.282 ; 8.282 ; 8.374 ;
+; ADDR[4]    ; Q[2]        ; 8.504 ; 8.393 ; 8.393 ; 8.504 ;
+; ADDR[4]    ; Q[3]        ; 8.075 ; 8.003 ; 8.003 ; 8.075 ;
+; ADDR[4]    ; Q[4]        ; 8.241 ; 8.090 ; 8.090 ; 8.241 ;
+; ADDR[4]    ; Q[5]        ; 8.352 ; 8.215 ; 8.215 ; 8.352 ;
+; ADDR[4]    ; Q[6]        ; 8.015 ; 7.976 ; 7.976 ; 8.015 ;
+; ADDR[4]    ; Q[7]        ; 8.257 ; 8.218 ; 8.218 ; 8.257 ;
+; CS         ; Q[0]        ; 4.509 ; 6.356 ; 6.356 ; 4.509 ;
+; CS         ; Q[1]        ; 4.400 ; 6.038 ; 6.038 ; 4.400 ;
+; CS         ; Q[2]        ; 4.205 ; 6.168 ; 6.168 ; 4.205 ;
+; CS         ; Q[3]        ; 4.172 ; 5.739 ; 5.739 ; 4.172 ;
+; CS         ; Q[4]        ; 4.172 ; 5.905 ; 5.905 ; 4.172 ;
+; CS         ; Q[5]        ; 4.509 ; 6.017 ; 6.017 ; 4.509 ;
+; CS         ; Q[6]        ; 4.085 ; 5.679 ; 5.679 ; 4.085 ;
+; CS         ; Q[7]        ; 4.272 ; 5.921 ; 5.921 ; 4.272 ;
+; RWS        ; Q[0]        ; 9.097 ; 6.816 ; 6.816 ; 9.097 ;
+; RWS        ; Q[1]        ; 8.735 ; 6.707 ; 6.707 ; 8.735 ;
+; RWS        ; Q[2]        ; 8.822 ; 6.512 ; 6.512 ; 8.822 ;
+; RWS        ; Q[3]        ; 8.437 ; 6.479 ; 6.479 ; 8.437 ;
+; RWS        ; Q[4]        ; 8.469 ; 6.479 ; 6.479 ; 8.469 ;
+; RWS        ; Q[5]        ; 8.775 ; 6.816 ; 6.816 ; 8.775 ;
+; RWS        ; Q[6]        ; 8.585 ; 6.392 ; 6.392 ; 8.585 ;
+; RWS        ; Q[7]        ; 8.601 ; 6.579 ; 6.579 ; 8.601 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; ADDR[1]    ; Q[0]        ; 7.450 ; 7.429 ; 7.429 ; 7.450 ;
+; ADDR[1]    ; Q[1]        ; 7.425 ; 7.413 ; 7.413 ; 7.425 ;
+; ADDR[1]    ; Q[2]        ; 7.563 ; 7.758 ; 7.758 ; 7.563 ;
+; ADDR[1]    ; Q[3]        ; 7.183 ; 7.213 ; 7.213 ; 7.183 ;
+; ADDR[1]    ; Q[4]        ; 7.161 ; 7.267 ; 7.267 ; 7.161 ;
+; ADDR[1]    ; Q[5]        ; 7.227 ; 7.332 ; 7.332 ; 7.227 ;
+; ADDR[1]    ; Q[6]        ; 7.135 ; 7.300 ; 7.300 ; 7.135 ;
+; ADDR[1]    ; Q[7]        ; 7.583 ; 7.312 ; 7.312 ; 7.583 ;
+; ADDR[2]    ; Q[0]        ; 8.016 ; 7.828 ; 7.828 ; 8.016 ;
+; ADDR[2]    ; Q[1]        ; 7.823 ; 7.788 ; 7.788 ; 7.823 ;
+; ADDR[2]    ; Q[2]        ; 8.124 ; 7.778 ; 7.778 ; 8.124 ;
+; ADDR[2]    ; Q[3]        ; 7.693 ; 7.753 ; 7.753 ; 7.693 ;
+; ADDR[2]    ; Q[4]        ; 7.851 ; 7.470 ; 7.470 ; 7.851 ;
+; ADDR[2]    ; Q[5]        ; 7.887 ; 7.912 ; 7.912 ; 7.887 ;
+; ADDR[2]    ; Q[6]        ; 7.780 ; 7.692 ; 7.692 ; 7.780 ;
+; ADDR[2]    ; Q[7]        ; 7.899 ; 7.864 ; 7.864 ; 7.899 ;
+; ADDR[3]    ; Q[0]        ; 4.989 ; 5.402 ; 5.402 ; 4.989 ;
+; ADDR[3]    ; Q[1]        ; 5.313 ; 4.968 ; 4.968 ; 5.313 ;
+; ADDR[3]    ; Q[2]        ; 5.295 ; 4.958 ; 4.958 ; 5.295 ;
+; ADDR[3]    ; Q[3]        ; 5.092 ; 5.099 ; 5.099 ; 5.092 ;
+; ADDR[3]    ; Q[4]        ; 4.984 ; 5.037 ; 5.037 ; 4.984 ;
+; ADDR[3]    ; Q[5]        ; 5.175 ; 5.407 ; 5.407 ; 5.175 ;
+; ADDR[3]    ; Q[6]        ; 5.309 ; 5.090 ; 5.090 ; 5.309 ;
+; ADDR[3]    ; Q[7]        ; 5.155 ; 5.044 ; 5.044 ; 5.155 ;
+; ADDR[4]    ; Q[0]        ; 7.069 ; 7.276 ; 7.276 ; 7.069 ;
+; ADDR[4]    ; Q[1]        ; 6.999 ; 6.990 ; 6.990 ; 6.999 ;
+; ADDR[4]    ; Q[2]        ; 7.015 ; 7.062 ; 7.062 ; 7.015 ;
+; ADDR[4]    ; Q[3]        ; 7.004 ; 6.877 ; 6.877 ; 7.004 ;
+; ADDR[4]    ; Q[4]        ; 6.995 ; 6.836 ; 6.836 ; 6.995 ;
+; ADDR[4]    ; Q[5]        ; 7.253 ; 7.036 ; 7.036 ; 7.253 ;
+; ADDR[4]    ; Q[6]        ; 7.009 ; 7.064 ; 7.064 ; 7.009 ;
+; ADDR[4]    ; Q[7]        ; 7.191 ; 7.148 ; 7.148 ; 7.191 ;
+; CS         ; Q[0]        ; 4.509 ; 4.509 ; 4.509 ; 4.509 ;
+; CS         ; Q[1]        ; 4.400 ; 4.400 ; 4.400 ; 4.400 ;
+; CS         ; Q[2]        ; 4.205 ; 4.205 ; 4.205 ; 4.205 ;
+; CS         ; Q[3]        ; 4.172 ; 4.172 ; 4.172 ; 4.172 ;
+; CS         ; Q[4]        ; 4.172 ; 4.172 ; 4.172 ; 4.172 ;
+; CS         ; Q[5]        ; 4.509 ; 4.509 ; 4.509 ; 4.509 ;
+; CS         ; Q[6]        ; 4.085 ; 4.085 ; 4.085 ; 4.085 ;
+; CS         ; Q[7]        ; 4.272 ; 4.272 ; 4.272 ; 4.272 ;
+; RWS        ; Q[0]        ; 6.816 ; 6.816 ; 6.816 ; 6.816 ;
+; RWS        ; Q[1]        ; 6.707 ; 6.707 ; 6.707 ; 6.707 ;
+; RWS        ; Q[2]        ; 6.512 ; 6.512 ; 6.512 ; 6.512 ;
+; RWS        ; Q[3]        ; 6.479 ; 6.479 ; 6.479 ; 6.479 ;
+; RWS        ; Q[4]        ; 6.479 ; 6.479 ; 6.479 ; 6.479 ;
+; RWS        ; Q[5]        ; 6.816 ; 6.816 ; 6.816 ; 6.816 ;
+; RWS        ; Q[6]        ; 6.392 ; 6.392 ; 6.392 ; 6.392 ;
+; RWS        ; Q[7]        ; 6.579 ; 6.579 ; 6.579 ; 6.579 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
+;  ADDR[0]         ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -1.222              ;
+;  ADDR[0]         ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; D[*]      ; ADDR[0]    ; 5.690 ; 5.690 ; Rise       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; 5.495 ; 5.495 ; Rise       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; 4.923 ; 4.923 ; Rise       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; 5.453 ; 5.453 ; Rise       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; 4.798 ; 4.798 ; Rise       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; 5.256 ; 5.256 ; Rise       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; 5.690 ; 5.690 ; Rise       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; 4.770 ; 4.770 ; Rise       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; 4.922 ; 4.922 ; Rise       ; ADDR[0]         ;
+; D[*]      ; ADDR[0]    ; 6.028 ; 6.028 ; Fall       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; 5.467 ; 5.467 ; Fall       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; 5.062 ; 5.062 ; Fall       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; 5.497 ; 5.497 ; Fall       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; 4.769 ; 4.769 ; Fall       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; 5.253 ; 5.253 ; Fall       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; 6.028 ; 6.028 ; Fall       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; 4.766 ; 4.766 ; Fall       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; 4.912 ; 4.912 ; Fall       ; ADDR[0]         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; D[*]      ; ADDR[0]    ; 0.272  ; 0.272  ; Rise       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; -0.190 ; -0.190 ; Rise       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; 0.079  ; 0.079  ; Rise       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; 0.267  ; 0.267  ; Rise       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; 0.161  ; 0.161  ; Rise       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; 0.243  ; 0.243  ; Rise       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; -0.036 ; -0.036 ; Rise       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; 0.272  ; 0.272  ; Rise       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; 0.268  ; 0.268  ; Rise       ; ADDR[0]         ;
+; D[*]      ; ADDR[0]    ; -0.006 ; -0.006 ; Fall       ; ADDR[0]         ;
+;  D[0]     ; ADDR[0]    ; -0.328 ; -0.328 ; Fall       ; ADDR[0]         ;
+;  D[1]     ; ADDR[0]    ; -0.329 ; -0.329 ; Fall       ; ADDR[0]         ;
+;  D[2]     ; ADDR[0]    ; -0.417 ; -0.417 ; Fall       ; ADDR[0]         ;
+;  D[3]     ; ADDR[0]    ; -0.357 ; -0.357 ; Fall       ; ADDR[0]         ;
+;  D[4]     ; ADDR[0]    ; -0.270 ; -0.270 ; Fall       ; ADDR[0]         ;
+;  D[5]     ; ADDR[0]    ; -0.107 ; -0.107 ; Fall       ; ADDR[0]         ;
+;  D[6]     ; ADDR[0]    ; -0.006 ; -0.006 ; Fall       ; ADDR[0]         ;
+;  D[7]     ; ADDR[0]    ; -0.259 ; -0.259 ; Fall       ; ADDR[0]         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; Q[*]      ; ADDR[0]    ; 17.009 ; 17.009 ; Rise       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 16.932 ; 16.932 ; Rise       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 16.858 ; 16.858 ; Rise       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 17.009 ; 17.009 ; Rise       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 16.446 ; 16.446 ; Rise       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 16.595 ; 16.595 ; Rise       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 16.822 ; 16.822 ; Rise       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 16.788 ; 16.788 ; Rise       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 16.817 ; 16.817 ; Rise       ; ADDR[0]         ;
+; Q[*]      ; ADDR[0]    ; 17.009 ; 17.009 ; Fall       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 16.932 ; 16.932 ; Fall       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 16.858 ; 16.858 ; Fall       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 17.009 ; 17.009 ; Fall       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 16.446 ; 16.446 ; Fall       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 16.595 ; 16.595 ; Fall       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 16.822 ; 16.822 ; Fall       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 16.788 ; 16.788 ; Fall       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 16.817 ; 16.817 ; Fall       ; ADDR[0]         ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; Q[*]      ; ADDR[0]    ; 4.589 ; 4.589 ; Rise       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 4.591 ; 4.591 ; Rise       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 4.595 ; 4.595 ; Rise       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 4.589 ; 4.589 ; Rise       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 4.879 ; 4.879 ; Rise       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 4.638 ; 4.638 ; Rise       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 5.001 ; 5.001 ; Rise       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 4.796 ; 4.796 ; Rise       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 4.699 ; 4.699 ; Rise       ; ADDR[0]         ;
+; Q[*]      ; ADDR[0]    ; 4.652 ; 4.652 ; Fall       ; ADDR[0]         ;
+;  Q[0]     ; ADDR[0]    ; 4.652 ; 4.652 ; Fall       ; ADDR[0]         ;
+;  Q[1]     ; ADDR[0]    ; 4.718 ; 4.718 ; Fall       ; ADDR[0]         ;
+;  Q[2]     ; ADDR[0]    ; 4.668 ; 4.668 ; Fall       ; ADDR[0]         ;
+;  Q[3]     ; ADDR[0]    ; 4.863 ; 4.863 ; Fall       ; ADDR[0]         ;
+;  Q[4]     ; ADDR[0]    ; 4.703 ; 4.703 ; Fall       ; ADDR[0]         ;
+;  Q[5]     ; ADDR[0]    ; 5.018 ; 5.018 ; Fall       ; ADDR[0]         ;
+;  Q[6]     ; ADDR[0]    ; 4.814 ; 4.814 ; Fall       ; ADDR[0]         ;
+;  Q[7]     ; ADDR[0]    ; 4.748 ; 4.748 ; Fall       ; ADDR[0]         ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Progagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; ADDR[1]    ; Q[0]        ; 16.760 ; 16.136 ; 16.136 ; 16.760 ;
+; ADDR[1]    ; Q[1]        ; 16.688 ; 16.442 ; 16.442 ; 16.688 ;
+; ADDR[1]    ; Q[2]        ; 16.839 ; 16.225 ; 16.225 ; 16.839 ;
+; ADDR[1]    ; Q[3]        ; 16.276 ; 15.868 ; 15.868 ; 16.276 ;
+; ADDR[1]    ; Q[4]        ; 16.425 ; 15.704 ; 15.704 ; 16.425 ;
+; ADDR[1]    ; Q[5]        ; 16.650 ; 16.203 ; 16.203 ; 16.650 ;
+; ADDR[1]    ; Q[6]        ; 16.618 ; 16.088 ; 16.088 ; 16.618 ;
+; ADDR[1]    ; Q[7]        ; 16.645 ; 16.236 ; 16.236 ; 16.645 ;
+; ADDR[2]    ; Q[0]        ; 17.558 ; 16.445 ; 16.445 ; 17.558 ;
+; ADDR[2]    ; Q[1]        ; 16.783 ; 16.403 ; 16.403 ; 16.783 ;
+; ADDR[2]    ; Q[2]        ; 16.961 ; 16.523 ; 16.523 ; 16.961 ;
+; ADDR[2]    ; Q[3]        ; 16.138 ; 15.960 ; 15.960 ; 16.138 ;
+; ADDR[2]    ; Q[4]        ; 16.211 ; 16.109 ; 16.109 ; 16.211 ;
+; ADDR[2]    ; Q[5]        ; 16.811 ; 16.335 ; 16.335 ; 16.811 ;
+; ADDR[2]    ; Q[6]        ; 16.022 ; 16.302 ; 16.302 ; 16.022 ;
+; ADDR[2]    ; Q[7]        ; 16.501 ; 16.330 ; 16.330 ; 16.501 ;
+; ADDR[3]    ; Q[0]        ; 11.964 ; 13.321 ; 13.321 ; 11.964 ;
+; ADDR[3]    ; Q[1]        ; 12.563 ; 12.519 ; 12.519 ; 12.563 ;
+; ADDR[3]    ; Q[2]        ; 12.741 ; 12.779 ; 12.779 ; 12.741 ;
+; ADDR[3]    ; Q[3]        ; 11.916 ; 11.938 ; 11.938 ; 11.916 ;
+; ADDR[3]    ; Q[4]        ; 11.358 ; 12.246 ; 12.246 ; 11.358 ;
+; ADDR[3]    ; Q[5]        ; 12.591 ; 12.244 ; 12.244 ; 12.591 ;
+; ADDR[3]    ; Q[6]        ; 11.800 ; 11.787 ; 11.787 ; 11.800 ;
+; ADDR[3]    ; Q[7]        ; 12.170 ; 12.310 ; 12.310 ; 12.170 ;
+; ADDR[4]    ; Q[0]        ; 15.574 ; 16.714 ; 16.714 ; 15.574 ;
+; ADDR[4]    ; Q[1]        ; 15.977 ; 15.760 ; 15.760 ; 15.977 ;
+; ADDR[4]    ; Q[2]        ; 16.175 ; 16.017 ; 16.017 ; 16.175 ;
+; ADDR[4]    ; Q[3]        ; 15.334 ; 15.190 ; 15.190 ; 15.334 ;
+; ADDR[4]    ; Q[4]        ; 15.642 ; 15.367 ; 15.367 ; 15.642 ;
+; ADDR[4]    ; Q[5]        ; 16.005 ; 15.637 ; 15.637 ; 16.005 ;
+; ADDR[4]    ; Q[6]        ; 15.214 ; 15.097 ; 15.097 ; 15.214 ;
+; ADDR[4]    ; Q[7]        ; 15.706 ; 15.681 ; 15.681 ; 15.706 ;
+; CS         ; Q[0]        ; 8.758  ; 12.898 ; 12.898 ; 8.758  ;
+; CS         ; Q[1]        ; 8.593  ; 12.164 ; 12.164 ; 8.593  ;
+; CS         ; Q[2]        ; 8.175  ; 12.370 ; 12.370 ; 8.175  ;
+; CS         ; Q[3]        ; 8.141  ; 11.518 ; 11.518 ; 8.141  ;
+; CS         ; Q[4]        ; 8.141  ; 11.826 ; 11.826 ; 8.141  ;
+; CS         ; Q[5]        ; 8.758  ; 12.192 ; 12.192 ; 8.758  ;
+; CS         ; Q[6]        ; 7.925  ; 11.401 ; 11.401 ; 7.925  ;
+; CS         ; Q[7]        ; 8.326  ; 11.890 ; 11.890 ; 8.326  ;
+; RWS        ; Q[0]        ; 17.594 ; 12.469 ; 12.469 ; 17.594 ;
+; RWS        ; Q[1]        ; 16.819 ; 12.304 ; 12.304 ; 16.819 ;
+; RWS        ; Q[2]        ; 16.997 ; 11.886 ; 11.886 ; 16.997 ;
+; RWS        ; Q[3]        ; 16.174 ; 11.852 ; 11.852 ; 16.174 ;
+; RWS        ; Q[4]        ; 16.247 ; 11.852 ; 11.852 ; 16.247 ;
+; RWS        ; Q[5]        ; 16.847 ; 12.469 ; 12.469 ; 16.847 ;
+; RWS        ; Q[6]        ; 16.427 ; 11.636 ; 11.636 ; 16.427 ;
+; RWS        ; Q[7]        ; 16.537 ; 12.037 ; 12.037 ; 16.537 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------+
+; Minimum Progagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; ADDR[1]    ; Q[0]        ; 7.450 ; 7.429 ; 7.429 ; 7.450 ;
+; ADDR[1]    ; Q[1]        ; 7.425 ; 7.413 ; 7.413 ; 7.425 ;
+; ADDR[1]    ; Q[2]        ; 7.563 ; 7.758 ; 7.758 ; 7.563 ;
+; ADDR[1]    ; Q[3]        ; 7.183 ; 7.213 ; 7.213 ; 7.183 ;
+; ADDR[1]    ; Q[4]        ; 7.161 ; 7.267 ; 7.267 ; 7.161 ;
+; ADDR[1]    ; Q[5]        ; 7.227 ; 7.332 ; 7.332 ; 7.227 ;
+; ADDR[1]    ; Q[6]        ; 7.135 ; 7.300 ; 7.300 ; 7.135 ;
+; ADDR[1]    ; Q[7]        ; 7.583 ; 7.312 ; 7.312 ; 7.583 ;
+; ADDR[2]    ; Q[0]        ; 8.016 ; 7.828 ; 7.828 ; 8.016 ;
+; ADDR[2]    ; Q[1]        ; 7.823 ; 7.788 ; 7.788 ; 7.823 ;
+; ADDR[2]    ; Q[2]        ; 8.124 ; 7.778 ; 7.778 ; 8.124 ;
+; ADDR[2]    ; Q[3]        ; 7.693 ; 7.753 ; 7.753 ; 7.693 ;
+; ADDR[2]    ; Q[4]        ; 7.851 ; 7.470 ; 7.470 ; 7.851 ;
+; ADDR[2]    ; Q[5]        ; 7.887 ; 7.912 ; 7.912 ; 7.887 ;
+; ADDR[2]    ; Q[6]        ; 7.780 ; 7.692 ; 7.692 ; 7.780 ;
+; ADDR[2]    ; Q[7]        ; 7.899 ; 7.864 ; 7.864 ; 7.899 ;
+; ADDR[3]    ; Q[0]        ; 4.989 ; 5.402 ; 5.402 ; 4.989 ;
+; ADDR[3]    ; Q[1]        ; 5.313 ; 4.968 ; 4.968 ; 5.313 ;
+; ADDR[3]    ; Q[2]        ; 5.295 ; 4.958 ; 4.958 ; 5.295 ;
+; ADDR[3]    ; Q[3]        ; 5.092 ; 5.099 ; 5.099 ; 5.092 ;
+; ADDR[3]    ; Q[4]        ; 4.984 ; 5.037 ; 5.037 ; 4.984 ;
+; ADDR[3]    ; Q[5]        ; 5.175 ; 5.407 ; 5.407 ; 5.175 ;
+; ADDR[3]    ; Q[6]        ; 5.309 ; 5.090 ; 5.090 ; 5.309 ;
+; ADDR[3]    ; Q[7]        ; 5.155 ; 5.044 ; 5.044 ; 5.155 ;
+; ADDR[4]    ; Q[0]        ; 7.069 ; 7.276 ; 7.276 ; 7.069 ;
+; ADDR[4]    ; Q[1]        ; 6.999 ; 6.990 ; 6.990 ; 6.999 ;
+; ADDR[4]    ; Q[2]        ; 7.015 ; 7.062 ; 7.062 ; 7.015 ;
+; ADDR[4]    ; Q[3]        ; 7.004 ; 6.877 ; 6.877 ; 7.004 ;
+; ADDR[4]    ; Q[4]        ; 6.995 ; 6.836 ; 6.836 ; 6.995 ;
+; ADDR[4]    ; Q[5]        ; 7.253 ; 7.036 ; 7.036 ; 7.253 ;
+; ADDR[4]    ; Q[6]        ; 7.009 ; 7.064 ; 7.064 ; 7.009 ;
+; ADDR[4]    ; Q[7]        ; 7.191 ; 7.148 ; 7.148 ; 7.191 ;
+; CS         ; Q[0]        ; 4.509 ; 4.509 ; 4.509 ; 4.509 ;
+; CS         ; Q[1]        ; 4.400 ; 4.400 ; 4.400 ; 4.400 ;
+; CS         ; Q[2]        ; 4.205 ; 4.205 ; 4.205 ; 4.205 ;
+; CS         ; Q[3]        ; 4.172 ; 4.172 ; 4.172 ; 4.172 ;
+; CS         ; Q[4]        ; 4.172 ; 4.172 ; 4.172 ; 4.172 ;
+; CS         ; Q[5]        ; 4.509 ; 4.509 ; 4.509 ; 4.509 ;
+; CS         ; Q[6]        ; 4.085 ; 4.085 ; 4.085 ; 4.085 ;
+; CS         ; Q[7]        ; 4.272 ; 4.272 ; 4.272 ; 4.272 ;
+; RWS        ; Q[0]        ; 6.816 ; 6.816 ; 6.816 ; 6.816 ;
+; RWS        ; Q[1]        ; 6.707 ; 6.707 ; 6.707 ; 6.707 ;
+; RWS        ; Q[2]        ; 6.512 ; 6.512 ; 6.512 ; 6.512 ;
+; RWS        ; Q[3]        ; 6.479 ; 6.479 ; 6.479 ; 6.479 ;
+; RWS        ; Q[4]        ; 6.479 ; 6.479 ; 6.479 ; 6.479 ;
+; RWS        ; Q[5]        ; 6.816 ; 6.816 ; 6.816 ; 6.816 ;
+; RWS        ; Q[6]        ; 6.392 ; 6.392 ; 6.392 ; 6.392 ;
+; RWS        ; Q[7]        ; 6.579 ; 6.579 ; 6.579 ; 6.579 ;
++------------+-------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 15    ; 15   ;
+; Unconstrained Input Port Paths  ; 312   ; 312  ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 312   ; 312  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu May 25 23:12:22 2023
+Info: Command: quartus_sta RAM -c RAM
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 256 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'RAM.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name ADDR[0] ADDR[0]
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 ADDR[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 ADDR[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4565 megabytes
+    Info: Processing ended: Thu May 25 23:12:24 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

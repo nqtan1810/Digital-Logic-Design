@@ -1,0 +1,91 @@
+|Lab1_21521810_DB
+MSSV[0] <= DECODER:inst8.MS[0]
+MSSV[1] <= DECODER:inst8.MS[1]
+MSSV[2] <= DECODER:inst8.MS[2]
+MSSV[3] <= DECODER:inst8.MS[3]
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+I[0] => MUX21:inst9.B
+I[1] => MUX21:inst6.B
+I[2] => MUX21:inst5.B
+LOAD => MUX21:inst6.SEL
+LOAD => MUX21:inst9.SEL
+LOAD => MUX21:inst5.SEL
+
+
+|Lab1_21521810_DB|DECODER:inst8
+MS[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+MS[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+MS[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+MS[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => instA.IN2
+A => inst11.IN0
+A => inst4.IN1
+C => inst.IN1
+C => instA.IN1
+C => inst2.IN1
+C => inst13.IN0
+C => inst7.IN2
+VALID => inst15.OE
+VALID => inst17.OE
+VALID => inst16.OE
+VALID => inst18.OE
+B => instA.IN0
+B => inst2.IN0
+B => inst1.IN0
+B => inst12.IN0
+B => inst4.IN0
+
+
+|Lab1_21521810_DB|CHECK:inst7
+VALID <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q1 => inst.IN0
+Q2 => inst.IN1
+
+
+|Lab1_21521810_DB|MUX21:inst5
+OUT <= instA.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+SEL => inst1.IN1
+SEL => inst2.IN0
+A => inst.IN0
+
+
+|Lab1_21521810_DB|NEXT_STATE:inst3
+D2 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst11.IN0
+A => inst4.IN0
+A => inst5.IN0
+B => inst12.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN1
+B => inst5.IN1
+C => inst13.IN0
+C => inst.IN2
+C => inst4.IN2
+C => inst2.IN2
+C => inst5.IN2
+D1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+D0 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1_21521810_DB|MUX21:inst6
+OUT <= instA.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+SEL => inst1.IN1
+SEL => inst2.IN0
+A => inst.IN0
+
+
+|Lab1_21521810_DB|MUX21:inst9
+OUT <= instA.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+SEL => inst1.IN1
+SEL => inst2.IN0
+A => inst.IN0
+
+

@@ -1,0 +1,749 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/13/2023 00:15:38"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Piplined_AU_Datapath_CONTROLLER
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Piplined_AU_Datapath_CONTROLLER_vlg_sample_tst(
+	CLK,
+	START,
+	sampler_tx
+);
+input  CLK;
+input  START;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(CLK or START)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Piplined_AU_Datapath_CONTROLLER_vlg_check_tst (
+	CTL_AU1,
+	CTL_AU2,
+	DONE,
+	ER1,
+	ER2,
+	ER3,
+	ER4,
+	ER5,
+	ET1,
+	ET2,
+	ET3,
+	ET4,
+	ET5,
+	ET6,
+	ET7,
+	ET8,
+	ET9,
+	ET10,
+	sampler_rx
+);
+input [1:0] CTL_AU1;
+input [1:0] CTL_AU2;
+input  DONE;
+input  ER1;
+input  ER2;
+input  ER3;
+input  ER4;
+input  ER5;
+input  ET1;
+input  ET2;
+input  ET3;
+input  ET4;
+input  ET5;
+input  ET6;
+input  ET7;
+input  ET8;
+input  ET9;
+input  ET10;
+input sampler_rx;
+
+reg [1:0] CTL_AU1_expected;
+reg [1:0] CTL_AU2_expected;
+reg  DONE_expected;
+reg  ER1_expected;
+reg  ER2_expected;
+reg  ER3_expected;
+reg  ER4_expected;
+reg  ER5_expected;
+reg  ET1_expected;
+reg  ET2_expected;
+reg  ET3_expected;
+reg  ET4_expected;
+reg  ET5_expected;
+reg  ET6_expected;
+reg  ET7_expected;
+reg  ET8_expected;
+reg  ET9_expected;
+reg  ET10_expected;
+
+reg [1:0] CTL_AU1_prev;
+reg [1:0] CTL_AU2_prev;
+reg  DONE_prev;
+reg  ER1_prev;
+reg  ER2_prev;
+reg  ER3_prev;
+reg  ER4_prev;
+reg  ER5_prev;
+reg  ET1_prev;
+reg  ET2_prev;
+reg  ET3_prev;
+reg  ET4_prev;
+reg  ET5_prev;
+reg  ET6_prev;
+reg  ET7_prev;
+reg  ET8_prev;
+reg  ET9_prev;
+reg  ET10_prev;
+
+reg [1:0] CTL_AU1_expected_prev;
+reg [1:0] CTL_AU2_expected_prev;
+reg  DONE_expected_prev;
+reg  ER1_expected_prev;
+reg  ER2_expected_prev;
+reg  ER3_expected_prev;
+reg  ER4_expected_prev;
+reg  ER5_expected_prev;
+reg  ET1_expected_prev;
+reg  ET2_expected_prev;
+reg  ET3_expected_prev;
+reg  ET4_expected_prev;
+reg  ET5_expected_prev;
+reg  ET6_expected_prev;
+reg  ET7_expected_prev;
+reg  ET8_expected_prev;
+reg  ET9_expected_prev;
+reg  ET10_expected_prev;
+
+reg [1:0] last_CTL_AU1_exp;
+reg [1:0] last_CTL_AU2_exp;
+reg  last_DONE_exp;
+reg  last_ER1_exp;
+reg  last_ER2_exp;
+reg  last_ER3_exp;
+reg  last_ER4_exp;
+reg  last_ER5_exp;
+reg  last_ET1_exp;
+reg  last_ET2_exp;
+reg  last_ET3_exp;
+reg  last_ET4_exp;
+reg  last_ET5_exp;
+reg  last_ET6_exp;
+reg  last_ET7_exp;
+reg  last_ET8_exp;
+reg  last_ET9_exp;
+reg  last_ET10_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:18] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 18'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	CTL_AU1_prev = CTL_AU1;
+	CTL_AU2_prev = CTL_AU2;
+	DONE_prev = DONE;
+	ER1_prev = ER1;
+	ER2_prev = ER2;
+	ER3_prev = ER3;
+	ER4_prev = ER4;
+	ER5_prev = ER5;
+	ET1_prev = ET1;
+	ET2_prev = ET2;
+	ET3_prev = ET3;
+	ET4_prev = ET4;
+	ET5_prev = ET5;
+	ET6_prev = ET6;
+	ET7_prev = ET7;
+	ET8_prev = ET8;
+	ET9_prev = ET9;
+	ET10_prev = ET10;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	CTL_AU1_expected_prev = CTL_AU1_expected;
+	CTL_AU2_expected_prev = CTL_AU2_expected;
+	DONE_expected_prev = DONE_expected;
+	ER1_expected_prev = ER1_expected;
+	ER2_expected_prev = ER2_expected;
+	ER3_expected_prev = ER3_expected;
+	ER4_expected_prev = ER4_expected;
+	ER5_expected_prev = ER5_expected;
+	ET1_expected_prev = ET1_expected;
+	ET2_expected_prev = ET2_expected;
+	ET3_expected_prev = ET3_expected;
+	ET4_expected_prev = ET4_expected;
+	ET5_expected_prev = ET5_expected;
+	ET6_expected_prev = ET6_expected;
+	ET7_expected_prev = ET7_expected;
+	ET8_expected_prev = ET8_expected;
+	ET9_expected_prev = ET9_expected;
+	ET10_expected_prev = ET10_expected;
+end
+
+
+
+// expected ER1
+initial
+begin
+	ER1_expected = 1'bX;
+end 
+
+// expected ER2
+initial
+begin
+	ER2_expected = 1'bX;
+end 
+
+// expected ER3
+initial
+begin
+	ER3_expected = 1'bX;
+end 
+
+// expected ER4
+initial
+begin
+	ER4_expected = 1'bX;
+end 
+
+// expected ER5
+initial
+begin
+	ER5_expected = 1'bX;
+end 
+// expected CTL_AU1[ 1 ]
+initial
+begin
+	CTL_AU1_expected[1] = 1'bX;
+end 
+// expected CTL_AU1[ 0 ]
+initial
+begin
+	CTL_AU1_expected[0] = 1'bX;
+end 
+// expected CTL_AU2[ 1 ]
+initial
+begin
+	CTL_AU2_expected[1] = 1'bX;
+end 
+// expected CTL_AU2[ 0 ]
+initial
+begin
+	CTL_AU2_expected[0] = 1'bX;
+end 
+
+// expected ET1
+initial
+begin
+	ET1_expected = 1'bX;
+end 
+
+// expected ET2
+initial
+begin
+	ET2_expected = 1'bX;
+end 
+
+// expected ET3
+initial
+begin
+	ET3_expected = 1'bX;
+end 
+
+// expected ET4
+initial
+begin
+	ET4_expected = 1'bX;
+end 
+
+// expected ET5
+initial
+begin
+	ET5_expected = 1'bX;
+end 
+
+// expected ET6
+initial
+begin
+	ET6_expected = 1'bX;
+end 
+
+// expected ET7
+initial
+begin
+	ET7_expected = 1'bX;
+end 
+
+// expected ET8
+initial
+begin
+	ET8_expected = 1'bX;
+end 
+
+// expected ET9
+initial
+begin
+	ET9_expected = 1'bX;
+end 
+
+// expected ET10
+initial
+begin
+	ET10_expected = 1'bX;
+end 
+
+// expected DONE
+initial
+begin
+	DONE_expected = 1'bX;
+end 
+// generate trigger
+always @(CTL_AU1_expected or CTL_AU1 or CTL_AU2_expected or CTL_AU2 or DONE_expected or DONE or ER1_expected or ER1 or ER2_expected or ER2 or ER3_expected or ER3 or ER4_expected or ER4 or ER5_expected or ER5 or ET1_expected or ET1 or ET2_expected or ET2 or ET3_expected or ET3 or ET4_expected or ET4 or ET5_expected or ET5 or ET6_expected or ET6 or ET7_expected or ET7 or ET8_expected or ET8 or ET9_expected or ET9 or ET10_expected or ET10)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected CTL_AU1 = %b | expected CTL_AU2 = %b | expected DONE = %b | expected ER1 = %b | expected ER2 = %b | expected ER3 = %b | expected ER4 = %b | expected ER5 = %b | expected ET1 = %b | expected ET2 = %b | expected ET3 = %b | expected ET4 = %b | expected ET5 = %b | expected ET6 = %b | expected ET7 = %b | expected ET8 = %b | expected ET9 = %b | expected ET10 = %b | ",CTL_AU1_expected_prev,CTL_AU2_expected_prev,DONE_expected_prev,ER1_expected_prev,ER2_expected_prev,ER3_expected_prev,ER4_expected_prev,ER5_expected_prev,ET1_expected_prev,ET2_expected_prev,ET3_expected_prev,ET4_expected_prev,ET5_expected_prev,ET6_expected_prev,ET7_expected_prev,ET8_expected_prev,ET9_expected_prev,ET10_expected_prev);
+	$display("| real CTL_AU1 = %b | real CTL_AU2 = %b | real DONE = %b | real ER1 = %b | real ER2 = %b | real ER3 = %b | real ER4 = %b | real ER5 = %b | real ET1 = %b | real ET2 = %b | real ET3 = %b | real ET4 = %b | real ET5 = %b | real ET6 = %b | real ET7 = %b | real ET8 = %b | real ET9 = %b | real ET10 = %b | ",CTL_AU1_prev,CTL_AU2_prev,DONE_prev,ER1_prev,ER2_prev,ER3_prev,ER4_prev,ER5_prev,ET1_prev,ET2_prev,ET3_prev,ET4_prev,ET5_prev,ET6_prev,ET7_prev,ET8_prev,ET9_prev,ET10_prev);
+`endif
+	if (
+		( CTL_AU1_expected_prev[0] !== 1'bx ) && ( CTL_AU1_prev[0] !== CTL_AU1_expected_prev[0] )
+		&& ((CTL_AU1_expected_prev[0] !== last_CTL_AU1_exp[0]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port CTL_AU1[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", CTL_AU1_expected_prev);
+		$display ("     Real value = %b", CTL_AU1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_CTL_AU1_exp[0] = CTL_AU1_expected_prev[0];
+	end
+	if (
+		( CTL_AU1_expected_prev[1] !== 1'bx ) && ( CTL_AU1_prev[1] !== CTL_AU1_expected_prev[1] )
+		&& ((CTL_AU1_expected_prev[1] !== last_CTL_AU1_exp[1]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port CTL_AU1[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", CTL_AU1_expected_prev);
+		$display ("     Real value = %b", CTL_AU1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_CTL_AU1_exp[1] = CTL_AU1_expected_prev[1];
+	end
+	if (
+		( CTL_AU2_expected_prev[0] !== 1'bx ) && ( CTL_AU2_prev[0] !== CTL_AU2_expected_prev[0] )
+		&& ((CTL_AU2_expected_prev[0] !== last_CTL_AU2_exp[0]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port CTL_AU2[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", CTL_AU2_expected_prev);
+		$display ("     Real value = %b", CTL_AU2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_CTL_AU2_exp[0] = CTL_AU2_expected_prev[0];
+	end
+	if (
+		( CTL_AU2_expected_prev[1] !== 1'bx ) && ( CTL_AU2_prev[1] !== CTL_AU2_expected_prev[1] )
+		&& ((CTL_AU2_expected_prev[1] !== last_CTL_AU2_exp[1]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port CTL_AU2[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", CTL_AU2_expected_prev);
+		$display ("     Real value = %b", CTL_AU2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_CTL_AU2_exp[1] = CTL_AU2_expected_prev[1];
+	end
+	if (
+		( DONE_expected_prev !== 1'bx ) && ( DONE_prev !== DONE_expected_prev )
+		&& ((DONE_expected_prev !== last_DONE_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DONE :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DONE_expected_prev);
+		$display ("     Real value = %b", DONE_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_DONE_exp = DONE_expected_prev;
+	end
+	if (
+		( ER1_expected_prev !== 1'bx ) && ( ER1_prev !== ER1_expected_prev )
+		&& ((ER1_expected_prev !== last_ER1_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ER1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ER1_expected_prev);
+		$display ("     Real value = %b", ER1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_ER1_exp = ER1_expected_prev;
+	end
+	if (
+		( ER2_expected_prev !== 1'bx ) && ( ER2_prev !== ER2_expected_prev )
+		&& ((ER2_expected_prev !== last_ER2_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ER2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ER2_expected_prev);
+		$display ("     Real value = %b", ER2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_ER2_exp = ER2_expected_prev;
+	end
+	if (
+		( ER3_expected_prev !== 1'bx ) && ( ER3_prev !== ER3_expected_prev )
+		&& ((ER3_expected_prev !== last_ER3_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ER3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ER3_expected_prev);
+		$display ("     Real value = %b", ER3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_ER3_exp = ER3_expected_prev;
+	end
+	if (
+		( ER4_expected_prev !== 1'bx ) && ( ER4_prev !== ER4_expected_prev )
+		&& ((ER4_expected_prev !== last_ER4_exp) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ER4 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ER4_expected_prev);
+		$display ("     Real value = %b", ER4_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_ER4_exp = ER4_expected_prev;
+	end
+	if (
+		( ER5_expected_prev !== 1'bx ) && ( ER5_prev !== ER5_expected_prev )
+		&& ((ER5_expected_prev !== last_ER5_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ER5 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ER5_expected_prev);
+		$display ("     Real value = %b", ER5_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_ER5_exp = ER5_expected_prev;
+	end
+	if (
+		( ET1_expected_prev !== 1'bx ) && ( ET1_prev !== ET1_expected_prev )
+		&& ((ET1_expected_prev !== last_ET1_exp) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ET1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ET1_expected_prev);
+		$display ("     Real value = %b", ET1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_ET1_exp = ET1_expected_prev;
+	end
+	if (
+		( ET2_expected_prev !== 1'bx ) && ( ET2_prev !== ET2_expected_prev )
+		&& ((ET2_expected_prev !== last_ET2_exp) ||
+			on_first_change[10])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ET2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ET2_expected_prev);
+		$display ("     Real value = %b", ET2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[10] = 1'b0;
+		last_ET2_exp = ET2_expected_prev;
+	end
+	if (
+		( ET3_expected_prev !== 1'bx ) && ( ET3_prev !== ET3_expected_prev )
+		&& ((ET3_expected_prev !== last_ET3_exp) ||
+			on_first_change[11])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ET3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ET3_expected_prev);
+		$display ("     Real value = %b", ET3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[11] = 1'b0;
+		last_ET3_exp = ET3_expected_prev;
+	end
+	if (
+		( ET4_expected_prev !== 1'bx ) && ( ET4_prev !== ET4_expected_prev )
+		&& ((ET4_expected_prev !== last_ET4_exp) ||
+			on_first_change[12])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ET4 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ET4_expected_prev);
+		$display ("     Real value = %b", ET4_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[12] = 1'b0;
+		last_ET4_exp = ET4_expected_prev;
+	end
+	if (
+		( ET5_expected_prev !== 1'bx ) && ( ET5_prev !== ET5_expected_prev )
+		&& ((ET5_expected_prev !== last_ET5_exp) ||
+			on_first_change[13])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ET5 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ET5_expected_prev);
+		$display ("     Real value = %b", ET5_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[13] = 1'b0;
+		last_ET5_exp = ET5_expected_prev;
+	end
+	if (
+		( ET6_expected_prev !== 1'bx ) && ( ET6_prev !== ET6_expected_prev )
+		&& ((ET6_expected_prev !== last_ET6_exp) ||
+			on_first_change[14])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ET6 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ET6_expected_prev);
+		$display ("     Real value = %b", ET6_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[14] = 1'b0;
+		last_ET6_exp = ET6_expected_prev;
+	end
+	if (
+		( ET7_expected_prev !== 1'bx ) && ( ET7_prev !== ET7_expected_prev )
+		&& ((ET7_expected_prev !== last_ET7_exp) ||
+			on_first_change[15])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ET7 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ET7_expected_prev);
+		$display ("     Real value = %b", ET7_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[15] = 1'b0;
+		last_ET7_exp = ET7_expected_prev;
+	end
+	if (
+		( ET8_expected_prev !== 1'bx ) && ( ET8_prev !== ET8_expected_prev )
+		&& ((ET8_expected_prev !== last_ET8_exp) ||
+			on_first_change[16])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ET8 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ET8_expected_prev);
+		$display ("     Real value = %b", ET8_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[16] = 1'b0;
+		last_ET8_exp = ET8_expected_prev;
+	end
+	if (
+		( ET9_expected_prev !== 1'bx ) && ( ET9_prev !== ET9_expected_prev )
+		&& ((ET9_expected_prev !== last_ET9_exp) ||
+			on_first_change[17])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ET9 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ET9_expected_prev);
+		$display ("     Real value = %b", ET9_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[17] = 1'b0;
+		last_ET9_exp = ET9_expected_prev;
+	end
+	if (
+		( ET10_expected_prev !== 1'bx ) && ( ET10_prev !== ET10_expected_prev )
+		&& ((ET10_expected_prev !== last_ET10_exp) ||
+			on_first_change[18])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ET10 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ET10_expected_prev);
+		$display ("     Real value = %b", ET10_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[18] = 1'b0;
+		last_ET10_exp = ET10_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module Piplined_AU_Datapath_CONTROLLER_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CLK;
+reg START;
+// wires                                               
+wire [1:0] CTL_AU1;
+wire [1:0] CTL_AU2;
+wire DONE;
+wire ER1;
+wire ER2;
+wire ER3;
+wire ER4;
+wire ER5;
+wire ET1;
+wire ET2;
+wire ET3;
+wire ET4;
+wire ET5;
+wire ET6;
+wire ET7;
+wire ET8;
+wire ET9;
+wire ET10;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Piplined_AU_Datapath_CONTROLLER i1 (
+// port map - connection between master ports and signals/registers   
+	.CLK(CLK),
+	.CTL_AU1(CTL_AU1),
+	.CTL_AU2(CTL_AU2),
+	.DONE(DONE),
+	.ER1(ER1),
+	.ER2(ER2),
+	.ER3(ER3),
+	.ER4(ER4),
+	.ER5(ER5),
+	.ET1(ET1),
+	.ET2(ET2),
+	.ET3(ET3),
+	.ET4(ET4),
+	.ET5(ET5),
+	.ET6(ET6),
+	.ET7(ET7),
+	.ET8(ET8),
+	.ET9(ET9),
+	.ET10(ET10),
+	.START(START)
+);
+
+// CLK
+initial
+begin
+	CLK = 1'b1;
+	# 20000;
+	repeat(24)
+	begin
+		CLK = 1'b0;
+		CLK = #20000 1'b1;
+		# 20000;
+	end
+	CLK = 1'b0;
+end 
+
+// START
+initial
+begin
+	START = 1'b0;
+	START = #30000 1'b1;
+	START = #20000 1'b0;
+end 
+
+Piplined_AU_Datapath_CONTROLLER_vlg_sample_tst tb_sample (
+	.CLK(CLK),
+	.START(START),
+	.sampler_tx(sampler)
+);
+
+Piplined_AU_Datapath_CONTROLLER_vlg_check_tst tb_out(
+	.CTL_AU1(CTL_AU1),
+	.CTL_AU2(CTL_AU2),
+	.DONE(DONE),
+	.ER1(ER1),
+	.ER2(ER2),
+	.ER3(ER3),
+	.ER4(ER4),
+	.ER5(ER5),
+	.ET1(ET1),
+	.ET2(ET2),
+	.ET3(ET3),
+	.ET4(ET4),
+	.ET5(ET5),
+	.ET6(ET6),
+	.ET7(ET7),
+	.ET8(ET8),
+	.ET9(ET9),
+	.ET10(ET10),
+	.sampler_rx(sampler)
+);
+endmodule
+

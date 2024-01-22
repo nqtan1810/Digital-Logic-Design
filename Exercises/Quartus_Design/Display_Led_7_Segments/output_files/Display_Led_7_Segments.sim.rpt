@@ -1,0 +1,460 @@
+Simulator report for Display_Led_7_Segments
+Tue May 23 18:09:05 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 211 nodes    ;
+; Simulation Coverage         ;      29.86 % ;
+; Total Number of Transitions ; 240          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                               ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                             ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                          ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                 ;               ;
+; Vector input source                                                                        ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Display_Led_7_Segments/Waveform_TOP.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                  ; On            ;
+; Check outputs                                                                              ; Off                                                                                 ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                 ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      29.86 % ;
+; Total nodes checked                                 ; 211          ;
+; Total output ports checked                          ; 211          ;
+; Total output ports with complete 1/0-value coverage ; 63           ;
+; Total output ports with no 1/0-value coverage       ; 87           ;
+; Total output ports with no 1-value coverage         ; 123          ;
+; Total output ports with no 0-value coverage         ; 112          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                        ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; Node Name                                                      ; Output Port Name                                               ; Output Port Type ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; |Display_Led_7_Segments|HG2                                    ; |Display_Led_7_Segments|HG2                                    ; pin_out          ;
+; |Display_Led_7_Segments|TA1                                    ; |Display_Led_7_Segments|TA1                                    ; pin_out          ;
+; |Display_Led_7_Segments|TB1                                    ; |Display_Led_7_Segments|TB1                                    ; pin_out          ;
+; |Display_Led_7_Segments|TC1                                    ; |Display_Led_7_Segments|TC1                                    ; pin_out          ;
+; |Display_Led_7_Segments|TD1                                    ; |Display_Led_7_Segments|TD1                                    ; pin_out          ;
+; |Display_Led_7_Segments|TE1                                    ; |Display_Led_7_Segments|TE1                                    ; pin_out          ;
+; |Display_Led_7_Segments|TF1                                    ; |Display_Led_7_Segments|TF1                                    ; pin_out          ;
+; |Display_Led_7_Segments|TG1                                    ; |Display_Led_7_Segments|TG1                                    ; pin_out          ;
+; |Display_Led_7_Segments|OA0                                    ; |Display_Led_7_Segments|OA0                                    ; pin_out          ;
+; |Display_Led_7_Segments|OB0                                    ; |Display_Led_7_Segments|OB0                                    ; pin_out          ;
+; |Display_Led_7_Segments|OC0                                    ; |Display_Led_7_Segments|OC0                                    ; pin_out          ;
+; |Display_Led_7_Segments|OD0                                    ; |Display_Led_7_Segments|OD0                                    ; pin_out          ;
+; |Display_Led_7_Segments|OF0                                    ; |Display_Led_7_Segments|OF0                                    ; pin_out          ;
+; |Display_Led_7_Segments|74247:inst40|41                        ; |Display_Led_7_Segments|74247:inst40|41                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|85                        ; |Display_Led_7_Segments|74247:inst40|85                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|34                        ; |Display_Led_7_Segments|74247:inst40|34                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|35                        ; |Display_Led_7_Segments|74247:inst40|35                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|30                        ; |Display_Led_7_Segments|74247:inst40|30                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|83                        ; |Display_Led_7_Segments|74247:inst40|83                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|25                        ; |Display_Led_7_Segments|74247:inst40|25                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|78                        ; |Display_Led_7_Segments|74247:inst40|78                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|82                        ; |Display_Led_7_Segments|74247:inst40|82                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|20                        ; |Display_Led_7_Segments|74247:inst40|20                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|81                        ; |Display_Led_7_Segments|74247:inst40|81                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|13                        ; |Display_Led_7_Segments|74247:inst40|13                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|14                        ; |Display_Led_7_Segments|74247:inst40|14                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|80                        ; |Display_Led_7_Segments|74247:inst40|80                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|86                        ; |Display_Led_7_Segments|74247:inst39|86                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|39                        ; |Display_Led_7_Segments|74247:inst39|39                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|57                        ; |Display_Led_7_Segments|74247:inst39|57                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|54                        ; |Display_Led_7_Segments|74247:inst39|54                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|58                        ; |Display_Led_7_Segments|74247:inst39|58                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|62                        ; |Display_Led_7_Segments|74247:inst39|62                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|41                        ; |Display_Led_7_Segments|74247:inst39|41                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|42                        ; |Display_Led_7_Segments|74247:inst39|42                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|56                        ; |Display_Led_7_Segments|74247:inst39|56                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|85                        ; |Display_Led_7_Segments|74247:inst39|85                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|34                        ; |Display_Led_7_Segments|74247:inst39|34                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|35                        ; |Display_Led_7_Segments|74247:inst39|35                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|36                        ; |Display_Led_7_Segments|74247:inst39|36                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|84                        ; |Display_Led_7_Segments|74247:inst39|84                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|30                        ; |Display_Led_7_Segments|74247:inst39|30                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|31                        ; |Display_Led_7_Segments|74247:inst39|31                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|83                        ; |Display_Led_7_Segments|74247:inst39|83                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|24                        ; |Display_Led_7_Segments|74247:inst39|24                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|25                        ; |Display_Led_7_Segments|74247:inst39|25                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|78                        ; |Display_Led_7_Segments|74247:inst39|78                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|82                        ; |Display_Led_7_Segments|74247:inst39|82                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|20                        ; |Display_Led_7_Segments|74247:inst39|20                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|81                        ; |Display_Led_7_Segments|74247:inst39|81                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|13                        ; |Display_Led_7_Segments|74247:inst39|13                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|14                        ; |Display_Led_7_Segments|74247:inst39|14                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|80                        ; |Display_Led_7_Segments|74247:inst39|80                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|12                        ; |Display_Led_7_Segments|74247:inst39|12                        ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst10 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst10 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst14 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst14 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst11 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst11 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst15 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst15 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst11 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst11 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst14 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst14 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst15 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst15 ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|86                        ; |Display_Led_7_Segments|74247:inst38|86                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|39                        ; |Display_Led_7_Segments|74247:inst38|39                        ; out0             ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                           ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; Node Name                                                      ; Output Port Name                                               ; Output Port Type ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; |Display_Led_7_Segments|SIGN                                   ; |Display_Led_7_Segments|SIGN                                   ; pin_out          ;
+; |Display_Led_7_Segments|Num[7]                                 ; |Display_Led_7_Segments|Num[7]                                 ; out              ;
+; |Display_Led_7_Segments|Num[6]                                 ; |Display_Led_7_Segments|Num[6]                                 ; out              ;
+; |Display_Led_7_Segments|Num[5]                                 ; |Display_Led_7_Segments|Num[5]                                 ; out              ;
+; |Display_Led_7_Segments|Num[2]                                 ; |Display_Led_7_Segments|Num[2]                                 ; out              ;
+; |Display_Led_7_Segments|Num[1]                                 ; |Display_Led_7_Segments|Num[1]                                 ; out              ;
+; |Display_Led_7_Segments|Num[0]                                 ; |Display_Led_7_Segments|Num[0]                                 ; out              ;
+; |Display_Led_7_Segments|HA2                                    ; |Display_Led_7_Segments|HA2                                    ; pin_out          ;
+; |Display_Led_7_Segments|HD2                                    ; |Display_Led_7_Segments|HD2                                    ; pin_out          ;
+; |Display_Led_7_Segments|HE2                                    ; |Display_Led_7_Segments|HE2                                    ; pin_out          ;
+; |Display_Led_7_Segments|HF2                                    ; |Display_Led_7_Segments|HF2                                    ; pin_out          ;
+; |Display_Led_7_Segments|OE0                                    ; |Display_Led_7_Segments|OE0                                    ; pin_out          ;
+; |Display_Led_7_Segments|OG0                                    ; |Display_Led_7_Segments|OG0                                    ; pin_out          ;
+; |Display_Led_7_Segments|74247:inst40|86                        ; |Display_Led_7_Segments|74247:inst40|86                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|39                        ; |Display_Led_7_Segments|74247:inst40|39                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|40                        ; |Display_Led_7_Segments|74247:inst40|40                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|36                        ; |Display_Led_7_Segments|74247:inst40|36                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|37                        ; |Display_Led_7_Segments|74247:inst40|37                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|76                        ; |Display_Led_7_Segments|74247:inst40|76                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|27                        ; |Display_Led_7_Segments|74247:inst40|27                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|73                        ; |Display_Led_7_Segments|74247:inst40|73                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|19                        ; |Display_Led_7_Segments|74247:inst40|19                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|15                        ; |Display_Led_7_Segments|74247:inst40|15                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|16                        ; |Display_Led_7_Segments|74247:inst40|16                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|9                         ; |Display_Led_7_Segments|74247:inst40|9                         ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|10                        ; |Display_Led_7_Segments|74247:inst40|10                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|11                        ; |Display_Led_7_Segments|74247:inst40|11                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|40                        ; |Display_Led_7_Segments|74247:inst39|40                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|37                        ; |Display_Led_7_Segments|74247:inst39|37                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|76                        ; |Display_Led_7_Segments|74247:inst39|76                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|27                        ; |Display_Led_7_Segments|74247:inst39|27                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|73                        ; |Display_Led_7_Segments|74247:inst39|73                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|19                        ; |Display_Led_7_Segments|74247:inst39|19                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|15                        ; |Display_Led_7_Segments|74247:inst39|15                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|16                        ; |Display_Led_7_Segments|74247:inst39|16                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|9                         ; |Display_Led_7_Segments|74247:inst39|9                         ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|10                        ; |Display_Led_7_Segments|74247:inst39|10                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|11                        ; |Display_Led_7_Segments|74247:inst39|11                        ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|inst15                       ; |Display_Led_7_Segments|TCC:inAst|inst15                       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|inst9                        ; |Display_Led_7_Segments|TCC:inAst|inst9                        ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|inst10                       ; |Display_Led_7_Segments|TCC:inAst|inst10                       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|inst11                       ; |Display_Led_7_Segments|TCC:inAst|inst11                       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|inst13                       ; |Display_Led_7_Segments|TCC:inAst|inst13                       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|inst12                       ; |Display_Led_7_Segments|TCC:inAst|inst12                       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst5|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst5|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst5|xor3:inst|1 ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst5|xor3:inst|1 ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst6|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst6|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst6|xor3:inst|1 ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst6|xor3:inst|1 ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst4|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst4|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst4|xor3:inst|1 ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst4|xor3:inst|1 ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst3|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst3|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst3|xor3:inst|1 ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst3|xor3:inst|1 ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst2|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst2|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst2|xor3:inst|1 ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst2|xor3:inst|1 ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst1|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst1|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst|inst5        ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst|inst5        ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst|xor3:inst|1  ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst|xor3:inst|1  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst12 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst12 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst9  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst9  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst11 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst11 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst13 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst13 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst12 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst12 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst   ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst   ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst13 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst13 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst14 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst14 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst9  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst9  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst10 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst10 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst9  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst9  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst11 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst11 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst   ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst   ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst13 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst13 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst9  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst9  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst11 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst11 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst10 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst10 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst   ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst   ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst13 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst13 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst14 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst14 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst12  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst12  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst11  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst11  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|instA   ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|instA   ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst13  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst13  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst14  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst14  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst15  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst15  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst12 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst12 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst11 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst11 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst13 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst13 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst14 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst14 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst15 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst15 ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|54                        ; |Display_Led_7_Segments|74247:inst38|54                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|40                        ; |Display_Led_7_Segments|74247:inst38|40                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|41                        ; |Display_Led_7_Segments|74247:inst38|41                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|42                        ; |Display_Led_7_Segments|74247:inst38|42                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|56                        ; |Display_Led_7_Segments|74247:inst38|56                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|85                        ; |Display_Led_7_Segments|74247:inst38|85                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|34                        ; |Display_Led_7_Segments|74247:inst38|34                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|35                        ; |Display_Led_7_Segments|74247:inst38|35                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|36                        ; |Display_Led_7_Segments|74247:inst38|36                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|37                        ; |Display_Led_7_Segments|74247:inst38|37                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|84                        ; |Display_Led_7_Segments|74247:inst38|84                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|30                        ; |Display_Led_7_Segments|74247:inst38|30                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|31                        ; |Display_Led_7_Segments|74247:inst38|31                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|83                        ; |Display_Led_7_Segments|74247:inst38|83                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|24                        ; |Display_Led_7_Segments|74247:inst38|24                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|25                        ; |Display_Led_7_Segments|74247:inst38|25                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|27                        ; |Display_Led_7_Segments|74247:inst38|27                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|78                        ; |Display_Led_7_Segments|74247:inst38|78                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|82                        ; |Display_Led_7_Segments|74247:inst38|82                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|73                        ; |Display_Led_7_Segments|74247:inst38|73                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|19                        ; |Display_Led_7_Segments|74247:inst38|19                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|81                        ; |Display_Led_7_Segments|74247:inst38|81                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|13                        ; |Display_Led_7_Segments|74247:inst38|13                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|15                        ; |Display_Led_7_Segments|74247:inst38|15                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|16                        ; |Display_Led_7_Segments|74247:inst38|16                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|80                        ; |Display_Led_7_Segments|74247:inst38|80                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|9                         ; |Display_Led_7_Segments|74247:inst38|9                         ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|12                        ; |Display_Led_7_Segments|74247:inst38|12                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|11                        ; |Display_Led_7_Segments|74247:inst38|11                        ; out0             ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                           ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; Node Name                                                      ; Output Port Name                                               ; Output Port Type ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; |Display_Led_7_Segments|Num[6]                                 ; |Display_Led_7_Segments|Num[6]                                 ; out              ;
+; |Display_Led_7_Segments|Num[5]                                 ; |Display_Led_7_Segments|Num[5]                                 ; out              ;
+; |Display_Led_7_Segments|Num[4]                                 ; |Display_Led_7_Segments|Num[4]                                 ; out              ;
+; |Display_Led_7_Segments|Num[3]                                 ; |Display_Led_7_Segments|Num[3]                                 ; out              ;
+; |Display_Led_7_Segments|Num[2]                                 ; |Display_Led_7_Segments|Num[2]                                 ; out              ;
+; |Display_Led_7_Segments|Num[1]                                 ; |Display_Led_7_Segments|Num[1]                                 ; out              ;
+; |Display_Led_7_Segments|HA2                                    ; |Display_Led_7_Segments|HA2                                    ; pin_out          ;
+; |Display_Led_7_Segments|HB2                                    ; |Display_Led_7_Segments|HB2                                    ; pin_out          ;
+; |Display_Led_7_Segments|HC2                                    ; |Display_Led_7_Segments|HC2                                    ; pin_out          ;
+; |Display_Led_7_Segments|HD2                                    ; |Display_Led_7_Segments|HD2                                    ; pin_out          ;
+; |Display_Led_7_Segments|HE2                                    ; |Display_Led_7_Segments|HE2                                    ; pin_out          ;
+; |Display_Led_7_Segments|HF2                                    ; |Display_Led_7_Segments|HF2                                    ; pin_out          ;
+; |Display_Led_7_Segments|OG0                                    ; |Display_Led_7_Segments|OG0                                    ; pin_out          ;
+; |Display_Led_7_Segments|74247:inst40|86                        ; |Display_Led_7_Segments|74247:inst40|86                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|40                        ; |Display_Led_7_Segments|74247:inst40|40                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|42                        ; |Display_Led_7_Segments|74247:inst40|42                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|37                        ; |Display_Led_7_Segments|74247:inst40|37                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|84                        ; |Display_Led_7_Segments|74247:inst40|84                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|31                        ; |Display_Led_7_Segments|74247:inst40|31                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|24                        ; |Display_Led_7_Segments|74247:inst40|24                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|76                        ; |Display_Led_7_Segments|74247:inst40|76                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|73                        ; |Display_Led_7_Segments|74247:inst40|73                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|19                        ; |Display_Led_7_Segments|74247:inst40|19                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|15                        ; |Display_Led_7_Segments|74247:inst40|15                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|16                        ; |Display_Led_7_Segments|74247:inst40|16                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|9                         ; |Display_Led_7_Segments|74247:inst40|9                         ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|12                        ; |Display_Led_7_Segments|74247:inst40|12                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst40|10                        ; |Display_Led_7_Segments|74247:inst40|10                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|40                        ; |Display_Led_7_Segments|74247:inst39|40                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|37                        ; |Display_Led_7_Segments|74247:inst39|37                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|76                        ; |Display_Led_7_Segments|74247:inst39|76                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|27                        ; |Display_Led_7_Segments|74247:inst39|27                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|73                        ; |Display_Led_7_Segments|74247:inst39|73                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|19                        ; |Display_Led_7_Segments|74247:inst39|19                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|15                        ; |Display_Led_7_Segments|74247:inst39|15                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|16                        ; |Display_Led_7_Segments|74247:inst39|16                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|9                         ; |Display_Led_7_Segments|74247:inst39|9                         ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|10                        ; |Display_Led_7_Segments|74247:inst39|10                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst39|11                        ; |Display_Led_7_Segments|74247:inst39|11                        ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|inst15                       ; |Display_Led_7_Segments|TCC:inAst|inst15                       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|inst8                        ; |Display_Led_7_Segments|TCC:inAst|inst8                        ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|inst10                       ; |Display_Led_7_Segments|TCC:inAst|inst10                       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|inst11                       ; |Display_Led_7_Segments|TCC:inAst|inst11                       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst5|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst5|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst6|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst6|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst4|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst4|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst4|xor3:inst|1 ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst4|xor3:inst|1 ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst3|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst3|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst3|xor3:inst|1 ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst3|xor3:inst|1 ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst2|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst2|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst1|inst5       ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst1|inst5       ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst1|xor3:inst|1 ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst1|xor3:inst|1 ; out0             ;
+; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst|inst5        ; |Display_Led_7_Segments|TCC:inAst|FULL_ADDER:inst|inst5        ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst12 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst12 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst9  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst9  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst11 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst11 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst   ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst   ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst13 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst13 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst15 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst6|inst15 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst9  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst9  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst10 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst10 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst14 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst5|inst14 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst12 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst12 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst   ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst   ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst13 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst8|inst13 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst12 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst12 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst11 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst11 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst10 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst10 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst   ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst   ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst13 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst13 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst14 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst14 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst15 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst3|inst15 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst12 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst12 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst11 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst11 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst   ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst   ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst13 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst13 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst15 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst2|inst15 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst12  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst12  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|instA   ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|instA   ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst13  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst|inst13  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst12 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst12 ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|instA  ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|instA  ; out0             ;
+; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst13 ; |Display_Led_7_Segments|DOUBLE_DABBLE:inst|DABBLE:inst4|inst13 ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|57                        ; |Display_Led_7_Segments|74247:inst38|57                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|40                        ; |Display_Led_7_Segments|74247:inst38|40                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|41                        ; |Display_Led_7_Segments|74247:inst38|41                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|42                        ; |Display_Led_7_Segments|74247:inst38|42                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|56                        ; |Display_Led_7_Segments|74247:inst38|56                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|85                        ; |Display_Led_7_Segments|74247:inst38|85                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|34                        ; |Display_Led_7_Segments|74247:inst38|34                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|35                        ; |Display_Led_7_Segments|74247:inst38|35                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|36                        ; |Display_Led_7_Segments|74247:inst38|36                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|37                        ; |Display_Led_7_Segments|74247:inst38|37                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|84                        ; |Display_Led_7_Segments|74247:inst38|84                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|30                        ; |Display_Led_7_Segments|74247:inst38|30                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|31                        ; |Display_Led_7_Segments|74247:inst38|31                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|83                        ; |Display_Led_7_Segments|74247:inst38|83                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|24                        ; |Display_Led_7_Segments|74247:inst38|24                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|25                        ; |Display_Led_7_Segments|74247:inst38|25                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|27                        ; |Display_Led_7_Segments|74247:inst38|27                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|78                        ; |Display_Led_7_Segments|74247:inst38|78                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|13                        ; |Display_Led_7_Segments|74247:inst38|13                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|16                        ; |Display_Led_7_Segments|74247:inst38|16                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|80                        ; |Display_Led_7_Segments|74247:inst38|80                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|9                         ; |Display_Led_7_Segments|74247:inst38|9                         ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|12                        ; |Display_Led_7_Segments|74247:inst38|12                        ; out0             ;
+; |Display_Led_7_Segments|74247:inst38|11                        ; |Display_Led_7_Segments|74247:inst38|11                        ; out0             ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue May 23 18:09:04 2023
+Info: Command: quartus_sim --simulation_results_format=VWF Display_Led_7_Segments -c Display_Led_7_Segments
+Info (324025): Using vector source file "D:/University/THIET_KE_LUAN_LY_SO/exercises/Display_Led_7_Segments/Waveform_TOP.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      29.86 %
+Info (328052): Number of transitions in simulation is 240
+Info (324045): Vector file Display_Led_7_Segments.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4453 megabytes
+    Info: Processing ended: Tue May 23 18:09:06 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

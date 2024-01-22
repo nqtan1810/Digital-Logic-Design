@@ -1,0 +1,412 @@
+Analysis & Synthesis report for Functional_Unit_Sharing
+Thu May 11 09:18:49 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu May 11 09:18:49 2023           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Functional_Unit_Sharing                         ;
+; Top-level Entity Name              ; Functional_Unit_Sharing                         ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 97                                              ;
+;     Total combinational functions  ; 89                                              ;
+;     Dedicated logic registers      ; 26                                              ;
+; Total registers                    ; 26                                              ;
+; Total pins                         ; 27                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                  ;
++----------------------------------------------------------------------------+-------------------------+-------------------------+
+; Option                                                                     ; Setting                 ; Default Value           ;
++----------------------------------------------------------------------------+-------------------------+-------------------------+
+; Device                                                                     ; EP2C35F672C6            ;                         ;
+; Top-level entity name                                                      ; Functional_Unit_Sharing ; Functional_Unit_Sharing ;
+; Family name                                                                ; Cyclone II              ; Cyclone IV GX           ;
+; Use smart compilation                                                      ; Off                     ; Off                     ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                      ; On                      ;
+; Enable compact report table                                                ; Off                     ; Off                     ;
+; Restructure Multiplexers                                                   ; Auto                    ; Auto                    ;
+; Create Debugging Nodes for IP Cores                                        ; Off                     ; Off                     ;
+; Preserve fewer node names                                                  ; On                      ; On                      ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                     ; Off                     ;
+; Verilog Version                                                            ; Verilog_2001            ; Verilog_2001            ;
+; VHDL Version                                                               ; VHDL_1993               ; VHDL_1993               ;
+; State Machine Processing                                                   ; Auto                    ; Auto                    ;
+; Safe State Machine                                                         ; Off                     ; Off                     ;
+; Extract Verilog State Machines                                             ; On                      ; On                      ;
+; Extract VHDL State Machines                                                ; On                      ; On                      ;
+; Ignore Verilog initial constructs                                          ; Off                     ; Off                     ;
+; Iteration limit for constant Verilog loops                                 ; 5000                    ; 5000                    ;
+; Iteration limit for non-constant Verilog loops                             ; 250                     ; 250                     ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                      ; On                      ;
+; Infer RAMs from Raw Logic                                                  ; On                      ; On                      ;
+; Parallel Synthesis                                                         ; On                      ; On                      ;
+; DSP Block Balancing                                                        ; Auto                    ; Auto                    ;
+; NOT Gate Push-Back                                                         ; On                      ; On                      ;
+; Power-Up Don't Care                                                        ; On                      ; On                      ;
+; Remove Redundant Logic Cells                                               ; Off                     ; Off                     ;
+; Remove Duplicate Registers                                                 ; On                      ; On                      ;
+; Ignore CARRY Buffers                                                       ; Off                     ; Off                     ;
+; Ignore CASCADE Buffers                                                     ; Off                     ; Off                     ;
+; Ignore GLOBAL Buffers                                                      ; Off                     ; Off                     ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                     ; Off                     ;
+; Ignore LCELL Buffers                                                       ; Off                     ; Off                     ;
+; Ignore SOFT Buffers                                                        ; On                      ; On                      ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                     ; Off                     ;
+; Optimization Technique                                                     ; Balanced                ; Balanced                ;
+; Carry Chain Length                                                         ; 70                      ; 70                      ;
+; Auto Carry Chains                                                          ; On                      ; On                      ;
+; Auto Open-Drain Pins                                                       ; On                      ; On                      ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                     ; Off                     ;
+; Auto ROM Replacement                                                       ; On                      ; On                      ;
+; Auto RAM Replacement                                                       ; On                      ; On                      ;
+; Auto Shift Register Replacement                                            ; Auto                    ; Auto                    ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                    ; Auto                    ;
+; Auto Clock Enable Replacement                                              ; On                      ; On                      ;
+; Strict RAM Replacement                                                     ; Off                     ; Off                     ;
+; Allow Synchronous Control Signals                                          ; On                      ; On                      ;
+; Force Use of Synchronous Clear Signals                                     ; Off                     ; Off                     ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                     ; Off                     ;
+; Auto Resource Sharing                                                      ; Off                     ; Off                     ;
+; Allow Any RAM Size For Recognition                                         ; Off                     ; Off                     ;
+; Allow Any ROM Size For Recognition                                         ; Off                     ; Off                     ;
+; Allow Any Shift Register Size For Recognition                              ; Off                     ; Off                     ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                      ; On                      ;
+; Ignore translate_off and synthesis_off directives                          ; Off                     ; Off                     ;
+; Timing-Driven Synthesis                                                    ; Off                     ; Off                     ;
+; Report Parameter Settings                                                  ; On                      ; On                      ;
+; Report Source Assignments                                                  ; On                      ; On                      ;
+; Report Connectivity Checks                                                 ; On                      ; On                      ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                     ; Off                     ;
+; Synchronization Register Chain Length                                      ; 2                       ; 2                       ;
+; PowerPlay Power Optimization                                               ; Normal compilation      ; Normal compilation      ;
+; HDL message level                                                          ; Level2                  ; Level2                  ;
+; Suppress Register Optimization Related Messages                            ; Off                     ; Off                     ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                    ; 5000                    ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                    ; 5000                    ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                     ; 100                     ;
+; Clock MUX Protection                                                       ; On                      ; On                      ;
+; Auto Gated Clock Conversion                                                ; Off                     ; Off                     ;
+; Block Design Naming                                                        ; Auto                    ; Auto                    ;
+; SDC constraint protection                                                  ; Off                     ; Off                     ;
+; Synthesis Effort                                                           ; Auto                    ; Auto                    ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                      ; On                      ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                     ; Off                     ;
+; Analysis & Synthesis Message Level                                         ; Medium                  ; Medium                  ;
+; Disable Register Merging Across Hierarchies                                ; Auto                    ; Auto                    ;
+; Resource Aware Inference For Block RAM                                     ; On                      ; On                      ;
+; Synthesis Seed                                                             ; 1                       ; 1                       ;
++----------------------------------------------------------------------------+-------------------------+-------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
++----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                               ; Library ;
++----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; REGISTER.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/REGISTER.bdf                           ;         ;
+; RS_3BIT.bdf                            ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/RS_3BIT.bdf                            ;         ;
+; RS_1BIT.bdf                            ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/RS_1BIT.bdf                            ;         ;
+; ADDER_8_BIT.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/ADDER_8_BIT.bdf                        ;         ;
+; FULL_ADDER.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/FULL_ADDER.bdf                         ;         ;
+; MUX21.bdf                              ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/MUX21.bdf                              ;         ;
+; MUX21_8BIT.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/MUX21_8BIT.bdf                         ;         ;
+; Functional_Unit_Sharing.bdf            ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/Functional_Unit_Sharing.bdf            ;         ;
+; ADD_MIN_SUB_ABS.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/ADD_MIN_SUB_ABS.bdf                    ;         ;
+; ABS_MAX.bdf                            ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/ABS_MAX.bdf                            ;         ;
+; RS_1_BIT.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/RS_1_BIT.bdf                           ;         ;
+; RS_3_BIT.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/RS_3_BIT.bdf                           ;         ;
+; MUX31_8BIT.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/MUX31_8BIT.bdf                         ;         ;
+; Functional_Unit_Sharing_datapath.bdf   ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/Functional_Unit_Sharing_datapath.bdf   ;         ;
+; Functional_Unit_Sharing_controller.bdf ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/Functional_Unit_Sharing_controller.bdf ;         ;
+; NEXT_STATE.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/NEXT_STATE.bdf                         ;         ;
+; OUTPUT.bdf                             ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/OUTPUT.bdf                             ;         ;
+; PRESENT_STATE.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Functional_Unit_Sharing/PRESENT_STATE.bdf                      ;         ;
+; xor3.bdf                               ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/xor3.bdf                                               ;         ;
++----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                      ;
++---------------------------------------------+--------------------------------------------------------------------+
+; Resource                                    ; Usage                                                              ;
++---------------------------------------------+--------------------------------------------------------------------+
+; Estimated Total logic elements              ; 97                                                                 ;
+;                                             ;                                                                    ;
+; Total combinational functions               ; 89                                                                 ;
+; Logic element usage by number of LUT inputs ;                                                                    ;
+;     -- 4 input functions                    ; 70                                                                 ;
+;     -- 3 input functions                    ; 15                                                                 ;
+;     -- <=2 input functions                  ; 4                                                                  ;
+;                                             ;                                                                    ;
+; Logic elements by mode                      ;                                                                    ;
+;     -- normal mode                          ; 89                                                                 ;
+;     -- arithmetic mode                      ; 0                                                                  ;
+;                                             ;                                                                    ;
+; Total registers                             ; 26                                                                 ;
+;     -- Dedicated logic registers            ; 26                                                                 ;
+;     -- I/O registers                        ; 0                                                                  ;
+;                                             ;                                                                    ;
+; I/O pins                                    ; 27                                                                 ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                  ;
+; Maximum fan-out node                        ; Functional_Unit_Sharing_controller:inst1|PRESENT_STATE:inst1|inst3 ;
+; Maximum fan-out                             ; 39                                                                 ;
+; Total fan-out                               ; 442                                                                ;
+; Average fan-out                             ; 3.11                                                               ;
++---------------------------------------------+--------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                           ;
++-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                ; Library Name ;
++-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |Functional_Unit_Sharing                      ; 89 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |Functional_Unit_Sharing                                                                                                           ; work         ;
+;    |Functional_Unit_Sharing_controller:inst1| ; 7 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_controller:inst1                                                                  ; work         ;
+;       |NEXT_STATE:inst|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_controller:inst1|NEXT_STATE:inst                                                  ; work         ;
+;       |OUTPUT:inst6|                          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_controller:inst1|OUTPUT:inst6                                                     ; work         ;
+;       |PRESENT_STATE:inst1|                   ; 1 (1)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_controller:inst1|PRESENT_STATE:inst1                                              ; work         ;
+;    |Functional_Unit_Sharing_datapath:inst3|   ; 82 (0)            ; 23 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3                                                                    ; work         ;
+;       |ABS_MAX:inst11|                        ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11                                                     ; work         ;
+;          |ADDER_8_BIT:inst|                   ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst                                    ; work         ;
+;             |FULL_ADDER:inst1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst|FULL_ADDER:inst1                   ; work         ;
+;             |FULL_ADDER:inst2|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst|FULL_ADDER:inst2                   ; work         ;
+;             |FULL_ADDER:inst3|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst|FULL_ADDER:inst3                   ; work         ;
+;             |FULL_ADDER:inst4|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst|FULL_ADDER:inst4                   ; work         ;
+;             |FULL_ADDER:inst5|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst|FULL_ADDER:inst5                   ; work         ;
+;             |FULL_ADDER:inst7|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst|FULL_ADDER:inst7                   ; work         ;
+;                |xor3:inst|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst|FULL_ADDER:inst7|xor3:inst         ; work         ;
+;             |FULL_ADDER:inst|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst|FULL_ADDER:inst                    ; work         ;
+;          |MUX21_8BIT:inst2|                   ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|MUX21_8BIT:inst2                                    ; work         ;
+;             |MUX21:inst2|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|MUX21_8BIT:inst2|MUX21:inst2                        ; work         ;
+;             |MUX21:inst3|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|MUX21_8BIT:inst2|MUX21:inst3                        ; work         ;
+;             |MUX21:inst4|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|MUX21_8BIT:inst2|MUX21:inst4                        ; work         ;
+;             |MUX21:inst5|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|MUX21_8BIT:inst2|MUX21:inst5                        ; work         ;
+;             |MUX21:inst6|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|MUX21_8BIT:inst2|MUX21:inst6                        ; work         ;
+;             |MUX21:inst7|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|MUX21_8BIT:inst2|MUX21:inst7                        ; work         ;
+;             |MUX21:inst8|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|MUX21_8BIT:inst2|MUX21:inst8                        ; work         ;
+;             |MUX21:inst|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|MUX21_8BIT:inst2|MUX21:inst                         ; work         ;
+;       |ADD_MIN_SUB_ABS:inst12|                ; 24 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12                                             ; work         ;
+;          |ADDER_8_BIT:inst|                   ; 19 (6)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst                            ; work         ;
+;             |FULL_ADDER:inst1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst|FULL_ADDER:inst1           ; work         ;
+;             |FULL_ADDER:inst2|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst|FULL_ADDER:inst2           ; work         ;
+;             |FULL_ADDER:inst3|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst|FULL_ADDER:inst3           ; work         ;
+;             |FULL_ADDER:inst4|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst|FULL_ADDER:inst4           ; work         ;
+;             |FULL_ADDER:inst5|                ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst|FULL_ADDER:inst5           ; work         ;
+;                |xor3:inst|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst|FULL_ADDER:inst5|xor3:inst ; work         ;
+;             |FULL_ADDER:inst6|                ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst|FULL_ADDER:inst6           ; work         ;
+;                |xor3:inst|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst|FULL_ADDER:inst6|xor3:inst ; work         ;
+;             |FULL_ADDER:inst7|                ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst|FULL_ADDER:inst7           ; work         ;
+;                |xor3:inst|                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst|FULL_ADDER:inst7|xor3:inst ; work         ;
+;             |FULL_ADDER:inst|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|ADDER_8_BIT:inst|FULL_ADDER:inst            ; work         ;
+;       |MUX21_8BIT:inst9|                      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX21_8BIT:inst9                                                   ; work         ;
+;          |MUX21:inst2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX21_8BIT:inst9|MUX21:inst2                                       ; work         ;
+;          |MUX21:inst3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX21_8BIT:inst9|MUX21:inst3                                       ; work         ;
+;          |MUX21:inst4|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX21_8BIT:inst9|MUX21:inst4                                       ; work         ;
+;          |MUX21:inst5|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX21_8BIT:inst9|MUX21:inst5                                       ; work         ;
+;          |MUX21:inst6|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX21_8BIT:inst9|MUX21:inst6                                       ; work         ;
+;          |MUX21:inst7|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX21_8BIT:inst9|MUX21:inst7                                       ; work         ;
+;       |MUX31_8BIT:inst1|                      ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX31_8BIT:inst1                                                   ; work         ;
+;          |MUX21_8BIT:inst1|                   ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX31_8BIT:inst1|MUX21_8BIT:inst1                                  ; work         ;
+;             |MUX21:inst2|                     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX31_8BIT:inst1|MUX21_8BIT:inst1|MUX21:inst2                      ; work         ;
+;             |MUX21:inst3|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX31_8BIT:inst1|MUX21_8BIT:inst1|MUX21:inst3                      ; work         ;
+;             |MUX21:inst4|                     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX31_8BIT:inst1|MUX21_8BIT:inst1|MUX21:inst4                      ; work         ;
+;             |MUX21:inst5|                     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX31_8BIT:inst1|MUX21_8BIT:inst1|MUX21:inst5                      ; work         ;
+;             |MUX21:inst6|                     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX31_8BIT:inst1|MUX21_8BIT:inst1|MUX21:inst6                      ; work         ;
+;             |MUX21:inst7|                     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX31_8BIT:inst1|MUX21_8BIT:inst1|MUX21:inst7                      ; work         ;
+;             |MUX21:inst8|                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX31_8BIT:inst1|MUX21_8BIT:inst1|MUX21:inst8                      ; work         ;
+;             |MUX21:inst|                      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|MUX31_8BIT:inst1|MUX21_8BIT:inst1|MUX21:inst                       ; work         ;
+;       |REGISTER:inst6|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|REGISTER:inst6                                                     ; work         ;
+;       |REGISTER:inst7|                        ; 3 (3)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|REGISTER:inst7                                                     ; work         ;
+;       |REGISTER:inst8|                        ; 0 (0)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|REGISTER:inst8                                                     ; work         ;
++-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                   ;
++-------------------------------------------------------------+----------------------------------------+
+; Register name                                               ; Reason for Removal                     ;
++-------------------------------------------------------------+----------------------------------------+
+; Functional_Unit_Sharing_datapath:inst3|REGISTER:inst8|inst9 ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1                       ;                                        ;
++-------------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 26    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 25    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------+
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|REGISTER:inst7|inst12                                     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Functional_Unit_Sharing|Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12|MUX21_8BIT:inst2|MUX21:inst2|inst2 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu May 11 09:18:46 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Functional_Unit_Sharing -c Functional_Unit_Sharing
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file tri_state.bdf
+    Info (12023): Found entity 1: TRI_STATE
+Info (12021): Found 1 design units, including 1 entities, in source file register.bdf
+    Info (12023): Found entity 1: REGISTER
+Info (12021): Found 1 design units, including 1 entities, in source file rs_3bit.bdf
+    Info (12023): Found entity 1: RS_3BIT
+Info (12021): Found 1 design units, including 1 entities, in source file rs_1bit.bdf
+    Info (12023): Found entity 1: RS_1BIT
+Info (12021): Found 1 design units, including 1 entities, in source file adder_8_bit.bdf
+    Info (12023): Found entity 1: ADDER_8_BIT
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.bdf
+    Info (12023): Found entity 1: FULL_ADDER
+Info (12021): Found 1 design units, including 1 entities, in source file mux21.bdf
+    Info (12023): Found entity 1: MUX21
+Info (12021): Found 1 design units, including 1 entities, in source file mux21_8bit.bdf
+    Info (12023): Found entity 1: MUX21_8BIT
+Info (12021): Found 1 design units, including 1 entities, in source file functional_unit_sharing.bdf
+    Info (12023): Found entity 1: Functional_Unit_Sharing
+Info (12021): Found 1 design units, including 1 entities, in source file add_min_sub_abs.bdf
+    Info (12023): Found entity 1: ADD_MIN_SUB_ABS
+Info (12021): Found 1 design units, including 1 entities, in source file abs_max.bdf
+    Info (12023): Found entity 1: ABS_MAX
+Info (12021): Found 1 design units, including 1 entities, in source file rs_1_bit.bdf
+    Info (12023): Found entity 1: RS_1_BIT
+Info (12021): Found 1 design units, including 1 entities, in source file rs_3_bit.bdf
+    Info (12023): Found entity 1: RS_3_BIT
+Info (12021): Found 1 design units, including 1 entities, in source file mux31_8bit.bdf
+    Info (12023): Found entity 1: MUX31_8BIT
+Info (12021): Found 1 design units, including 1 entities, in source file functional_unit_sharing_datapath.bdf
+    Info (12023): Found entity 1: Functional_Unit_Sharing_datapath
+Info (12021): Found 1 design units, including 1 entities, in source file functional_unit_sharing_controller.bdf
+    Info (12023): Found entity 1: Functional_Unit_Sharing_controller
+Info (12021): Found 1 design units, including 1 entities, in source file next_state.bdf
+    Info (12023): Found entity 1: NEXT_STATE
+Info (12021): Found 1 design units, including 1 entities, in source file output.bdf
+    Info (12023): Found entity 1: OUTPUT
+Info (12021): Found 1 design units, including 1 entities, in source file present_state.bdf
+    Info (12023): Found entity 1: PRESENT_STATE
+Info (12127): Elaborating entity "Functional_Unit_Sharing" for the top level hierarchy
+Info (12128): Elaborating entity "Functional_Unit_Sharing_controller" for hierarchy "Functional_Unit_Sharing_controller:inst1"
+Info (12128): Elaborating entity "OUTPUT" for hierarchy "Functional_Unit_Sharing_controller:inst1|OUTPUT:inst6"
+Info (12128): Elaborating entity "PRESENT_STATE" for hierarchy "Functional_Unit_Sharing_controller:inst1|PRESENT_STATE:inst1"
+Info (12128): Elaborating entity "NEXT_STATE" for hierarchy "Functional_Unit_Sharing_controller:inst1|NEXT_STATE:inst"
+Info (12128): Elaborating entity "Functional_Unit_Sharing_datapath" for hierarchy "Functional_Unit_Sharing_datapath:inst3"
+Info (12128): Elaborating entity "REGISTER" for hierarchy "Functional_Unit_Sharing_datapath:inst3|REGISTER:inst6"
+Info (12128): Elaborating entity "MUX21_8BIT" for hierarchy "Functional_Unit_Sharing_datapath:inst3|MUX21_8BIT:inst"
+Info (12128): Elaborating entity "MUX21" for hierarchy "Functional_Unit_Sharing_datapath:inst3|MUX21_8BIT:inst|MUX21:inst"
+Info (12128): Elaborating entity "ABS_MAX" for hierarchy "Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11"
+Info (12128): Elaborating entity "ADDER_8_BIT" for hierarchy "Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst"
+Info (12128): Elaborating entity "FULL_ADDER" for hierarchy "Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst|FULL_ADDER:inst"
+Info (12128): Elaborating entity "XOR3" for hierarchy "Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst|FULL_ADDER:inst|XOR3:inst"
+Info (12130): Elaborated megafunction instantiation "Functional_Unit_Sharing_datapath:inst3|ABS_MAX:inst11|ADDER_8_BIT:inst|FULL_ADDER:inst|XOR3:inst"
+Info (12128): Elaborating entity "MUX31_8BIT" for hierarchy "Functional_Unit_Sharing_datapath:inst3|MUX31_8BIT:inst1"
+Info (12128): Elaborating entity "ADD_MIN_SUB_ABS" for hierarchy "Functional_Unit_Sharing_datapath:inst3|ADD_MIN_SUB_ABS:inst12"
+Info (12128): Elaborating entity "RS_1_BIT" for hierarchy "Functional_Unit_Sharing_datapath:inst3|RS_1_BIT:inst13"
+Info (12128): Elaborating entity "RS_1BIT" for hierarchy "Functional_Unit_Sharing_datapath:inst3|RS_1_BIT:inst13|RS_1BIT:inst"
+Warning (275009): Pin "I0" not connected
+Warning (275008): Primitive "GND" of instance "inst" not used
+Info (12128): Elaborating entity "RS_3_BIT" for hierarchy "Functional_Unit_Sharing_datapath:inst3|RS_3_BIT:inst14"
+Info (12128): Elaborating entity "RS_3BIT" for hierarchy "Functional_Unit_Sharing_datapath:inst3|RS_3_BIT:inst14|RS_3BIT:inst"
+Warning (275009): Pin "I2" not connected
+Warning (275009): Pin "I1" not connected
+Warning (275009): Pin "I0" not connected
+Warning (275008): Primitive "GND" of instance "inst" not used
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 124 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 97 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4612 megabytes
+    Info: Processing ended: Thu May 11 09:18:49 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

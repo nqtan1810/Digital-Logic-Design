@@ -1,0 +1,642 @@
+Simulator report for Piplined_AU_Datapath
+Wed May 17 08:49:10 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 462 nodes    ;
+; Simulation Coverage         ;      69.91 % ;
+; Total Number of Transitions ; 3834         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                                 ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                               ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                            ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                                  ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                                   ;               ;
+; Vector input source                                                                        ; D:/University/THIET_KE_LUAN_LY_SO/exercises/Piplined_Function_Piplined_Datapath/Waveform_DATAPATH.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                                    ; On            ;
+; Check outputs                                                                              ; Off                                                                                                   ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                                    ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                                    ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                                    ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                                    ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                                   ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                                   ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                                   ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                                   ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                                   ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                                   ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                                    ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                            ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                                   ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                                  ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      69.91 % ;
+; Total nodes checked                                 ; 462          ;
+; Total output ports checked                          ; 462          ;
+; Total output ports with complete 1/0-value coverage ; 323          ;
+; Total output ports with no 1/0-value coverage       ; 18           ;
+; Total output ports with no 1-value coverage         ; 99           ;
+; Total output ports with no 0-value coverage         ; 58           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                          ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                               ; Output Port Name                                                                        ; Output Port Type ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; |Piplined_AU_Datapath_DATAPATH|RESULT[6]                                                ; |Piplined_AU_Datapath_DATAPATH|RESULT[6]                                                ; pin_out          ;
+; |Piplined_AU_Datapath_DATAPATH|RESULT[5]                                                ; |Piplined_AU_Datapath_DATAPATH|RESULT[5]                                                ; pin_out          ;
+; |Piplined_AU_Datapath_DATAPATH|RESULT[3]                                                ; |Piplined_AU_Datapath_DATAPATH|RESULT[3]                                                ; pin_out          ;
+; |Piplined_AU_Datapath_DATAPATH|RESULT[1]                                                ; |Piplined_AU_Datapath_DATAPATH|RESULT[1]                                                ; pin_out          ;
+; |Piplined_AU_Datapath_DATAPATH|RESULT[0]                                                ; |Piplined_AU_Datapath_DATAPATH|RESULT[0]                                                ; pin_out          ;
+; |Piplined_AU_Datapath_DATAPATH|inst13[6]                                                ; |Piplined_AU_Datapath_DATAPATH|inst13[6]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst13[5]                                                ; |Piplined_AU_Datapath_DATAPATH|inst13[5]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst13[3]                                                ; |Piplined_AU_Datapath_DATAPATH|inst13[3]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst13[1]                                                ; |Piplined_AU_Datapath_DATAPATH|inst13[1]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst13[0]                                                ; |Piplined_AU_Datapath_DATAPATH|inst13[0]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|CLK                                                      ; |Piplined_AU_Datapath_DATAPATH|CLK                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ER3                                                      ; |Piplined_AU_Datapath_DATAPATH|ER3                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|G[6]                                                     ; |Piplined_AU_Datapath_DATAPATH|G[6]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|G[5]                                                     ; |Piplined_AU_Datapath_DATAPATH|G[5]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|G[3]                                                     ; |Piplined_AU_Datapath_DATAPATH|G[3]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|G[2]                                                     ; |Piplined_AU_Datapath_DATAPATH|G[2]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|G[1]                                                     ; |Piplined_AU_Datapath_DATAPATH|G[1]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|G[0]                                                     ; |Piplined_AU_Datapath_DATAPATH|G[0]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|inst7[3]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst7[3]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst7[1]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst7[1]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst7[0]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst7[0]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ER1                                                      ; |Piplined_AU_Datapath_DATAPATH|ER1                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|C[7]                                                     ; |Piplined_AU_Datapath_DATAPATH|C[7]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|C[6]                                                     ; |Piplined_AU_Datapath_DATAPATH|C[6]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|C[5]                                                     ; |Piplined_AU_Datapath_DATAPATH|C[5]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|C[4]                                                     ; |Piplined_AU_Datapath_DATAPATH|C[4]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|C[3]                                                     ; |Piplined_AU_Datapath_DATAPATH|C[3]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|C[2]                                                     ; |Piplined_AU_Datapath_DATAPATH|C[2]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|C[1]                                                     ; |Piplined_AU_Datapath_DATAPATH|C[1]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|C[0]                                                     ; |Piplined_AU_Datapath_DATAPATH|C[0]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|ET3                                                      ; |Piplined_AU_Datapath_DATAPATH|ET3                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst10[6]                                                ; |Piplined_AU_Datapath_DATAPATH|inst10[6]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst10[5]                                                ; |Piplined_AU_Datapath_DATAPATH|inst10[5]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst10[4]                                                ; |Piplined_AU_Datapath_DATAPATH|inst10[4]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst10[3]                                                ; |Piplined_AU_Datapath_DATAPATH|inst10[3]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst10[2]                                                ; |Piplined_AU_Datapath_DATAPATH|inst10[2]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst10[0]                                                ; |Piplined_AU_Datapath_DATAPATH|inst10[0]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ET4                                                      ; |Piplined_AU_Datapath_DATAPATH|ET4                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|B[7]                                                     ; |Piplined_AU_Datapath_DATAPATH|B[7]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|B[6]                                                     ; |Piplined_AU_Datapath_DATAPATH|B[6]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|B[5]                                                     ; |Piplined_AU_Datapath_DATAPATH|B[5]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|B[4]                                                     ; |Piplined_AU_Datapath_DATAPATH|B[4]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|B[3]                                                     ; |Piplined_AU_Datapath_DATAPATH|B[3]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|B[2]                                                     ; |Piplined_AU_Datapath_DATAPATH|B[2]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|B[1]                                                     ; |Piplined_AU_Datapath_DATAPATH|B[1]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|B[0]                                                     ; |Piplined_AU_Datapath_DATAPATH|B[0]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|inst5[5]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst5[5]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst5[4]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst5[4]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst5[1]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst5[1]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst5[0]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst5[0]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ET1                                                      ; |Piplined_AU_Datapath_DATAPATH|ET1                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst6[7]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst6[7]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst6[6]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst6[6]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst6[5]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst6[5]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst6[4]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst6[4]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst6[3]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst6[3]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst6[2]                                                 ; |Piplined_AU_Datapath_DATAPATH|inst6[2]                                                 ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ER2                                                      ; |Piplined_AU_Datapath_DATAPATH|ER2                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|D[7]                                                     ; |Piplined_AU_Datapath_DATAPATH|D[7]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|D[6]                                                     ; |Piplined_AU_Datapath_DATAPATH|D[6]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|D[5]                                                     ; |Piplined_AU_Datapath_DATAPATH|D[5]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|D[4]                                                     ; |Piplined_AU_Datapath_DATAPATH|D[4]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|D[3]                                                     ; |Piplined_AU_Datapath_DATAPATH|D[3]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|D[2]                                                     ; |Piplined_AU_Datapath_DATAPATH|D[2]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|inst11[6]                                                ; |Piplined_AU_Datapath_DATAPATH|inst11[6]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst11[4]                                                ; |Piplined_AU_Datapath_DATAPATH|inst11[4]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst11[3]                                                ; |Piplined_AU_Datapath_DATAPATH|inst11[3]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst11[2]                                                ; |Piplined_AU_Datapath_DATAPATH|inst11[2]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ET5                                                      ; |Piplined_AU_Datapath_DATAPATH|ET5                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ET6                                                      ; |Piplined_AU_Datapath_DATAPATH|ET6                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ET2                                                      ; |Piplined_AU_Datapath_DATAPATH|ET2                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|CTRL_AU1[1]                                              ; |Piplined_AU_Datapath_DATAPATH|CTRL_AU1[1]                                              ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|CTRL_AU1[0]                                              ; |Piplined_AU_Datapath_DATAPATH|CTRL_AU1[0]                                              ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ET7                                                      ; |Piplined_AU_Datapath_DATAPATH|ET7                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst21[6]                                                ; |Piplined_AU_Datapath_DATAPATH|inst21[6]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst21[5]                                                ; |Piplined_AU_Datapath_DATAPATH|inst21[5]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst21[3]                                                ; |Piplined_AU_Datapath_DATAPATH|inst21[3]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst21[2]                                                ; |Piplined_AU_Datapath_DATAPATH|inst21[2]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst21[1]                                                ; |Piplined_AU_Datapath_DATAPATH|inst21[1]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst21[0]                                                ; |Piplined_AU_Datapath_DATAPATH|inst21[0]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|E[6]                                                     ; |Piplined_AU_Datapath_DATAPATH|E[6]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|E[4]                                                     ; |Piplined_AU_Datapath_DATAPATH|E[4]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|E[3]                                                     ; |Piplined_AU_Datapath_DATAPATH|E[3]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|E[2]                                                     ; |Piplined_AU_Datapath_DATAPATH|E[2]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|E[1]                                                     ; |Piplined_AU_Datapath_DATAPATH|E[1]                                                     ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|inst17[6]                                                ; |Piplined_AU_Datapath_DATAPATH|inst17[6]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst17[4]                                                ; |Piplined_AU_Datapath_DATAPATH|inst17[4]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst17[3]                                                ; |Piplined_AU_Datapath_DATAPATH|inst17[3]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst17[2]                                                ; |Piplined_AU_Datapath_DATAPATH|inst17[2]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ER4                                                      ; |Piplined_AU_Datapath_DATAPATH|ER4                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ET8                                                      ; |Piplined_AU_Datapath_DATAPATH|ET8                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst19[4]                                                ; |Piplined_AU_Datapath_DATAPATH|inst19[4]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst19[3]                                                ; |Piplined_AU_Datapath_DATAPATH|inst19[3]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst19[1]                                                ; |Piplined_AU_Datapath_DATAPATH|inst19[1]                                                ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ER5                                                      ; |Piplined_AU_Datapath_DATAPATH|ER5                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ET9                                                      ; |Piplined_AU_Datapath_DATAPATH|ET9                                                      ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|CTRL_AU2[1]                                              ; |Piplined_AU_Datapath_DATAPATH|CTRL_AU2[1]                                              ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|CTRL_AU2[0]                                              ; |Piplined_AU_Datapath_DATAPATH|CTRL_AU2[0]                                              ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|ET10                                                     ; |Piplined_AU_Datapath_DATAPATH|ET10                                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|DONE                                                     ; |Piplined_AU_Datapath_DATAPATH|DONE                                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst12                                   ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst12                                   ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst13                                   ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst13                                   ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst14                                   ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst14                                   ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst10                                   ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst10                                   ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst12                                   ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst12                                   ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst10                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst10                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst12                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst12                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst13                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst13                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst15                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst15                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst14                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst14                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst10                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst10                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst11                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst11                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst13                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst13                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst15                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst15                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst14                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst14                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst8|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst8|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst8|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst8|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst7|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst7|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst7|inst1            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst7|inst1            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst7|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst7|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst5|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst5|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst5|inst1            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst5|inst1            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst5|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst5|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst6|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst6|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst6|inst1            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst6|inst1            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst6|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst6|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst4|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst4|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst4|inst1            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst4|inst1            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst3|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst3|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst3|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst3|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst2|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst2|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst2|inst1            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst2|inst1            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst2|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst2|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst15                       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst15                       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst8                        ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst8                        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst9                        ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst9                        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst10                       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst10                       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst11                       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst11                       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst14                       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst14                       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst13                       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst13                       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst12                       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|inst12                       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|inst3       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|inst3       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|inst5       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|inst5       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|inst3       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|inst3       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|inst5       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|inst5       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst6|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst7|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst7|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst7|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst7|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|inst3       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|inst3       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|inst5       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|inst5       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst4|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|inst3       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|inst3       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|inst5       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|inst5       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst3|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|inst3       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|inst3       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|inst3       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|inst3       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|inst5       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|inst5       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst1|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|inst3        ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|inst3        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|inst5        ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|inst5        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|inst1        ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|inst1        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|xor3:inst|1  ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|xor3:inst|1  ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|xor3:inst|3  ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|xor3:inst|3  ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst10                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst10                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst11                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst11                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst12                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst12                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst13                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst13                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst15                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst15                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst14                         ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst14                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst8                          ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst8                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst9                          ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst6|inst9                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER_2BIT:inst14|inst8                    ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER_2BIT:inst14|inst8                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst8|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst8|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst8|inst1            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst8|inst1            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst8|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst8|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst7|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst7|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst7|inst1            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst7|inst1            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst7|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst7|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst5|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst5|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst5|inst1            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst5|inst1            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst5|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst5|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst6|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst6|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst6|inst1            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst6|inst1            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst6|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst6|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst3|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst3|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst3|inst1            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst3|inst1            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst3|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst3|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst2|inst2            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst2|inst2            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst2|inst1            ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst2|inst1            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst2|inst             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst2|inst             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst10                                    ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst10                                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst11                                    ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst11                                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst12                                    ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst12                                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst9                                     ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst9                                     ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst10                                    ; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst10                                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst11                                    ; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst11                                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst12                                    ; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst12                                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst13                                    ; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst13                                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst15                                    ; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst15                                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst14                                    ; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst14                                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst9                                     ; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst9                                     ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|inst6                                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|inst6                                          ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst10                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst10                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst11                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst11                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst12                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst12                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst13                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst13                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst15                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst15                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst14                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst14                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst9                           ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst9                           ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst8|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst8|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst8|inst              ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst8|inst              ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst5|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst5|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst5|inst1             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst5|inst1             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst5|inst              ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst5|inst              ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst6|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst6|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst6|inst1             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst6|inst1             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst6|inst              ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst6|inst              ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst4|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst4|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst4|inst1             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst4|inst1             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst4|inst              ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst4|inst              ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst3|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst3|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst3|inst1             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst3|inst1             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst3|inst              ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst3|inst              ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst2|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst2|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst2|inst              ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst2|inst              ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst10                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst10                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst11                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst11                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst12                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst12                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst13                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst13                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst15                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst15                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst14                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst14                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst8                           ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst8                           ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst9                           ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst1|inst9                           ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER_2BIT:inst14|inst14                    ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER_2BIT:inst14|inst14                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER_2BIT:inst14|inst8                     ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER_2BIT:inst14|inst8                     ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst                             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst                             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst3                            ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst3                            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst4                            ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst4                            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst5                            ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst5                            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst6                            ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst6                            ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|inst3       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|inst3       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst7|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst7|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst7|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst7|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|inst3       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|inst3       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|inst5       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|inst5       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|inst3       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|inst3       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|inst5       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|inst5       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst3|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|inst3       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|inst3       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|inst5       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|inst5       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst2|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|inst3       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|inst3       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|inst5       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|inst5       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|xor3:inst|1 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|xor3:inst|1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|xor3:inst|3 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|xor3:inst|3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst|inst3        ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst|inst3        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst|inst1        ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst|inst1        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst|inst2        ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst|inst2        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst|xor3:inst|1  ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst|xor3:inst|1  ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst10                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst10                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst11                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst11                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst12                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst12                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst13                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst13                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst15                          ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst15                          ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst8                           ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst8                           ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst9                           ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst9                           ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst8|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst8|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst8|inst1             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst8|inst1             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst5|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst5|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst5|inst1             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst5|inst1             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst5|inst              ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst5|inst              ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst6|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst6|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst6|inst1             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst6|inst1             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst6|inst              ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst6|inst              ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst4|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst4|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst4|inst1             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst4|inst1             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst4|inst              ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst4|inst              ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst3|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst3|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst3|inst1             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst3|inst1             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst2|inst2             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst2|inst2             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst2|inst1             ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst2|inst1             ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst2|inst              ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst2|inst              ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst10                                   ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst10                                   ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst11                                   ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst11                                   ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst13                                   ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst13                                   ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst15                                   ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst15                                   ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst14                                   ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst14                                   ; regout           ;
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                 ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                         ; Output Port Name                                                                  ; Output Port Type ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; |Piplined_AU_Datapath_DATAPATH|RESULT[7]                                          ; |Piplined_AU_Datapath_DATAPATH|RESULT[7]                                          ; pin_out          ;
+; |Piplined_AU_Datapath_DATAPATH|RESULT[4]                                          ; |Piplined_AU_Datapath_DATAPATH|RESULT[4]                                          ; pin_out          ;
+; |Piplined_AU_Datapath_DATAPATH|inst13[7]                                          ; |Piplined_AU_Datapath_DATAPATH|inst13[7]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst13[4]                                          ; |Piplined_AU_Datapath_DATAPATH|inst13[4]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|G[7]                                               ; |Piplined_AU_Datapath_DATAPATH|G[7]                                               ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|G[4]                                               ; |Piplined_AU_Datapath_DATAPATH|G[4]                                               ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|inst7[7]                                           ; |Piplined_AU_Datapath_DATAPATH|inst7[7]                                           ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst7[6]                                           ; |Piplined_AU_Datapath_DATAPATH|inst7[6]                                           ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst7[5]                                           ; |Piplined_AU_Datapath_DATAPATH|inst7[5]                                           ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst7[4]                                           ; |Piplined_AU_Datapath_DATAPATH|inst7[4]                                           ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst7[2]                                           ; |Piplined_AU_Datapath_DATAPATH|inst7[2]                                           ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst9[3]                                           ; |Piplined_AU_Datapath_DATAPATH|inst9[3]                                           ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN1[3]                                             ; |Piplined_AU_Datapath_DATAPATH|IN1[3]                                             ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst10[7]                                          ; |Piplined_AU_Datapath_DATAPATH|inst10[7]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst10[1]                                          ; |Piplined_AU_Datapath_DATAPATH|inst10[1]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst5[3]                                           ; |Piplined_AU_Datapath_DATAPATH|inst5[3]                                           ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst6[1]                                           ; |Piplined_AU_Datapath_DATAPATH|inst6[1]                                           ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst6[0]                                           ; |Piplined_AU_Datapath_DATAPATH|inst6[0]                                           ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|D[1]                                               ; |Piplined_AU_Datapath_DATAPATH|D[1]                                               ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|D[0]                                               ; |Piplined_AU_Datapath_DATAPATH|D[0]                                               ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|inst11[7]                                          ; |Piplined_AU_Datapath_DATAPATH|inst11[7]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst11[5]                                          ; |Piplined_AU_Datapath_DATAPATH|inst11[5]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst11[1]                                          ; |Piplined_AU_Datapath_DATAPATH|inst11[1]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst11[0]                                          ; |Piplined_AU_Datapath_DATAPATH|inst11[0]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst12[3]                                          ; |Piplined_AU_Datapath_DATAPATH|inst12[3]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst12[1]                                          ; |Piplined_AU_Datapath_DATAPATH|inst12[1]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst12[0]                                          ; |Piplined_AU_Datapath_DATAPATH|inst12[0]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN2[3]                                             ; |Piplined_AU_Datapath_DATAPATH|IN2[3]                                             ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN2[1]                                             ; |Piplined_AU_Datapath_DATAPATH|IN2[1]                                             ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN2[0]                                             ; |Piplined_AU_Datapath_DATAPATH|IN2[0]                                             ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst21[7]                                          ; |Piplined_AU_Datapath_DATAPATH|inst21[7]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst21[4]                                          ; |Piplined_AU_Datapath_DATAPATH|inst21[4]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|E[7]                                               ; |Piplined_AU_Datapath_DATAPATH|E[7]                                               ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|E[5]                                               ; |Piplined_AU_Datapath_DATAPATH|E[5]                                               ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|E[0]                                               ; |Piplined_AU_Datapath_DATAPATH|E[0]                                               ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|inst17[7]                                          ; |Piplined_AU_Datapath_DATAPATH|inst17[7]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst17[5]                                          ; |Piplined_AU_Datapath_DATAPATH|inst17[5]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst17[1]                                          ; |Piplined_AU_Datapath_DATAPATH|inst17[1]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst17[0]                                          ; |Piplined_AU_Datapath_DATAPATH|inst17[0]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst19[7]                                          ; |Piplined_AU_Datapath_DATAPATH|inst19[7]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst19[6]                                          ; |Piplined_AU_Datapath_DATAPATH|inst19[6]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst19[5]                                          ; |Piplined_AU_Datapath_DATAPATH|inst19[5]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst19[0]                                          ; |Piplined_AU_Datapath_DATAPATH|inst19[0]                                          ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst10                             ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst10                             ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst11                             ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst11                             ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst8                              ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst8                              ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst11                             ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst11                             ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst14                             ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst14                             ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst8                              ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst8                              ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst9                              ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst9                              ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst11                   ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst11                   ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst8                    ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst8                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst9                    ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst5|inst9                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst12                   ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst12                   ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst9                    ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst9                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst|inst        ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst|inst        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst8|inst1      ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst8|inst1      ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst4|inst       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst4|inst       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst3|inst1      ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst3|inst1      ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|inst2 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst5|inst2 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|inst5 ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst2|inst5 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|inst2  ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|ADDER_8_BIT:inst|FULL_ADDER:inst|inst2  ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst|inst        ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst|inst        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst4|inst2      ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst4|inst2      ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst4|inst1      ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst4|inst1      ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst4|inst       ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst3|MUX21:inst4|inst       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst14                              ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst14                              ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst8                               ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst8                               ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst|inst2        ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst|inst2        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst|inst1        ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst|inst1        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst|inst         ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst|inst         ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst7|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst7|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst7|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst7|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst7|inst        ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst7|inst        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst2|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst2|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst2                      ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst2                      ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst7                      ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst7                      ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst8                      ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|AND_8BIT:inst|inst8                      ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|inst5 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst5|inst5 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|inst3 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|inst3 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|inst5 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|inst5 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|inst2 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst6|inst2 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|inst2 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst4|inst2 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|inst2 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|ADDER_8_BIT:inst7|FULL_ADDER:inst1|inst2 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst14                    ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst5|inst14                    ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst|inst2        ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst|inst2        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst|inst1        ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst|inst1        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst|inst         ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst|inst         ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst8|inst        ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst8|inst        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst7|inst2       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst7|inst2       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst7|inst1       ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst7|inst1       ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst7|inst        ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst7|inst        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst3|inst        ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst9|MUX21:inst3|inst        ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst12                             ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst12                             ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst9                              ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst9                              ; regout           ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                     ;
++-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+; Node Name                                                                   ; Output Port Name                                                            ; Output Port Type ;
++-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+; |Piplined_AU_Datapath_DATAPATH|RESULT[2]                                    ; |Piplined_AU_Datapath_DATAPATH|RESULT[2]                                    ; pin_out          ;
+; |Piplined_AU_Datapath_DATAPATH|inst13[2]                                    ; |Piplined_AU_Datapath_DATAPATH|inst13[2]                                    ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst9[7]                                     ; |Piplined_AU_Datapath_DATAPATH|inst9[7]                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst9[6]                                     ; |Piplined_AU_Datapath_DATAPATH|inst9[6]                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst9[5]                                     ; |Piplined_AU_Datapath_DATAPATH|inst9[5]                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst9[4]                                     ; |Piplined_AU_Datapath_DATAPATH|inst9[4]                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst9[2]                                     ; |Piplined_AU_Datapath_DATAPATH|inst9[2]                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst9[1]                                     ; |Piplined_AU_Datapath_DATAPATH|inst9[1]                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst9[0]                                     ; |Piplined_AU_Datapath_DATAPATH|inst9[0]                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN1[7]                                       ; |Piplined_AU_Datapath_DATAPATH|IN1[7]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN1[6]                                       ; |Piplined_AU_Datapath_DATAPATH|IN1[6]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN1[5]                                       ; |Piplined_AU_Datapath_DATAPATH|IN1[5]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN1[4]                                       ; |Piplined_AU_Datapath_DATAPATH|IN1[4]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN1[2]                                       ; |Piplined_AU_Datapath_DATAPATH|IN1[2]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN1[1]                                       ; |Piplined_AU_Datapath_DATAPATH|IN1[1]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN1[0]                                       ; |Piplined_AU_Datapath_DATAPATH|IN1[0]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst5[7]                                     ; |Piplined_AU_Datapath_DATAPATH|inst5[7]                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst5[6]                                     ; |Piplined_AU_Datapath_DATAPATH|inst5[6]                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst5[2]                                     ; |Piplined_AU_Datapath_DATAPATH|inst5[2]                                     ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst12[7]                                    ; |Piplined_AU_Datapath_DATAPATH|inst12[7]                                    ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst12[6]                                    ; |Piplined_AU_Datapath_DATAPATH|inst12[6]                                    ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst12[5]                                    ; |Piplined_AU_Datapath_DATAPATH|inst12[5]                                    ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst12[4]                                    ; |Piplined_AU_Datapath_DATAPATH|inst12[4]                                    ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst12[2]                                    ; |Piplined_AU_Datapath_DATAPATH|inst12[2]                                    ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN2[7]                                       ; |Piplined_AU_Datapath_DATAPATH|IN2[7]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN2[6]                                       ; |Piplined_AU_Datapath_DATAPATH|IN2[6]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN2[5]                                       ; |Piplined_AU_Datapath_DATAPATH|IN2[5]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN2[4]                                       ; |Piplined_AU_Datapath_DATAPATH|IN2[4]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|IN2[2]                                       ; |Piplined_AU_Datapath_DATAPATH|IN2[2]                                       ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|inst19[2]                                    ; |Piplined_AU_Datapath_DATAPATH|inst19[2]                                    ; out              ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst10                       ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst10                       ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst11                       ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst11                       ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst15                       ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst15                       ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst8                        ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst20|inst8                        ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst11                       ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst11                       ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst13                       ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst13                       ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst15                       ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst15                       ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst14                       ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst14                       ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst8                        ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst8                        ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst9                        ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst18|inst9                        ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst12             ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst12             ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst8              ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst8              ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst9              ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|REGISTER:inst4|inst9              ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst|inst  ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst|inst  ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst4|inst ; |Piplined_AU_Datapath_DATAPATH|AU2:inst26|MUX21_8BIT:inst1|MUX21:inst4|inst ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst13                        ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst13                        ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst15                        ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst15                        ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst14                        ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst14                        ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst8                         ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst2|inst8                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst8                         ; |Piplined_AU_Datapath_DATAPATH|REGISTER:instA|inst8                         ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst8               ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|REGISTER:inst3|inst8               ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst|inst1  ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst|inst1  ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst8|inst1 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst8|inst1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst7|inst1 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst7|inst1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst2|inst1 ; |Piplined_AU_Datapath_DATAPATH|AU1:inst8|MUX21_8BIT:inst8|MUX21:inst2|inst1 ; out0             ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst12                       ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst12                       ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst8                        ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst8                        ; regout           ;
+; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst9                        ; |Piplined_AU_Datapath_DATAPATH|REGISTER:inst16|inst9                        ; regout           ;
++-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed May 17 08:49:09 2023
+Info: Command: quartus_sim --simulation_results_format=VWF Piplined_AU_Datapath -c Piplined_AU_Datapath
+Info (324025): Using vector source file "D:/University/THIET_KE_LUAN_LY_SO/exercises/Piplined_Function_Piplined_Datapath/Waveform_DATAPATH.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      69.91 %
+Info (328052): Number of transitions in simulation is 3834
+Info (324045): Vector file Piplined_AU_Datapath.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4453 megabytes
+    Info: Processing ended: Wed May 17 08:49:12 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

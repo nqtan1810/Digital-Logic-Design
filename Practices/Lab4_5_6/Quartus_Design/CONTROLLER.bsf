@@ -1,0 +1,106 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 304 432)
+	(text "Simple_Processor_CONTROLLER" (rect 5 0 239 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 173 31 188)(font "Arial" ))
+	(port
+		(pt 0 184)
+		(input)
+		(text "START" (rect 0 0 48 16)(font "Arial" (font_size 8)))
+		(text "START" (rect 21 179 69 195)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 16 184))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "CLK" (rect 0 0 29 16)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 35 50 51)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 240 136)
+		(output)
+		(text "WE" (rect 40 0 65 16)(font "Arial" (font_size 8)))
+		(text "WE" (rect 194 131 219 147)(font "Arial" (font_size 8)))
+		(line (pt 240 136)(pt 224 136))
+	)
+	(port
+		(pt 240 160)
+		(output)
+		(text "WA[1..0]" (rect 40 0 101 16)(font "Arial" (font_size 8)))
+		(text "WA[1..0]" (rect 158 155 219 171)(font "Arial" (font_size 8)))
+		(line (pt 240 160)(pt 224 160)(line_width 3))
+	)
+	(port
+		(pt 240 184)
+		(output)
+		(text "IE" (rect 40 0 54 16)(font "Arial" (font_size 8)))
+		(text "IE" (rect 205 179 219 195)(font "Arial" (font_size 8)))
+		(line (pt 240 184)(pt 224 184))
+	)
+	(port
+		(pt 240 208)
+		(output)
+		(text "REA" (rect 40 0 71 16)(font "Arial" (font_size 8)))
+		(text "REA" (rect 188 203 219 219)(font "Arial" (font_size 8)))
+		(line (pt 240 208)(pt 224 208))
+	)
+	(port
+		(pt 240 232)
+		(output)
+		(text "RAA[1..0]" (rect 40 0 107 16)(font "Arial" (font_size 8)))
+		(text "RAA[1..0]" (rect 152 227 219 243)(font "Arial" (font_size 8)))
+		(line (pt 240 232)(pt 224 232)(line_width 3))
+	)
+	(port
+		(pt 240 256)
+		(output)
+		(text "REB" (rect 40 0 71 16)(font "Arial" (font_size 8)))
+		(text "REB" (rect 188 251 219 267)(font "Arial" (font_size 8)))
+		(line (pt 240 256)(pt 224 256))
+	)
+	(port
+		(pt 240 280)
+		(output)
+		(text "RAB[1..0]" (rect 40 0 107 16)(font "Arial" (font_size 8)))
+		(text "RAB[1..0]" (rect 152 275 219 291)(font "Arial" (font_size 8)))
+		(line (pt 240 280)(pt 224 280)(line_width 3))
+	)
+	(port
+		(pt 240 304)
+		(output)
+		(text "OPCODE[2..0]" (rect 40 0 141 16)(font "Arial" (font_size 8)))
+		(text "OPCODE[2..0]" (rect 118 299 219 315)(font "Arial" (font_size 8)))
+		(line (pt 240 304)(pt 224 304)(line_width 3))
+	)
+	(port
+		(pt 240 328)
+		(output)
+		(text "OE" (rect 40 0 62 16)(font "Arial" (font_size 8)))
+		(text "OE" (rect 197 323 219 339)(font "Arial" (font_size 8)))
+		(line (pt 240 328)(pt 224 328))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 352))
+	)
+)

@@ -1,0 +1,495 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/17/2023 21:38:07"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    MAX_UNIT
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module MAX_UNIT_vlg_sample_tst(
+	A,
+	B,
+	sampler_tx
+);
+input [7:0] A;
+input [7:0] B;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(A or B)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module MAX_UNIT_vlg_check_tst (
+	MIN,
+	sampler_rx
+);
+input [7:0] MIN;
+input sampler_rx;
+
+reg [7:0] MIN_expected;
+
+reg [7:0] MIN_prev;
+
+reg [7:0] MIN_expected_prev;
+
+reg [7:0] last_MIN_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:1] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 1'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	MIN_prev = MIN;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	MIN_expected_prev = MIN_expected;
+end
+
+
+// expected MIN[ 7 ]
+initial
+begin
+	MIN_expected[7] = 1'bX;
+end 
+// expected MIN[ 6 ]
+initial
+begin
+	MIN_expected[6] = 1'bX;
+end 
+// expected MIN[ 5 ]
+initial
+begin
+	MIN_expected[5] = 1'bX;
+end 
+// expected MIN[ 4 ]
+initial
+begin
+	MIN_expected[4] = 1'bX;
+end 
+// expected MIN[ 3 ]
+initial
+begin
+	MIN_expected[3] = 1'bX;
+end 
+// expected MIN[ 2 ]
+initial
+begin
+	MIN_expected[2] = 1'bX;
+end 
+// expected MIN[ 1 ]
+initial
+begin
+	MIN_expected[1] = 1'bX;
+end 
+// expected MIN[ 0 ]
+initial
+begin
+	MIN_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(MIN_expected or MIN)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected MIN = %b | ",MIN_expected_prev);
+	$display("| real MIN = %b | ",MIN_prev);
+`endif
+	if (
+		( MIN_expected_prev[0] !== 1'bx ) && ( MIN_prev[0] !== MIN_expected_prev[0] )
+		&& ((MIN_expected_prev[0] !== last_MIN_exp[0]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MIN[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MIN_expected_prev);
+		$display ("     Real value = %b", MIN_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_MIN_exp[0] = MIN_expected_prev[0];
+	end
+	if (
+		( MIN_expected_prev[1] !== 1'bx ) && ( MIN_prev[1] !== MIN_expected_prev[1] )
+		&& ((MIN_expected_prev[1] !== last_MIN_exp[1]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MIN[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MIN_expected_prev);
+		$display ("     Real value = %b", MIN_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_MIN_exp[1] = MIN_expected_prev[1];
+	end
+	if (
+		( MIN_expected_prev[2] !== 1'bx ) && ( MIN_prev[2] !== MIN_expected_prev[2] )
+		&& ((MIN_expected_prev[2] !== last_MIN_exp[2]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MIN[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MIN_expected_prev);
+		$display ("     Real value = %b", MIN_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_MIN_exp[2] = MIN_expected_prev[2];
+	end
+	if (
+		( MIN_expected_prev[3] !== 1'bx ) && ( MIN_prev[3] !== MIN_expected_prev[3] )
+		&& ((MIN_expected_prev[3] !== last_MIN_exp[3]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MIN[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MIN_expected_prev);
+		$display ("     Real value = %b", MIN_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_MIN_exp[3] = MIN_expected_prev[3];
+	end
+	if (
+		( MIN_expected_prev[4] !== 1'bx ) && ( MIN_prev[4] !== MIN_expected_prev[4] )
+		&& ((MIN_expected_prev[4] !== last_MIN_exp[4]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MIN[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MIN_expected_prev);
+		$display ("     Real value = %b", MIN_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_MIN_exp[4] = MIN_expected_prev[4];
+	end
+	if (
+		( MIN_expected_prev[5] !== 1'bx ) && ( MIN_prev[5] !== MIN_expected_prev[5] )
+		&& ((MIN_expected_prev[5] !== last_MIN_exp[5]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MIN[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MIN_expected_prev);
+		$display ("     Real value = %b", MIN_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_MIN_exp[5] = MIN_expected_prev[5];
+	end
+	if (
+		( MIN_expected_prev[6] !== 1'bx ) && ( MIN_prev[6] !== MIN_expected_prev[6] )
+		&& ((MIN_expected_prev[6] !== last_MIN_exp[6]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MIN[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MIN_expected_prev);
+		$display ("     Real value = %b", MIN_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_MIN_exp[6] = MIN_expected_prev[6];
+	end
+	if (
+		( MIN_expected_prev[7] !== 1'bx ) && ( MIN_prev[7] !== MIN_expected_prev[7] )
+		&& ((MIN_expected_prev[7] !== last_MIN_exp[7]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MIN[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MIN_expected_prev);
+		$display ("     Real value = %b", MIN_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_MIN_exp[7] = MIN_expected_prev[7];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$stop;
+end 
+endmodule
+
+module MAX_UNIT_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [7:0] A;
+reg [7:0] B;
+// wires                                               
+wire [7:0] MIN;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+MAX_UNIT i1 (
+// port map - connection between master ports and signals/registers   
+	.A(A),
+	.B(B),
+	.MIN(MIN)
+);
+// A[ 7 ]
+initial
+begin
+	A[7] = 1'b0;
+	A[7] = #510000 1'b1;
+end 
+// A[ 6 ]
+initial
+begin
+	A[6] = 1'b0;
+	A[6] = #480000 1'b1;
+end 
+// A[ 5 ]
+initial
+begin
+	A[5] = 1'b0;
+	A[5] = #510000 1'b1;
+end 
+// A[ 4 ]
+initial
+begin
+	A[4] = 1'b1;
+	A[4] = #30000 1'b0;
+	A[4] = #480000 1'b1;
+	A[4] = #480000 1'b0;
+end 
+// A[ 3 ]
+initial
+begin
+	A[3] = 1'b0;
+	A[3] = #30000 1'b1;
+	A[3] = #240000 1'b0;
+	A[3] = #240000 1'b1;
+	A[3] = #240000 1'b0;
+	A[3] = #240000 1'b1;
+end 
+// A[ 2 ]
+initial
+begin
+	A[2] = 1'b0;
+	A[2] = #30000 1'b1;
+	A[2] = #120000 1'b0;
+	A[2] = #120000 1'b1;
+	A[2] = #120000 1'b0;
+	A[2] = #90000 1'b1;
+	A[2] = #150000 1'b0;
+	A[2] = #120000 1'b1;
+	A[2] = #120000 1'b0;
+	A[2] = #120000 1'b1;
+end 
+// A[ 1 ]
+initial
+begin
+	A[1] = 1'b0;
+	# 30000;
+	repeat(3)
+	begin
+		A[1] = 1'b1;
+		A[1] = #60000 1'b0;
+		# 60000;
+	end
+	A[1] = 1'b1;
+	A[1] = #60000 1'b0;
+	A[1] = #60000 1'b1;
+	A[1] = #60000 1'b0;
+	# 60000;
+	repeat(3)
+	begin
+		A[1] = 1'b1;
+		A[1] = #60000 1'b0;
+		# 60000;
+	end
+	A[1] = 1'b1;
+end 
+// A[ 0 ]
+initial
+begin
+	repeat(7)
+	begin
+		A[0] = 1'b0;
+		A[0] = #30000 1'b1;
+		# 30000;
+	end
+	A[0] = 1'b0;
+	A[0] = #30000 1'b1;
+	A[0] = #90000 1'b0;
+	A[0] = #30000 1'b1;
+	# 30000;
+	repeat(6)
+	begin
+		A[0] = 1'b0;
+		A[0] = #30000 1'b1;
+		# 30000;
+	end
+	A[0] = 1'b0;
+	A[0] = #30000 1'b1;
+end 
+// B[ 7 ]
+initial
+begin
+	B[7] = 1'b1;
+	B[7] = #480000 1'b0;
+end 
+// B[ 6 ]
+initial
+begin
+	B[6] = 1'b1;
+	B[6] = #510000 1'b0;
+end 
+// B[ 5 ]
+initial
+begin
+	B[5] = 1'b1;
+	B[5] = #510000 1'b0;
+end 
+// B[ 4 ]
+initial
+begin
+	B[4] = 1'b1;
+	B[4] = #480000 1'b0;
+	B[4] = #480000 1'b1;
+end 
+// B[ 3 ]
+initial
+begin
+	B[3] = 1'b0;
+	B[3] = #240000 1'b1;
+	B[3] = #240000 1'b0;
+	B[3] = #240000 1'b1;
+	B[3] = #240000 1'b0;
+end 
+// B[ 2 ]
+initial
+begin
+	repeat(2)
+	begin
+		B[2] = 1'b0;
+		B[2] = #120000 1'b1;
+		# 120000;
+	end
+	B[2] = 1'b0;
+	B[2] = #120000 1'b1;
+	B[2] = #120000 1'b0;
+	B[2] = #120000 1'b1;
+	B[2] = #120000 1'b0;
+end 
+// B[ 1 ]
+initial
+begin
+	repeat(4)
+	begin
+		B[1] = 1'b0;
+		B[1] = #60000 1'b1;
+		# 60000;
+	end
+	B[1] = 1'b0;
+	B[1] = #60000 1'b1;
+	# 60000;
+	repeat(3)
+	begin
+		B[1] = 1'b0;
+		B[1] = #60000 1'b1;
+		# 60000;
+	end
+	B[1] = 1'b0;
+end 
+// B[ 0 ]
+initial
+begin
+	repeat(8)
+	begin
+		B[0] = 1'b0;
+		B[0] = #30000 1'b1;
+		# 30000;
+	end
+	B[0] = 1'b0;
+	B[0] = #30000 1'b1;
+	# 30000;
+	repeat(7)
+	begin
+		B[0] = 1'b0;
+		B[0] = #30000 1'b1;
+		# 30000;
+	end
+	B[0] = 1'b0;
+	B[0] = #30000 1'b1;
+end 
+
+MAX_UNIT_vlg_sample_tst tb_sample (
+	.A(A),
+	.B(B),
+	.sampler_tx(sampler)
+);
+
+MAX_UNIT_vlg_check_tst tb_out(
+	.MIN(MIN),
+	.sampler_rx(sampler)
+);
+endmodule
+

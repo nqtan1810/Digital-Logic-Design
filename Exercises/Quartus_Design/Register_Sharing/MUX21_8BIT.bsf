@@ -1,0 +1,57 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 192 256)
+	(text "MUX21_8BIT" (rect 5 0 92 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 77 31 92)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "A[7..0]" (rect 0 0 46 16)(font "Arial" (font_size 8)))
+		(text "A[7..0]" (rect 21 35 67 51)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40)(line_width 3))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "B[7..0]" (rect 0 0 46 16)(font "Arial" (font_size 8)))
+		(text "B[7..0]" (rect 21 99 67 115)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 16 104)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "SEL" (rect 0 0 29 16)(font "Arial" (font_size 8)))
+		(text "SEL" (rect 21 155 50 171)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 128 104)
+		(output)
+		(text "Y[7..0]" (rect -16 0 30 16)(font "Arial" (font_size 8)))
+		(text "Y[7..0]" (rect 61 99 107 115)(font "Arial" (font_size 8)))
+		(line (pt 128 104)(pt 112 104)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 184))
+	)
+)

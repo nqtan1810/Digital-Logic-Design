@@ -1,0 +1,256 @@
+|TOP
+Q[0] <= BCD_COUNTER:inst.Q[0]
+Q[1] <= BCD_COUNTER:inst.Q[1]
+Q[2] <= BCD_COUNTER:inst.Q[2]
+Q[3] <= BCD_COUNTER:inst.Q[3]
+Q[4] <= BCD_COUNTER:inst.Q[4]
+D => BCD_COUNTER:inst.D
+E => BCD_COUNTER:inst.E
+SETN => BCD_COUNTER:inst.SETN
+RESETN => BCD_COUNTER:inst.RESETN
+CLK => BCD_COUNTER:inst.CLK
+I0[0] => BCD_COUNTER:inst.I0[0]
+I0[1] => BCD_COUNTER:inst.I0[1]
+I0[2] => BCD_COUNTER:inst.I0[2]
+I0[3] => BCD_COUNTER:inst.I0[3]
+I0[4] => BCD_COUNTER:inst.I0[4]
+I9[0] => BCD_COUNTER:inst.I9[0]
+I9[1] => BCD_COUNTER:inst.I9[1]
+I9[2] => BCD_COUNTER:inst.I9[2]
+I9[3] => BCD_COUNTER:inst.I9[3]
+I9[4] => BCD_COUNTER:inst.I9[4]
+
+
+|TOP|BCD_COUNTER:inst
+Q[0] <= COUNTER32_UP_DOWN:inst.Q[0]
+Q[1] <= COUNTER32_UP_DOWN:inst.Q[1]
+Q[2] <= COUNTER32_UP_DOWN:inst.Q[2]
+Q[3] <= COUNTER32_UP_DOWN:inst.Q[3]
+Q[4] <= COUNTER32_UP_DOWN:inst.Q[4]
+D => COUNTER32_UP_DOWN:inst.D
+D => inst4.IN0
+D => MUX21_5BIT:inst13.S
+D => inst2.IN3
+E => COUNTER32_UP_DOWN:inst.E
+CLK => COUNTER32_UP_DOWN:inst.CLK
+RESETN => COUNTER32_UP_DOWN:inst.RESETN
+SETN => COUNTER32_UP_DOWN:inst.SETN
+I0[0] => MUX21_5BIT:inst13.A[0]
+I0[1] => MUX21_5BIT:inst13.A[1]
+I0[2] => MUX21_5BIT:inst13.A[2]
+I0[3] => MUX21_5BIT:inst13.A[3]
+I0[4] => MUX21_5BIT:inst13.A[4]
+I9[0] => MUX21_5BIT:inst13.B[0]
+I9[1] => MUX21_5BIT:inst13.B[1]
+I9[2] => MUX21_5BIT:inst13.B[2]
+I9[3] => MUX21_5BIT:inst13.B[3]
+I9[4] => MUX21_5BIT:inst13.B[4]
+
+
+|TOP|BCD_COUNTER:inst|COUNTER32_UP_DOWN:inst
+Q[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+RESETN => inst3.ACLR
+RESETN => inst2.ACLR
+RESETN => inst1.ACLR
+RESETN => inst.ACLR
+RESETN => inst4.ACLR
+CLK => inst3.CLK
+CLK => inst2.CLK
+CLK => inst1.CLK
+CLK => inst.CLK
+CLK => inst4.CLK
+LOAD => 21mux:inst5.S
+LOAD => 21mux:inst10.S
+LOAD => 21mux:inst11.S
+LOAD => 21mux:inst12.S
+LOAD => 21mux:inst13.S
+D => HAS:inst18.D
+D => HAS:inst17.D
+D => HAS:inst16.D
+D => HAS:inst15.D
+D => HAS:inst14.D
+E => HAS:inst14.C
+I[0] => 21mux:inst13.A
+I[1] => 21mux:inst12.A
+I[2] => 21mux:inst11.A
+I[3] => 21mux:inst10.A
+I[4] => 21mux:inst5.A
+SETN => inst3.PRESET
+SETN => inst2.PRESET
+SETN => inst1.PRESET
+SETN => inst.PRESET
+SETN => inst4.PRESET
+
+
+|TOP|BCD_COUNTER:inst|COUNTER32_UP_DOWN:inst|21mux:inst5
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|TOP|BCD_COUNTER:inst|COUNTER32_UP_DOWN:inst|HAS:inst18
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst3.IN0
+Q => inst1.IN2
+Q => inst4.IN0
+C => inst3.IN1
+C => inst1.IN1
+C => insta.IN1
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+
+
+|TOP|BCD_COUNTER:inst|COUNTER32_UP_DOWN:inst|HAS:inst17
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst3.IN0
+Q => inst1.IN2
+Q => inst4.IN0
+C => inst3.IN1
+C => inst1.IN1
+C => insta.IN1
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+
+
+|TOP|BCD_COUNTER:inst|COUNTER32_UP_DOWN:inst|HAS:inst16
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst3.IN0
+Q => inst1.IN2
+Q => inst4.IN0
+C => inst3.IN1
+C => inst1.IN1
+C => insta.IN1
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+
+
+|TOP|BCD_COUNTER:inst|COUNTER32_UP_DOWN:inst|HAS:inst15
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst3.IN0
+Q => inst1.IN2
+Q => inst4.IN0
+C => inst3.IN1
+C => inst1.IN1
+C => insta.IN1
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+
+
+|TOP|BCD_COUNTER:inst|COUNTER32_UP_DOWN:inst|HAS:inst14
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst3.IN0
+Q => inst1.IN2
+Q => inst4.IN0
+C => inst3.IN1
+C => inst1.IN1
+C => insta.IN1
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+
+
+|TOP|BCD_COUNTER:inst|COUNTER32_UP_DOWN:inst|21mux:inst10
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|TOP|BCD_COUNTER:inst|COUNTER32_UP_DOWN:inst|21mux:inst11
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|TOP|BCD_COUNTER:inst|COUNTER32_UP_DOWN:inst|21mux:inst12
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|TOP|BCD_COUNTER:inst|COUNTER32_UP_DOWN:inst|21mux:inst13
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|TOP|BCD_COUNTER:inst|MUX21_5BIT:inst13
+Y[0] <= 21mux:inst4.Y
+Y[1] <= 21mux:inst3.Y
+Y[2] <= 21mux:inst.Y
+Y[3] <= 21mux:inst1.Y
+Y[4] <= 21mux:inst2.Y
+S => 21mux:inst2.S
+S => 21mux:inst1.S
+S => 21mux:inst.S
+S => 21mux:inst3.S
+S => 21mux:inst4.S
+A[0] => 21mux:inst4.B
+A[1] => 21mux:inst3.B
+A[2] => 21mux:inst.B
+A[3] => 21mux:inst1.B
+A[4] => 21mux:inst2.B
+B[0] => 21mux:inst4.A
+B[1] => 21mux:inst3.A
+B[2] => 21mux:inst.A
+B[3] => 21mux:inst1.A
+B[4] => 21mux:inst2.A
+
+
+|TOP|BCD_COUNTER:inst|MUX21_5BIT:inst13|21mux:inst2
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|TOP|BCD_COUNTER:inst|MUX21_5BIT:inst13|21mux:inst1
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|TOP|BCD_COUNTER:inst|MUX21_5BIT:inst13|21mux:inst
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|TOP|BCD_COUNTER:inst|MUX21_5BIT:inst13|21mux:inst3
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|TOP|BCD_COUNTER:inst|MUX21_5BIT:inst13|21mux:inst4
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+

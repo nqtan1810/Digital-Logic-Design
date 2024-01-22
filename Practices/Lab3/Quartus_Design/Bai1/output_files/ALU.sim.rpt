@@ -1,0 +1,627 @@
+Simulator report for ALU
+Wed May 24 15:21:47 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 444 nodes    ;
+; Simulation Coverage         ;      95.27 % ;
+; Total Number of Transitions ; 8935         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                         ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                       ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                    ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                          ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                           ;               ;
+; Vector input source                                                                        ; D:/University/THIET_KE_LUAN_LY_SO/TH/Lab3/Quartus_Design/Bai1/Waveform_AU.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                            ; On            ;
+; Check outputs                                                                              ; Off                                                                           ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                            ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                            ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                            ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                           ; Off           ;
+; Detect glitches                                                                            ; Off                                                                           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                           ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                          ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      95.27 % ;
+; Total nodes checked                                 ; 444          ;
+; Total output ports checked                          ; 444          ;
+; Total output ports with complete 1/0-value coverage ; 423          ;
+; Total output ports with no 1/0-value coverage       ; 21           ;
+; Total output ports with no 1-value coverage         ; 21           ;
+; Total output ports with no 0-value coverage         ; 21           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                            ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                        ; Output Port Name                                                                 ; Output Port Type ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; |AU|OUT[15]                                                                      ; |AU|OUT[15]                                                                      ; pin_out          ;
+; |AU|OUT[14]                                                                      ; |AU|OUT[14]                                                                      ; pin_out          ;
+; |AU|OUT[13]                                                                      ; |AU|OUT[13]                                                                      ; pin_out          ;
+; |AU|OUT[12]                                                                      ; |AU|OUT[12]                                                                      ; pin_out          ;
+; |AU|OUT[11]                                                                      ; |AU|OUT[11]                                                                      ; pin_out          ;
+; |AU|OUT[10]                                                                      ; |AU|OUT[10]                                                                      ; pin_out          ;
+; |AU|OUT[9]                                                                       ; |AU|OUT[9]                                                                       ; pin_out          ;
+; |AU|OUT[8]                                                                       ; |AU|OUT[8]                                                                       ; pin_out          ;
+; |AU|OUT[7]                                                                       ; |AU|OUT[7]                                                                       ; pin_out          ;
+; |AU|OUT[6]                                                                       ; |AU|OUT[6]                                                                       ; pin_out          ;
+; |AU|OUT[5]                                                                       ; |AU|OUT[5]                                                                       ; pin_out          ;
+; |AU|OUT[4]                                                                       ; |AU|OUT[4]                                                                       ; pin_out          ;
+; |AU|OUT[3]                                                                       ; |AU|OUT[3]                                                                       ; pin_out          ;
+; |AU|OUT[2]                                                                       ; |AU|OUT[2]                                                                       ; pin_out          ;
+; |AU|OUT[1]                                                                       ; |AU|OUT[1]                                                                       ; pin_out          ;
+; |AU|A[15]                                                                        ; |AU|A[15]                                                                        ; out              ;
+; |AU|A[14]                                                                        ; |AU|A[14]                                                                        ; out              ;
+; |AU|A[13]                                                                        ; |AU|A[13]                                                                        ; out              ;
+; |AU|A[12]                                                                        ; |AU|A[12]                                                                        ; out              ;
+; |AU|A[11]                                                                        ; |AU|A[11]                                                                        ; out              ;
+; |AU|A[10]                                                                        ; |AU|A[10]                                                                        ; out              ;
+; |AU|A[9]                                                                         ; |AU|A[9]                                                                         ; out              ;
+; |AU|A[8]                                                                         ; |AU|A[8]                                                                         ; out              ;
+; |AU|A[7]                                                                         ; |AU|A[7]                                                                         ; out              ;
+; |AU|A[6]                                                                         ; |AU|A[6]                                                                         ; out              ;
+; |AU|A[5]                                                                         ; |AU|A[5]                                                                         ; out              ;
+; |AU|A[4]                                                                         ; |AU|A[4]                                                                         ; out              ;
+; |AU|A[3]                                                                         ; |AU|A[3]                                                                         ; out              ;
+; |AU|A[2]                                                                         ; |AU|A[2]                                                                         ; out              ;
+; |AU|A[1]                                                                         ; |AU|A[1]                                                                         ; out              ;
+; |AU|A[0]                                                                         ; |AU|A[0]                                                                         ; out              ;
+; |AU|B[15]                                                                        ; |AU|B[15]                                                                        ; out              ;
+; |AU|B[14]                                                                        ; |AU|B[14]                                                                        ; out              ;
+; |AU|B[13]                                                                        ; |AU|B[13]                                                                        ; out              ;
+; |AU|B[12]                                                                        ; |AU|B[12]                                                                        ; out              ;
+; |AU|B[11]                                                                        ; |AU|B[11]                                                                        ; out              ;
+; |AU|B[10]                                                                        ; |AU|B[10]                                                                        ; out              ;
+; |AU|B[9]                                                                         ; |AU|B[9]                                                                         ; out              ;
+; |AU|B[8]                                                                         ; |AU|B[8]                                                                         ; out              ;
+; |AU|B[7]                                                                         ; |AU|B[7]                                                                         ; out              ;
+; |AU|B[6]                                                                         ; |AU|B[6]                                                                         ; out              ;
+; |AU|B[5]                                                                         ; |AU|B[5]                                                                         ; out              ;
+; |AU|B[4]                                                                         ; |AU|B[4]                                                                         ; out              ;
+; |AU|B[3]                                                                         ; |AU|B[3]                                                                         ; out              ;
+; |AU|B[2]                                                                         ; |AU|B[2]                                                                         ; out              ;
+; |AU|B[1]                                                                         ; |AU|B[1]                                                                         ; out              ;
+; |AU|B[0]                                                                         ; |AU|B[0]                                                                         ; out              ;
+; |AU|SEL[1]                                                                       ; |AU|SEL[1]                                                                       ; out              ;
+; |AU|SEL[0]                                                                       ; |AU|SEL[0]                                                                       ; out              ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst3          ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst3          ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst5          ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst5          ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|1    ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|1    ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|1   ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst3         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst3         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst5         ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst5         ; out0             ;
+; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|1   ; |AU|SUB_1:inst3|SUB_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|1   ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst3                     ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst3                     ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst5                     ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst5                     ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst1                     ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst1                     ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst2                     ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst2                     ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|1               ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|1               ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|3               ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|3               ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst|inst1                     ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst|inst1                     ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst|inst2                     ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst|inst2                     ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst|xor3:inst|1               ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst|xor3:inst|1               ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|3              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst3                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst3                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst5                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst5                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst1                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst1                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst2                    ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst2                    ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|1              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|1              ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|3              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|3              ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|1  ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|1  ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst5       ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst5       ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst5       ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst5       ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst5       ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst5       ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst5       ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst5       ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst5       ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst5       ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst5       ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst5       ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|1 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst5       ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst5       ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|1 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|1 ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst3                    ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst3                    ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst5                    ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst5                    ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst1                    ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst1                    ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst2                    ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst2                    ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|1              ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|1              ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|3              ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|xor3:inst|3              ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst5                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst5                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst5                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst5                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst5                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst5                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst5                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst5                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst5                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst5                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst5                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst5                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst7|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst|inst2                    ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst|inst2                    ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst|xor3:inst|1              ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst|xor3:inst|1              ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst5                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst5                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst3|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst5                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst5                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst4|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst5                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst5                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst5|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst5                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst5                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst6|xor3:inst|3             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst3                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst3                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst5                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst5                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst1                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst1                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst2                   ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|inst2                   ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|1             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|1             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|3             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst7|xor3:inst|3             ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst8|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst8|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst8|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst8|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst8|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst8|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst7|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst7|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst7|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst7|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst7|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst7|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst5|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst5|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst5|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst5|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst5|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst5|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst6|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst6|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst6|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst6|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst6|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst6|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst4|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst4|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst4|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst4|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst4|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst4|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst3|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst3|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst3|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst3|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst3|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst3|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst2|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst2|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst2|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst2|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst2|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst2|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst|inst2         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst|inst2         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst|inst1         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst|inst1         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst|inst          ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst1|MUX21:inst|inst          ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst7|inst2         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst7|inst2         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst7|inst1         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst7|inst1         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst7|inst          ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst7|inst          ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst5|inst2         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst5|inst2         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst5|inst1         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst5|inst1         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst5|inst          ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst5|inst          ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst6|inst2         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst6|inst2         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst6|inst1         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst6|inst1         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst6|inst          ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst6|inst          ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst4|inst2         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst4|inst2         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst4|inst1         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst4|inst1         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst4|inst          ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst4|inst          ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst3|inst2         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst3|inst2         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst3|inst1         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst3|inst1         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst3|inst          ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst3|inst          ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst2|inst2         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst2|inst2         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst2|inst1         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst2|inst1         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst2|inst          ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst2|inst          ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst|inst2          ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst|inst2          ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst|inst1          ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst|inst1          ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst|inst           ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst|inst           ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst8|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst8|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst8|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst8|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst8|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst8|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst7|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst7|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst7|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst7|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst7|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst7|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst5|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst5|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst5|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst5|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst5|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst5|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst6|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst6|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst6|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst6|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst6|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst6|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst4|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst4|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst4|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst4|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst4|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst4|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst3|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst3|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst3|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst3|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst3|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst3|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst2|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst2|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst2|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst2|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst2|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst2|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst1|MUX21:inst|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst7|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst7|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst7|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst7|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst7|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst7|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst5|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst5|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst5|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst5|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst5|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst5|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst6|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst6|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst6|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst6|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst6|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst6|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst4|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst4|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst4|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst4|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst4|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst4|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst3|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst3|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst3|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst3|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst3|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst3|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst2|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst2|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst2|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst2|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst2|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst2|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst|inst2         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst|inst2         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst|inst1         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst|inst1         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst|inst          ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst|inst          ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst8|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst8|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst8|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst8|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst8|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst8|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst7|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst7|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst7|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst7|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst7|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst7|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst5|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst5|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst5|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst5|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst5|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst5|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst6|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst6|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst6|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst6|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst6|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst6|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst4|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst4|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst4|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst4|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst4|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst4|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst3|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst3|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst3|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst3|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst3|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst3|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst2|inst2       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst2|inst2       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst2|inst1       ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst2|inst1       ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst2|inst        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst2|inst        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst1|MUX21:inst|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst7|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst7|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst7|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst7|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst7|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst7|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst5|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst5|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst5|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst5|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst5|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst5|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst6|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst6|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst6|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst6|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst6|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst6|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst4|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst4|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst4|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst4|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst4|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst4|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst3|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst3|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst3|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst3|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst3|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst3|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst2|inst2        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst2|inst2        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst2|inst1        ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst2|inst1        ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst2|inst         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst2|inst         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst|inst2         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst|inst2         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst|inst1         ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst|inst1         ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst|inst          ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst|inst          ; out0             ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                   ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                           ; Output Port Type ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; |AU|OUT[0]                                                                 ; |AU|OUT[0]                                                                 ; pin_out          ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst|inst3               ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst|inst3               ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst2              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst2              ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst5  ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst5  ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst5 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst5 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst5 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst5 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst5 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst5 ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst5             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst5             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst5             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst5             ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst2   ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst2   ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst1   ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst1   ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst    ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst    ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst2  ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst2  ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst1  ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst1  ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst   ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst   ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst2  ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst2  ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst1  ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst1  ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst   ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst   ; out0             ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                   ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                           ; Output Port Type ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; |AU|OUT[0]                                                                 ; |AU|OUT[0]                                                                 ; pin_out          ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst|inst3               ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst|inst3               ; out0             ;
+; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst2              ; |AU|SUB_16_BIT:inst2|ADDER_8_BIT:inst3|FULL_ADDER:inst3|inst2              ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst5  ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst|inst5  ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst1|inst5 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst2|inst5 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst3|inst5 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst4|inst5 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst5|inst5 ; out0             ;
+; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst5 ; |AU|ADD_1:inst1|ADDER_16_BIT:inst|ADDER_8_BIT:inst4|FULL_ADDER:inst6|inst5 ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst5             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst1|inst5             ; out0             ;
+; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst5             ; |AU|ADDER_16_BIT:inst|ADDER_8_BIT:inst3|FULL_ADDER:inst2|inst5             ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst2   ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst2   ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst1   ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst1   ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst    ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst|MUX21_8BIT:inst|MUX21:inst8|inst    ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst2  ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst2  ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst1  ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst1  ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst   ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst2|MUX21_8BIT:inst|MUX21:inst8|inst   ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst2  ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst2  ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst1  ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst1  ; out0             ;
+; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst   ; |AU|MUX41_16BIT:inst4|MUX21_16BIT:inst3|MUX21_8BIT:inst|MUX21:inst8|inst   ; out0             ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed May 24 15:21:46 2023
+Info: Command: quartus_sim --simulation_results_format=VWF ALU -c ALU
+Info (324025): Using vector source file "D:/University/THIET_KE_LUAN_LY_SO/TH/Lab3/Quartus_Design/Bai1/Waveform_AU.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      95.27 %
+Info (328052): Number of transitions in simulation is 8935
+Info (324045): Vector file ALU.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4453 megabytes
+    Info: Processing ended: Wed May 24 15:21:48 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

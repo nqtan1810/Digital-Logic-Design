@@ -1,0 +1,120 @@
+|ADDER_5bit
+S[0] <= FULL_ADDER:inst.S
+S[1] <= FULL_ADDER:inst1.S
+S[2] <= FULL_ADDER:inst2.S
+S[3] <= FULL_ADDER:inst3.S
+S[4] <= FULL_ADDER:inst4.S
+S[5] <= FULL_ADDER:inst4.Cout
+A[0] => FULL_ADDER:inst.A
+A[1] => FULL_ADDER:inst1.A
+A[2] => FULL_ADDER:inst2.A
+A[3] => FULL_ADDER:inst3.A
+A[4] => FULL_ADDER:inst4.A
+B[0] => FULL_ADDER:inst.B
+B[1] => FULL_ADDER:inst1.B
+B[2] => FULL_ADDER:inst2.B
+B[3] => FULL_ADDER:inst3.B
+B[4] => FULL_ADDER:inst4.B
+Cin => FULL_ADDER:inst.Cin
+
+
+|ADDER_5bit|FULL_ADDER:inst
+S <= XOR3:inst.OUT
+Cin => XOR3:inst.IN3
+Cin => inst5.IN1
+A => XOR3:inst.IN1
+A => inst1.IN0
+A => inst2.IN0
+B => XOR3:inst.IN2
+B => inst1.IN1
+B => inst2.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ADDER_5bit|FULL_ADDER:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|ADDER_5bit|FULL_ADDER:inst1
+S <= XOR3:inst.OUT
+Cin => XOR3:inst.IN3
+Cin => inst5.IN1
+A => XOR3:inst.IN1
+A => inst1.IN0
+A => inst2.IN0
+B => XOR3:inst.IN2
+B => inst1.IN1
+B => inst2.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ADDER_5bit|FULL_ADDER:inst1|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|ADDER_5bit|FULL_ADDER:inst2
+S <= XOR3:inst.OUT
+Cin => XOR3:inst.IN3
+Cin => inst5.IN1
+A => XOR3:inst.IN1
+A => inst1.IN0
+A => inst2.IN0
+B => XOR3:inst.IN2
+B => inst1.IN1
+B => inst2.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ADDER_5bit|FULL_ADDER:inst2|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|ADDER_5bit|FULL_ADDER:inst3
+S <= XOR3:inst.OUT
+Cin => XOR3:inst.IN3
+Cin => inst5.IN1
+A => XOR3:inst.IN1
+A => inst1.IN0
+A => inst2.IN0
+B => XOR3:inst.IN2
+B => inst1.IN1
+B => inst2.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ADDER_5bit|FULL_ADDER:inst3|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|ADDER_5bit|FULL_ADDER:inst4
+S <= XOR3:inst.OUT
+Cin => XOR3:inst.IN3
+Cin => inst5.IN1
+A => XOR3:inst.IN1
+A => inst1.IN0
+A => inst2.IN0
+B => XOR3:inst.IN2
+B => inst1.IN1
+B => inst2.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ADDER_5bit|FULL_ADDER:inst4|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+

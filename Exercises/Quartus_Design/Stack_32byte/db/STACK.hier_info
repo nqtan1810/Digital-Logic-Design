@@ -1,0 +1,1614 @@
+|STACK
+EMPTY <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+POP => CONTROL_LOGIC:inst6.POP
+POP => TRI_STATE:inst15.POP
+E => CONTROL_LOGIC:inst6.E
+E => COUNTER32_UP_DOWN:TOP.E
+E => TRI_STATE:inst15.EN
+E => RAM32X8:inst2.CS
+E => COUNTER32_UP_DOWN:TOP-1.E
+RESETN => CONTROL_LOGIC:inst6.RESETN
+CLK => COUNTER32_UP_DOWN:TOP.CLK
+CLK => COUNTER32_UP_DOWN:TOP-1.CLK
+FULL <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+OUT[0] <= TRI_STATE:inst15.OUT[0]
+OUT[1] <= TRI_STATE:inst15.OUT[1]
+OUT[2] <= TRI_STATE:inst15.OUT[2]
+OUT[3] <= TRI_STATE:inst15.OUT[3]
+OUT[4] <= TRI_STATE:inst15.OUT[4]
+OUT[5] <= TRI_STATE:inst15.OUT[5]
+OUT[6] <= TRI_STATE:inst15.OUT[6]
+OUT[7] <= TRI_STATE:inst15.OUT[7]
+IN[0] => RAM32X8:inst2.D[0]
+IN[1] => RAM32X8:inst2.D[1]
+IN[2] => RAM32X8:inst2.D[2]
+IN[3] => RAM32X8:inst2.D[3]
+IN[4] => RAM32X8:inst2.D[4]
+IN[5] => RAM32X8:inst2.D[5]
+IN[6] => RAM32X8:inst2.D[6]
+IN[7] => RAM32X8:inst2.D[7]
+
+
+|STACK|COUNTER32_UP_DOWN:TOP
+Q[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+RESETN => inst4.ACLR
+RESETN => inst.ACLR
+RESETN => inst1.ACLR
+RESETN => inst2.ACLR
+RESETN => inst3.ACLR
+CLK => inst4.CLK
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+D => HAS:inst6.D
+D => HAS:instS.D
+D => HAS:inst7.D
+D => HAS:inst8.D
+D => HAS:inst9.D
+E => HAS:inst6.C
+SETN => inst4.PRESET
+SETN => inst.PRESET
+SETN => inst1.PRESET
+SETN => inst2.PRESET
+SETN => inst3.PRESET
+
+
+|STACK|COUNTER32_UP_DOWN:TOP|HAS:inst6
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+C => inst1.IN1
+C => insta.IN1
+C => inst3.IN1
+Q => inst1.IN2
+Q => inst4.IN0
+Q => inst3.IN0
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|COUNTER32_UP_DOWN:TOP|HAS:instS
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+C => inst1.IN1
+C => insta.IN1
+C => inst3.IN1
+Q => inst1.IN2
+Q => inst4.IN0
+Q => inst3.IN0
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|COUNTER32_UP_DOWN:TOP|HAS:inst7
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+C => inst1.IN1
+C => insta.IN1
+C => inst3.IN1
+Q => inst1.IN2
+Q => inst4.IN0
+Q => inst3.IN0
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|COUNTER32_UP_DOWN:TOP|HAS:inst8
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+C => inst1.IN1
+C => insta.IN1
+C => inst3.IN1
+Q => inst1.IN2
+Q => inst4.IN0
+Q => inst3.IN0
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|COUNTER32_UP_DOWN:TOP|HAS:inst9
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+C => inst1.IN1
+C => insta.IN1
+C => inst3.IN1
+Q => inst1.IN2
+Q => inst4.IN0
+Q => inst3.IN0
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|CONTROL_LOGIC:inst6
+W <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+POP => inst4.IN0
+POP => inst6.IN1
+E => inst5.IN1
+E => inst6.IN0
+D <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RESET_N <= RESETN.DB_MAX_OUTPUT_PORT_TYPE
+RESETN => RESET_N.DATAIN
+
+
+|STACK|TRI_STATE:inst15
+OUT[0] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+OUT[7] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] => inst7.DATAIN
+Q[1] => inst5.DATAIN
+Q[2] => inst4.DATAIN
+Q[3] => inst3.DATAIN
+Q[4] => inst2.DATAIN
+Q[5] => inst1.DATAIN
+Q[6] => inst.DATAIN
+Q[7] => inst6.DATAIN
+EMPTY => inst8.IN0
+EN => inst9.IN1
+POP => inst9.IN2
+
+
+|STACK|RAM32X8:inst2
+Q[0] <= Q~7.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q~6.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q~5.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q~4.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q~3.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q~2.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q~1.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+ADDR[0] => RAM8X8:inst.ADDR[0]
+ADDR[0] => RAM8X8:inst5.ADDR[0]
+ADDR[0] => RAM8X8:inst6.ADDR[0]
+ADDR[0] => RAM8X8:inst7.ADDR[0]
+ADDR[1] => RAM8X8:inst.ADDR[1]
+ADDR[1] => RAM8X8:inst5.ADDR[1]
+ADDR[1] => RAM8X8:inst6.ADDR[1]
+ADDR[1] => RAM8X8:inst7.ADDR[1]
+ADDR[2] => RAM8X8:inst.ADDR[2]
+ADDR[2] => RAM8X8:inst5.ADDR[2]
+ADDR[2] => RAM8X8:inst6.ADDR[2]
+ADDR[2] => RAM8X8:inst7.ADDR[2]
+ADDR[3] => DECODER_2_TO_4:inst1.B
+ADDR[4] => DECODER_2_TO_4:inst1.A
+CS => DECODER_2_TO_4:inst1.EN
+RWS => RAM8X8:inst.RWS
+RWS => RAM8X8:inst5.RWS
+RWS => RAM8X8:inst6.RWS
+RWS => RAM8X8:inst7.RWS
+D[0] => RAM8X8:inst.D[0]
+D[0] => RAM8X8:inst5.D[0]
+D[0] => RAM8X8:inst6.D[0]
+D[0] => RAM8X8:inst7.D[0]
+D[1] => RAM8X8:inst.D[1]
+D[1] => RAM8X8:inst5.D[1]
+D[1] => RAM8X8:inst6.D[1]
+D[1] => RAM8X8:inst7.D[1]
+D[2] => RAM8X8:inst.D[2]
+D[2] => RAM8X8:inst5.D[2]
+D[2] => RAM8X8:inst6.D[2]
+D[2] => RAM8X8:inst7.D[2]
+D[3] => RAM8X8:inst.D[3]
+D[3] => RAM8X8:inst5.D[3]
+D[3] => RAM8X8:inst6.D[3]
+D[3] => RAM8X8:inst7.D[3]
+D[4] => RAM8X8:inst.D[4]
+D[4] => RAM8X8:inst5.D[4]
+D[4] => RAM8X8:inst6.D[4]
+D[4] => RAM8X8:inst7.D[4]
+D[5] => RAM8X8:inst.D[5]
+D[5] => RAM8X8:inst5.D[5]
+D[5] => RAM8X8:inst6.D[5]
+D[5] => RAM8X8:inst7.D[5]
+D[6] => RAM8X8:inst.D[6]
+D[6] => RAM8X8:inst5.D[6]
+D[6] => RAM8X8:inst6.D[6]
+D[6] => RAM8X8:inst7.D[6]
+D[7] => RAM8X8:inst.D[7]
+D[7] => RAM8X8:inst5.D[7]
+D[7] => RAM8X8:inst6.D[7]
+D[7] => RAM8X8:inst7.D[7]
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst
+Q[0] <= Q~7.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q~6.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q~5.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q~4.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q~3.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q~2.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q~1.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+ADDR[0] => DECODER_3_TO_8:inst8.C
+ADDR[1] => DECODER_3_TO_8:inst8.B
+ADDR[2] => DECODER_3_TO_8:inst8.A
+CS => DECODER_3_TO_8:inst8.EN
+RWS => WORD_8_bit:inst.RWS
+RWS => WORD_8_bit:inst1.RWS
+RWS => WORD_8_bit:inst2.RWS
+RWS => WORD_8_bit:inst3.RWS
+RWS => WORD_8_bit:inst4.RWS
+RWS => WORD_8_bit:inst5.RWS
+RWS => WORD_8_bit:inst6.RWS
+RWS => WORD_8_bit:inst7.RWS
+D[0] => WORD_8_bit:inst.D[0]
+D[0] => WORD_8_bit:inst1.D[0]
+D[0] => WORD_8_bit:inst2.D[0]
+D[0] => WORD_8_bit:inst3.D[0]
+D[0] => WORD_8_bit:inst4.D[0]
+D[0] => WORD_8_bit:inst5.D[0]
+D[0] => WORD_8_bit:inst6.D[0]
+D[0] => WORD_8_bit:inst7.D[0]
+D[1] => WORD_8_bit:inst.D[1]
+D[1] => WORD_8_bit:inst1.D[1]
+D[1] => WORD_8_bit:inst2.D[1]
+D[1] => WORD_8_bit:inst3.D[1]
+D[1] => WORD_8_bit:inst4.D[1]
+D[1] => WORD_8_bit:inst5.D[1]
+D[1] => WORD_8_bit:inst6.D[1]
+D[1] => WORD_8_bit:inst7.D[1]
+D[2] => WORD_8_bit:inst.D[2]
+D[2] => WORD_8_bit:inst1.D[2]
+D[2] => WORD_8_bit:inst2.D[2]
+D[2] => WORD_8_bit:inst3.D[2]
+D[2] => WORD_8_bit:inst4.D[2]
+D[2] => WORD_8_bit:inst5.D[2]
+D[2] => WORD_8_bit:inst6.D[2]
+D[2] => WORD_8_bit:inst7.D[2]
+D[3] => WORD_8_bit:inst.D[3]
+D[3] => WORD_8_bit:inst1.D[3]
+D[3] => WORD_8_bit:inst2.D[3]
+D[3] => WORD_8_bit:inst3.D[3]
+D[3] => WORD_8_bit:inst4.D[3]
+D[3] => WORD_8_bit:inst5.D[3]
+D[3] => WORD_8_bit:inst6.D[3]
+D[3] => WORD_8_bit:inst7.D[3]
+D[4] => WORD_8_bit:inst.D[4]
+D[4] => WORD_8_bit:inst1.D[4]
+D[4] => WORD_8_bit:inst2.D[4]
+D[4] => WORD_8_bit:inst3.D[4]
+D[4] => WORD_8_bit:inst4.D[4]
+D[4] => WORD_8_bit:inst5.D[4]
+D[4] => WORD_8_bit:inst6.D[4]
+D[4] => WORD_8_bit:inst7.D[4]
+D[5] => WORD_8_bit:inst.D[5]
+D[5] => WORD_8_bit:inst1.D[5]
+D[5] => WORD_8_bit:inst2.D[5]
+D[5] => WORD_8_bit:inst3.D[5]
+D[5] => WORD_8_bit:inst4.D[5]
+D[5] => WORD_8_bit:inst5.D[5]
+D[5] => WORD_8_bit:inst6.D[5]
+D[5] => WORD_8_bit:inst7.D[5]
+D[6] => WORD_8_bit:inst.D[6]
+D[6] => WORD_8_bit:inst1.D[6]
+D[6] => WORD_8_bit:inst2.D[6]
+D[6] => WORD_8_bit:inst3.D[6]
+D[6] => WORD_8_bit:inst4.D[6]
+D[6] => WORD_8_bit:inst5.D[6]
+D[6] => WORD_8_bit:inst6.D[6]
+D[6] => WORD_8_bit:inst7.D[6]
+D[7] => WORD_8_bit:inst.D[7]
+D[7] => WORD_8_bit:inst1.D[7]
+D[7] => WORD_8_bit:inst2.D[7]
+D[7] => WORD_8_bit:inst3.D[7]
+D[7] => WORD_8_bit:inst4.D[7]
+D[7] => WORD_8_bit:inst5.D[7]
+D[7] => WORD_8_bit:inst6.D[7]
+D[7] => WORD_8_bit:inst7.D[7]
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst|WORD_8_bit:inst
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst|DECODER_3_TO_8:inst8
+Y0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst1.IN0
+A => inst2.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst9.IN0
+B => inst5.IN1
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN1
+C => inst10.IN0
+C => inst6.IN2
+C => inst.IN2
+C => inst2.IN2
+C => inst4.IN2
+EN => inst7.IN3
+EN => inst6.IN3
+EN => inst5.IN3
+EN => inst.IN3
+EN => inst1.IN3
+EN => inst2.IN3
+EN => inst3.IN3
+EN => inst4.IN3
+Y1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Y4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Y5 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Y6 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y7 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst|WORD_8_bit:inst1
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst|WORD_8_bit:inst2
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst|WORD_8_bit:inst3
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst|WORD_8_bit:inst4
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst|WORD_8_bit:inst5
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst|WORD_8_bit:inst6
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst|WORD_8_bit:inst7
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|DECODER_2_TO_4:inst1
+Y0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst3.IN0
+A => inst6.IN0
+B => inst5.IN0
+B => inst2.IN1
+B => inst6.IN1
+EN => inst.IN2
+EN => inst2.IN2
+EN => inst3.IN2
+EN => inst6.IN2
+Y1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst5
+Q[0] <= Q~7.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q~6.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q~5.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q~4.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q~3.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q~2.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q~1.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+ADDR[0] => DECODER_3_TO_8:inst8.C
+ADDR[1] => DECODER_3_TO_8:inst8.B
+ADDR[2] => DECODER_3_TO_8:inst8.A
+CS => DECODER_3_TO_8:inst8.EN
+RWS => WORD_8_bit:inst.RWS
+RWS => WORD_8_bit:inst1.RWS
+RWS => WORD_8_bit:inst2.RWS
+RWS => WORD_8_bit:inst3.RWS
+RWS => WORD_8_bit:inst4.RWS
+RWS => WORD_8_bit:inst5.RWS
+RWS => WORD_8_bit:inst6.RWS
+RWS => WORD_8_bit:inst7.RWS
+D[0] => WORD_8_bit:inst.D[0]
+D[0] => WORD_8_bit:inst1.D[0]
+D[0] => WORD_8_bit:inst2.D[0]
+D[0] => WORD_8_bit:inst3.D[0]
+D[0] => WORD_8_bit:inst4.D[0]
+D[0] => WORD_8_bit:inst5.D[0]
+D[0] => WORD_8_bit:inst6.D[0]
+D[0] => WORD_8_bit:inst7.D[0]
+D[1] => WORD_8_bit:inst.D[1]
+D[1] => WORD_8_bit:inst1.D[1]
+D[1] => WORD_8_bit:inst2.D[1]
+D[1] => WORD_8_bit:inst3.D[1]
+D[1] => WORD_8_bit:inst4.D[1]
+D[1] => WORD_8_bit:inst5.D[1]
+D[1] => WORD_8_bit:inst6.D[1]
+D[1] => WORD_8_bit:inst7.D[1]
+D[2] => WORD_8_bit:inst.D[2]
+D[2] => WORD_8_bit:inst1.D[2]
+D[2] => WORD_8_bit:inst2.D[2]
+D[2] => WORD_8_bit:inst3.D[2]
+D[2] => WORD_8_bit:inst4.D[2]
+D[2] => WORD_8_bit:inst5.D[2]
+D[2] => WORD_8_bit:inst6.D[2]
+D[2] => WORD_8_bit:inst7.D[2]
+D[3] => WORD_8_bit:inst.D[3]
+D[3] => WORD_8_bit:inst1.D[3]
+D[3] => WORD_8_bit:inst2.D[3]
+D[3] => WORD_8_bit:inst3.D[3]
+D[3] => WORD_8_bit:inst4.D[3]
+D[3] => WORD_8_bit:inst5.D[3]
+D[3] => WORD_8_bit:inst6.D[3]
+D[3] => WORD_8_bit:inst7.D[3]
+D[4] => WORD_8_bit:inst.D[4]
+D[4] => WORD_8_bit:inst1.D[4]
+D[4] => WORD_8_bit:inst2.D[4]
+D[4] => WORD_8_bit:inst3.D[4]
+D[4] => WORD_8_bit:inst4.D[4]
+D[4] => WORD_8_bit:inst5.D[4]
+D[4] => WORD_8_bit:inst6.D[4]
+D[4] => WORD_8_bit:inst7.D[4]
+D[5] => WORD_8_bit:inst.D[5]
+D[5] => WORD_8_bit:inst1.D[5]
+D[5] => WORD_8_bit:inst2.D[5]
+D[5] => WORD_8_bit:inst3.D[5]
+D[5] => WORD_8_bit:inst4.D[5]
+D[5] => WORD_8_bit:inst5.D[5]
+D[5] => WORD_8_bit:inst6.D[5]
+D[5] => WORD_8_bit:inst7.D[5]
+D[6] => WORD_8_bit:inst.D[6]
+D[6] => WORD_8_bit:inst1.D[6]
+D[6] => WORD_8_bit:inst2.D[6]
+D[6] => WORD_8_bit:inst3.D[6]
+D[6] => WORD_8_bit:inst4.D[6]
+D[6] => WORD_8_bit:inst5.D[6]
+D[6] => WORD_8_bit:inst6.D[6]
+D[6] => WORD_8_bit:inst7.D[6]
+D[7] => WORD_8_bit:inst.D[7]
+D[7] => WORD_8_bit:inst1.D[7]
+D[7] => WORD_8_bit:inst2.D[7]
+D[7] => WORD_8_bit:inst3.D[7]
+D[7] => WORD_8_bit:inst4.D[7]
+D[7] => WORD_8_bit:inst5.D[7]
+D[7] => WORD_8_bit:inst6.D[7]
+D[7] => WORD_8_bit:inst7.D[7]
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst5|WORD_8_bit:inst
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst5|DECODER_3_TO_8:inst8
+Y0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst1.IN0
+A => inst2.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst9.IN0
+B => inst5.IN1
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN1
+C => inst10.IN0
+C => inst6.IN2
+C => inst.IN2
+C => inst2.IN2
+C => inst4.IN2
+EN => inst7.IN3
+EN => inst6.IN3
+EN => inst5.IN3
+EN => inst.IN3
+EN => inst1.IN3
+EN => inst2.IN3
+EN => inst3.IN3
+EN => inst4.IN3
+Y1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Y4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Y5 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Y6 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y7 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst5|WORD_8_bit:inst1
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst5|WORD_8_bit:inst2
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst5|WORD_8_bit:inst3
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst5|WORD_8_bit:inst4
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst5|WORD_8_bit:inst5
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst5|WORD_8_bit:inst6
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst5|WORD_8_bit:inst7
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst6
+Q[0] <= Q~7.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q~6.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q~5.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q~4.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q~3.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q~2.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q~1.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+ADDR[0] => DECODER_3_TO_8:inst8.C
+ADDR[1] => DECODER_3_TO_8:inst8.B
+ADDR[2] => DECODER_3_TO_8:inst8.A
+CS => DECODER_3_TO_8:inst8.EN
+RWS => WORD_8_bit:inst.RWS
+RWS => WORD_8_bit:inst1.RWS
+RWS => WORD_8_bit:inst2.RWS
+RWS => WORD_8_bit:inst3.RWS
+RWS => WORD_8_bit:inst4.RWS
+RWS => WORD_8_bit:inst5.RWS
+RWS => WORD_8_bit:inst6.RWS
+RWS => WORD_8_bit:inst7.RWS
+D[0] => WORD_8_bit:inst.D[0]
+D[0] => WORD_8_bit:inst1.D[0]
+D[0] => WORD_8_bit:inst2.D[0]
+D[0] => WORD_8_bit:inst3.D[0]
+D[0] => WORD_8_bit:inst4.D[0]
+D[0] => WORD_8_bit:inst5.D[0]
+D[0] => WORD_8_bit:inst6.D[0]
+D[0] => WORD_8_bit:inst7.D[0]
+D[1] => WORD_8_bit:inst.D[1]
+D[1] => WORD_8_bit:inst1.D[1]
+D[1] => WORD_8_bit:inst2.D[1]
+D[1] => WORD_8_bit:inst3.D[1]
+D[1] => WORD_8_bit:inst4.D[1]
+D[1] => WORD_8_bit:inst5.D[1]
+D[1] => WORD_8_bit:inst6.D[1]
+D[1] => WORD_8_bit:inst7.D[1]
+D[2] => WORD_8_bit:inst.D[2]
+D[2] => WORD_8_bit:inst1.D[2]
+D[2] => WORD_8_bit:inst2.D[2]
+D[2] => WORD_8_bit:inst3.D[2]
+D[2] => WORD_8_bit:inst4.D[2]
+D[2] => WORD_8_bit:inst5.D[2]
+D[2] => WORD_8_bit:inst6.D[2]
+D[2] => WORD_8_bit:inst7.D[2]
+D[3] => WORD_8_bit:inst.D[3]
+D[3] => WORD_8_bit:inst1.D[3]
+D[3] => WORD_8_bit:inst2.D[3]
+D[3] => WORD_8_bit:inst3.D[3]
+D[3] => WORD_8_bit:inst4.D[3]
+D[3] => WORD_8_bit:inst5.D[3]
+D[3] => WORD_8_bit:inst6.D[3]
+D[3] => WORD_8_bit:inst7.D[3]
+D[4] => WORD_8_bit:inst.D[4]
+D[4] => WORD_8_bit:inst1.D[4]
+D[4] => WORD_8_bit:inst2.D[4]
+D[4] => WORD_8_bit:inst3.D[4]
+D[4] => WORD_8_bit:inst4.D[4]
+D[4] => WORD_8_bit:inst5.D[4]
+D[4] => WORD_8_bit:inst6.D[4]
+D[4] => WORD_8_bit:inst7.D[4]
+D[5] => WORD_8_bit:inst.D[5]
+D[5] => WORD_8_bit:inst1.D[5]
+D[5] => WORD_8_bit:inst2.D[5]
+D[5] => WORD_8_bit:inst3.D[5]
+D[5] => WORD_8_bit:inst4.D[5]
+D[5] => WORD_8_bit:inst5.D[5]
+D[5] => WORD_8_bit:inst6.D[5]
+D[5] => WORD_8_bit:inst7.D[5]
+D[6] => WORD_8_bit:inst.D[6]
+D[6] => WORD_8_bit:inst1.D[6]
+D[6] => WORD_8_bit:inst2.D[6]
+D[6] => WORD_8_bit:inst3.D[6]
+D[6] => WORD_8_bit:inst4.D[6]
+D[6] => WORD_8_bit:inst5.D[6]
+D[6] => WORD_8_bit:inst6.D[6]
+D[6] => WORD_8_bit:inst7.D[6]
+D[7] => WORD_8_bit:inst.D[7]
+D[7] => WORD_8_bit:inst1.D[7]
+D[7] => WORD_8_bit:inst2.D[7]
+D[7] => WORD_8_bit:inst3.D[7]
+D[7] => WORD_8_bit:inst4.D[7]
+D[7] => WORD_8_bit:inst5.D[7]
+D[7] => WORD_8_bit:inst6.D[7]
+D[7] => WORD_8_bit:inst7.D[7]
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst6|WORD_8_bit:inst
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst6|DECODER_3_TO_8:inst8
+Y0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst1.IN0
+A => inst2.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst9.IN0
+B => inst5.IN1
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN1
+C => inst10.IN0
+C => inst6.IN2
+C => inst.IN2
+C => inst2.IN2
+C => inst4.IN2
+EN => inst7.IN3
+EN => inst6.IN3
+EN => inst5.IN3
+EN => inst.IN3
+EN => inst1.IN3
+EN => inst2.IN3
+EN => inst3.IN3
+EN => inst4.IN3
+Y1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Y4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Y5 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Y6 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y7 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst6|WORD_8_bit:inst1
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst6|WORD_8_bit:inst2
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst6|WORD_8_bit:inst3
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst6|WORD_8_bit:inst4
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst6|WORD_8_bit:inst5
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst6|WORD_8_bit:inst6
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst6|WORD_8_bit:inst7
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst7
+Q[0] <= Q~7.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q~6.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q~5.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q~4.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q~3.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q~2.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q~1.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+ADDR[0] => DECODER_3_TO_8:inst8.C
+ADDR[1] => DECODER_3_TO_8:inst8.B
+ADDR[2] => DECODER_3_TO_8:inst8.A
+CS => DECODER_3_TO_8:inst8.EN
+RWS => WORD_8_bit:inst.RWS
+RWS => WORD_8_bit:inst1.RWS
+RWS => WORD_8_bit:inst2.RWS
+RWS => WORD_8_bit:inst3.RWS
+RWS => WORD_8_bit:inst4.RWS
+RWS => WORD_8_bit:inst5.RWS
+RWS => WORD_8_bit:inst6.RWS
+RWS => WORD_8_bit:inst7.RWS
+D[0] => WORD_8_bit:inst.D[0]
+D[0] => WORD_8_bit:inst1.D[0]
+D[0] => WORD_8_bit:inst2.D[0]
+D[0] => WORD_8_bit:inst3.D[0]
+D[0] => WORD_8_bit:inst4.D[0]
+D[0] => WORD_8_bit:inst5.D[0]
+D[0] => WORD_8_bit:inst6.D[0]
+D[0] => WORD_8_bit:inst7.D[0]
+D[1] => WORD_8_bit:inst.D[1]
+D[1] => WORD_8_bit:inst1.D[1]
+D[1] => WORD_8_bit:inst2.D[1]
+D[1] => WORD_8_bit:inst3.D[1]
+D[1] => WORD_8_bit:inst4.D[1]
+D[1] => WORD_8_bit:inst5.D[1]
+D[1] => WORD_8_bit:inst6.D[1]
+D[1] => WORD_8_bit:inst7.D[1]
+D[2] => WORD_8_bit:inst.D[2]
+D[2] => WORD_8_bit:inst1.D[2]
+D[2] => WORD_8_bit:inst2.D[2]
+D[2] => WORD_8_bit:inst3.D[2]
+D[2] => WORD_8_bit:inst4.D[2]
+D[2] => WORD_8_bit:inst5.D[2]
+D[2] => WORD_8_bit:inst6.D[2]
+D[2] => WORD_8_bit:inst7.D[2]
+D[3] => WORD_8_bit:inst.D[3]
+D[3] => WORD_8_bit:inst1.D[3]
+D[3] => WORD_8_bit:inst2.D[3]
+D[3] => WORD_8_bit:inst3.D[3]
+D[3] => WORD_8_bit:inst4.D[3]
+D[3] => WORD_8_bit:inst5.D[3]
+D[3] => WORD_8_bit:inst6.D[3]
+D[3] => WORD_8_bit:inst7.D[3]
+D[4] => WORD_8_bit:inst.D[4]
+D[4] => WORD_8_bit:inst1.D[4]
+D[4] => WORD_8_bit:inst2.D[4]
+D[4] => WORD_8_bit:inst3.D[4]
+D[4] => WORD_8_bit:inst4.D[4]
+D[4] => WORD_8_bit:inst5.D[4]
+D[4] => WORD_8_bit:inst6.D[4]
+D[4] => WORD_8_bit:inst7.D[4]
+D[5] => WORD_8_bit:inst.D[5]
+D[5] => WORD_8_bit:inst1.D[5]
+D[5] => WORD_8_bit:inst2.D[5]
+D[5] => WORD_8_bit:inst3.D[5]
+D[5] => WORD_8_bit:inst4.D[5]
+D[5] => WORD_8_bit:inst5.D[5]
+D[5] => WORD_8_bit:inst6.D[5]
+D[5] => WORD_8_bit:inst7.D[5]
+D[6] => WORD_8_bit:inst.D[6]
+D[6] => WORD_8_bit:inst1.D[6]
+D[6] => WORD_8_bit:inst2.D[6]
+D[6] => WORD_8_bit:inst3.D[6]
+D[6] => WORD_8_bit:inst4.D[6]
+D[6] => WORD_8_bit:inst5.D[6]
+D[6] => WORD_8_bit:inst6.D[6]
+D[6] => WORD_8_bit:inst7.D[6]
+D[7] => WORD_8_bit:inst.D[7]
+D[7] => WORD_8_bit:inst1.D[7]
+D[7] => WORD_8_bit:inst2.D[7]
+D[7] => WORD_8_bit:inst3.D[7]
+D[7] => WORD_8_bit:inst4.D[7]
+D[7] => WORD_8_bit:inst5.D[7]
+D[7] => WORD_8_bit:inst6.D[7]
+D[7] => WORD_8_bit:inst7.D[7]
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst7|WORD_8_bit:inst
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst7|DECODER_3_TO_8:inst8
+Y0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst1.IN0
+A => inst2.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst9.IN0
+B => inst5.IN1
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN1
+C => inst10.IN0
+C => inst6.IN2
+C => inst.IN2
+C => inst2.IN2
+C => inst4.IN2
+EN => inst7.IN3
+EN => inst6.IN3
+EN => inst5.IN3
+EN => inst.IN3
+EN => inst1.IN3
+EN => inst2.IN3
+EN => inst3.IN3
+EN => inst4.IN3
+Y1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Y4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Y5 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Y6 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y7 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst7|WORD_8_bit:inst1
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst7|WORD_8_bit:inst2
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst7|WORD_8_bit:inst3
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst7|WORD_8_bit:inst4
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst7|WORD_8_bit:inst5
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst7|WORD_8_bit:inst6
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|RAM32X8:inst2|RAM8X8:inst7|WORD_8_bit:inst7
+Q[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => inst7.DATAIN
+D[1] => inst6.DATAIN
+D[2] => inst5.DATAIN
+D[3] => inst4.DATAIN
+D[4] => inst3.DATAIN
+D[5] => inst2.DATAIN
+D[6] => inst1.DATAIN
+D[7] => inst.DATAIN
+CS => inst8.IN0
+CS => inst9.IN1
+RWS => inst8.IN1
+RWS => inst10.IN0
+
+
+|STACK|MUX21_5BIT:inst
+Y[0] <= 21mux:inst4.Y
+Y[1] <= 21mux:inst3.Y
+Y[2] <= 21mux:inst.Y
+Y[3] <= 21mux:inst1.Y
+Y[4] <= 21mux:inst2.Y
+S => 21mux:inst2.S
+S => 21mux:inst1.S
+S => 21mux:inst.S
+S => 21mux:inst3.S
+S => 21mux:inst4.S
+A[0] => 21mux:inst4.B
+A[1] => 21mux:inst3.B
+A[2] => 21mux:inst.B
+A[3] => 21mux:inst1.B
+A[4] => 21mux:inst2.B
+B[0] => 21mux:inst4.A
+B[1] => 21mux:inst3.A
+B[2] => 21mux:inst.A
+B[3] => 21mux:inst1.A
+B[4] => 21mux:inst2.A
+
+
+|STACK|MUX21_5BIT:inst|21mux:inst2
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|STACK|MUX21_5BIT:inst|21mux:inst1
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|STACK|MUX21_5BIT:inst|21mux:inst
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|STACK|MUX21_5BIT:inst|21mux:inst3
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|STACK|MUX21_5BIT:inst|21mux:inst4
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|STACK|COUNTER32_UP_DOWN:TOP-1
+Q[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+RESETN => inst4.ACLR
+RESETN => inst.ACLR
+RESETN => inst1.ACLR
+RESETN => inst2.ACLR
+RESETN => inst3.ACLR
+CLK => inst4.CLK
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+D => HAS:inst6.D
+D => HAS:instS.D
+D => HAS:inst7.D
+D => HAS:inst8.D
+D => HAS:inst9.D
+E => HAS:inst6.C
+SETN => inst4.PRESET
+SETN => inst.PRESET
+SETN => inst1.PRESET
+SETN => inst2.PRESET
+SETN => inst3.PRESET
+
+
+|STACK|COUNTER32_UP_DOWN:TOP-1|HAS:inst6
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+C => inst1.IN1
+C => insta.IN1
+C => inst3.IN1
+Q => inst1.IN2
+Q => inst4.IN0
+Q => inst3.IN0
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|COUNTER32_UP_DOWN:TOP-1|HAS:instS
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+C => inst1.IN1
+C => insta.IN1
+C => inst3.IN1
+Q => inst1.IN2
+Q => inst4.IN0
+Q => inst3.IN0
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|COUNTER32_UP_DOWN:TOP-1|HAS:inst7
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+C => inst1.IN1
+C => insta.IN1
+C => inst3.IN1
+Q => inst1.IN2
+Q => inst4.IN0
+Q => inst3.IN0
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|COUNTER32_UP_DOWN:TOP-1|HAS:inst8
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+C => inst1.IN1
+C => insta.IN1
+C => inst3.IN1
+Q => inst1.IN2
+Q => inst4.IN0
+Q => inst3.IN0
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STACK|COUNTER32_UP_DOWN:TOP-1|HAS:inst9
+CNEXT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+D => insta.IN0
+C => inst1.IN1
+C => insta.IN1
+C => inst3.IN1
+Q => inst1.IN2
+Q => inst4.IN0
+Q => inst3.IN0
+DOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Apr 19 08:23:26 2023
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : LAST_NUM_Detection
+Top-level Entity Name : LAST_NUM_Detection
+Family : Cyclone II
+Total logic elements : 4
+    Total combinational functions : 4
+    Dedicated logic registers : 3
+Total registers : 3
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

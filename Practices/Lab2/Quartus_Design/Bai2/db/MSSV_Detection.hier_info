@@ -1,0 +1,133 @@
+|MSSV_Detection_2
+Y <= OUTPUT_GEN_2:inst8.Y
+MS[0] => OUTPUT_GEN_2:inst8.I[0]
+MS[0] => D2_GEN_2:inst.I[0]
+MS[0] => D1_GEN_2:inst5.I[0]
+MS[0] => D0_GEN_2:inst6.I[0]
+MS[0] => 7447:inst9.A
+MS[1] => OUTPUT_GEN_2:inst8.I[1]
+MS[1] => D2_GEN_2:inst.I[1]
+MS[1] => D1_GEN_2:inst5.I[1]
+MS[1] => D0_GEN_2:inst6.I[1]
+MS[1] => 7447:inst9.B
+MS[2] => OUTPUT_GEN_2:inst8.I[2]
+MS[2] => D2_GEN_2:inst.I[2]
+MS[2] => D1_GEN_2:inst5.I[2]
+MS[2] => D0_GEN_2:inst6.I[2]
+MS[2] => 7447:inst9.C
+MS[3] => OUTPUT_GEN_2:inst8.I[3]
+MS[3] => D2_GEN_2:inst.I[3]
+MS[3] => D1_GEN_2:inst5.I[3]
+MS[3] => D0_GEN_2:inst6.I[3]
+MS[3] => 7447:inst9.D
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+A <= 7447:inst9.OA
+B <= 7447:inst9.OB
+C <= 7447:inst9.OC
+D <= 7447:inst9.OD
+E <= 7447:inst9.OE
+F <= 7447:inst9.OF
+G <= 7447:inst9.OG
+
+
+|MSSV_Detection_2|OUTPUT_GEN_2:inst8
+Y <= inst.DB_MAX_OUTPUT_PORT_TYPE
+I[0] => inst11.IN0
+I[1] => inst10.IN0
+I[2] => inst9.IN0
+I[3] => inst8.IN0
+Q[0] => inst7.IN0
+Q[1] => inst1.IN1
+Q[2] => inst1.IN0
+
+
+|MSSV_Detection_2|D2_GEN_2:inst
+D2_NEXT <= inst5C.DB_MAX_OUTPUT_PORT_TYPE
+I[0] => inst3.IN0
+I[0] => inst27.IN3
+I[0] => inst23.IN3
+I[1] => inst21.IN2
+I[1] => inst2.IN0
+I[2] => inst1.IN0
+I[3] => inst.IN0
+I[3] => inst25.IN0
+Q[0] => inst7.IN0
+Q[0] => inst8.IN2
+Q[0] => inst4.IN2
+Q[1] => inst4B.IN1
+Q[1] => inst6.IN0
+Q[1] => inst4.IN1
+Q[2] => inst5.IN0
+Q[2] => inst8.IN0
+Q[2] => inst4.IN0
+Q[2] => inst7A.IN0
+
+
+|MSSV_Detection_2|D1_GEN_2:inst5
+D1_NEXT <= inst5C.DB_MAX_OUTPUT_PORT_TYPE
+I[0] => inst21.IN3
+I[0] => inst25.IN3
+I[0] => inst3.IN0
+I[0] => inst23.IN3
+I[1] => inst2.IN0
+I[2] => inst1.IN0
+I[2] => inst25.IN1
+I[3] => inst.IN0
+I[3] => inst27.IN0
+Q[0] => inst4B.IN2
+Q[0] => inst8.IN2
+Q[0] => inst4.IN2
+Q[0] => inst7A.IN2
+Q[1] => inst6.IN0
+Q[1] => inst8.IN1
+Q[1] => inst7A.IN1
+Q[2] => inst5.IN0
+Q[2] => inst4.IN0
+Q[2] => inst7A.IN0
+
+
+|MSSV_Detection_2|D0_GEN_2:inst6
+D0_NEXT <= inst5C.DB_MAX_OUTPUT_PORT_TYPE
+I[0] => inst3.IN0
+I[0] => inst25.IN3
+I[0] => inst23.IN3
+I[1] => inst21.IN2
+I[1] => inst2.IN0
+I[2] => inst1.IN0
+I[3] => inst.IN0
+I[3] => inst27.IN0
+Q[0] => inst14.IN1
+Q[0] => inst7.IN0
+Q[0] => inst4.IN2
+Q[0] => inst7A.IN2
+Q[1] => inst6.IN0
+Q[2] => inst14.IN2
+Q[2] => inst8.IN0
+Q[2] => inst4.IN0
+Q[2] => inst5.IN0
+
+
+|MSSV_Detection_2|7447:inst9
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+

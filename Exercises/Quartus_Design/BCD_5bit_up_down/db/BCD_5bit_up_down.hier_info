@@ -1,0 +1,237 @@
+|TOP
+Q[0] <= BCD_5bit_up_down:inst.Q[0]
+Q[1] <= BCD_5bit_up_down:inst.Q[1]
+Q[2] <= BCD_5bit_up_down:inst.Q[2]
+Q[3] <= BCD_5bit_up_down:inst.Q[3]
+Q[4] <= BCD_5bit_up_down:inst.Q[4]
+SETN => BCD_5bit_up_down:inst.SETN
+DIR => BCD_5bit_up_down:inst.DIR
+LOAD => BCD_5bit_up_down:inst.LOAD
+EN => BCD_5bit_up_down:inst.EN
+CLK => BCD_5bit_up_down:inst.CLK
+RESETN => BCD_5bit_up_down:inst.RESETN
+I[0] => BCD_5bit_up_down:inst.I[0]
+I[1] => BCD_5bit_up_down:inst.I[1]
+I[2] => BCD_5bit_up_down:inst.I[2]
+I[3] => BCD_5bit_up_down:inst.I[3]
+I[4] => BCD_5bit_up_down:inst.I[4]
+
+
+|TOP|BCD_5bit_up_down:inst
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+RESETN => inst4.ACLR
+RESETN => inst3.ACLR
+RESETN => inst2.ACLR
+RESETN => inst1.ACLR
+RESETN => inst.ACLR
+CLK => inst4.CLK
+CLK => inst3.CLK
+CLK => inst2.CLK
+CLK => inst1.CLK
+CLK => inst.CLK
+DIR => SELECTOR:inst36.D
+DIR => SELECTOR:inst32.D
+DIR => SELECTOR:inst33.D
+DIR => SELECTOR:inst34.D
+DIR => SELECTOR:inst35.D
+EN => SELECTOR:inst36.E
+EN => SELECTOR:inst32.E
+EN => SELECTOR:inst33.E
+EN => SELECTOR:inst34.E
+EN => SELECTOR:inst35.E
+LOAD => SELECTOR:inst36.LOAD
+LOAD => SELECTOR:inst32.LOAD
+LOAD => SELECTOR:inst33.LOAD
+LOAD => SELECTOR:inst34.LOAD
+LOAD => SELECTOR:inst35.LOAD
+I[0] => SELECTOR:inst35.I
+I[1] => SELECTOR:inst34.I
+I[2] => SELECTOR:inst33.I
+I[3] => SELECTOR:inst32.I
+I[4] => SELECTOR:inst36.I
+SETN => inst4.PRESET
+SETN => inst3.PRESET
+SETN => inst2.PRESET
+SETN => inst1.PRESET
+SETN => inst.PRESET
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst36
+OUT <= mux21:inst2.OUT
+Q => mux21:inst1.I0
+E => mux21:inst1.Select
+UP => mux21:inst.I0
+D => mux21:inst.Select
+DOWN => mux21:inst.I1
+LOAD => mux21:inst2.Select
+I => mux21:inst2.I1
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst36|mux21:inst2
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst36|mux21:inst1
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst36|mux21:inst
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst32
+OUT <= mux21:inst2.OUT
+Q => mux21:inst1.I0
+E => mux21:inst1.Select
+UP => mux21:inst.I0
+D => mux21:inst.Select
+DOWN => mux21:inst.I1
+LOAD => mux21:inst2.Select
+I => mux21:inst2.I1
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst32|mux21:inst2
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst32|mux21:inst1
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst32|mux21:inst
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst33
+OUT <= mux21:inst2.OUT
+Q => mux21:inst1.I0
+E => mux21:inst1.Select
+UP => mux21:inst.I0
+D => mux21:inst.Select
+DOWN => mux21:inst.I1
+LOAD => mux21:inst2.Select
+I => mux21:inst2.I1
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst33|mux21:inst2
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst33|mux21:inst1
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst33|mux21:inst
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst34
+OUT <= mux21:inst2.OUT
+Q => mux21:inst1.I0
+E => mux21:inst1.Select
+UP => mux21:inst.I0
+D => mux21:inst.Select
+DOWN => mux21:inst.I1
+LOAD => mux21:inst2.Select
+I => mux21:inst2.I1
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst34|mux21:inst2
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst34|mux21:inst1
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst34|mux21:inst
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst35
+OUT <= mux21:inst2.OUT
+Q => mux21:inst1.I0
+E => mux21:inst1.Select
+UP => mux21:inst.I0
+D => mux21:inst.Select
+DOWN => mux21:inst.I1
+LOAD => mux21:inst2.Select
+I => mux21:inst2.I1
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst35|mux21:inst2
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst35|mux21:inst1
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|TOP|BCD_5bit_up_down:inst|SELECTOR:inst35|mux21:inst
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Select => inst1.IN0
+Select => inst2.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+

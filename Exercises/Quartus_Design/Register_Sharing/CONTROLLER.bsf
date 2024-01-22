@@ -1,0 +1,99 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 280 304)
+	(text "Register_Sharing_CONTROLLER" (rect 5 0 231 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 173 31 188)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 29 16)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 27 50 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "START" (rect 0 0 48 16)(font "Arial" (font_size 8)))
+		(text "START" (rect 21 91 69 107)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 216 80)
+		(output)
+		(text "SEL1[1..0]" (rect 40 0 113 16)(font "Arial" (font_size 8)))
+		(text "SEL1[1..0]" (rect 122 75 195 91)(font "Arial" (font_size 8)))
+		(line (pt 216 80)(pt 200 80)(line_width 3))
+	)
+	(port
+		(pt 216 96)
+		(output)
+		(text "SEL2[2..0]" (rect 40 0 113 16)(font "Arial" (font_size 8)))
+		(text "SEL2[2..0]" (rect 122 91 195 107)(font "Arial" (font_size 8)))
+		(line (pt 216 96)(pt 200 96)(line_width 3))
+	)
+	(port
+		(pt 216 112)
+		(output)
+		(text "SEL3" (rect 40 0 77 16)(font "Arial" (font_size 8)))
+		(text "SEL3" (rect 158 107 195 123)(font "Arial" (font_size 8)))
+		(line (pt 216 112)(pt 200 112))
+	)
+	(port
+		(pt 216 128)
+		(output)
+		(text "E_R1" (rect 40 0 77 16)(font "Arial" (font_size 8)))
+		(text "E_R1" (rect 158 123 195 139)(font "Arial" (font_size 8)))
+		(line (pt 216 128)(pt 200 128))
+	)
+	(port
+		(pt 216 144)
+		(output)
+		(text "E_R2" (rect 40 0 77 16)(font "Arial" (font_size 8)))
+		(text "E_R2" (rect 158 139 195 155)(font "Arial" (font_size 8)))
+		(line (pt 216 144)(pt 200 144))
+	)
+	(port
+		(pt 216 160)
+		(output)
+		(text "E_R3" (rect 40 0 77 16)(font "Arial" (font_size 8)))
+		(text "E_R3" (rect 158 155 195 171)(font "Arial" (font_size 8)))
+		(line (pt 216 160)(pt 200 160))
+	)
+	(port
+		(pt 216 176)
+		(output)
+		(text "TRI" (rect 40 0 62 16)(font "Arial" (font_size 8)))
+		(text "TRI" (rect 173 171 195 187)(font "Arial" (font_size 8)))
+		(line (pt 216 176)(pt 200 176))
+	)
+	(port
+		(pt 216 216)
+		(output)
+		(text "DONE" (rect 40 0 83 16)(font "Arial" (font_size 8)))
+		(text "DONE" (rect 152 211 195 227)(font "Arial" (font_size 8)))
+		(line (pt 216 216)(pt 200 216))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 232))
+	)
+)
